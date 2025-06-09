@@ -30,15 +30,27 @@ Lab Representative: <a href="mailto:shjang7071@kaist.ac.kr">shjang7071@kaist.ac.
 
 </div>
 
-<div class="col-md-4">
 
-<!-- https://ayastreb.me/jekyll-maps/#examples -->
-{% google_map
-   zoom="12"
-   latitude="36.391978"
-   longitude="127.398833"
-   marker_title="KAIST Munji Campus"
-   marker_url="https://mo.kaist.ac.kr/en/" %}
+<div class="col-md-5" id="map" style="height: 400px; width: 500%; margin-top: 20px; margin-bottom: 20px;"></div>
+
+<script>
+  function initMap() {
+    var location = { lat: 36.391978, lng: 127.398833 }; 
+    var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 14,
+      center: location,
+    });
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map,
+    });
+  }
+</script>
+
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXRN3bsLEKOt4zvoDlw-yz0nzhXcLLqcM&callback=initMap">
+</script>
+
 
 </div>
 </div>
@@ -117,4 +129,3 @@ To be updated.
 </div>
 -->
 
-</div>

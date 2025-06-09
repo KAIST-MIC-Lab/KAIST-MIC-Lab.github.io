@@ -5,7 +5,7 @@ description: "This is the official web page for the Mobility Intelligence & Cont
 url: "https://kaist-mic-lab.github.io"
 
 paginate: 5
-plugins: [jekyll-paginate, jekyll-sitemap, jekyll-maps]
+plugins: [jekyll-paginate, jekyll-sitemap]
 paginate_path: "news/page:num"
 
 permalink: pretty
@@ -13,10 +13,6 @@ markdown: kramdown
 kramdown:
   parse_block_html: true
   
-maps:
-  google:
-    api_key: "AIzaSyBXRN3bsLEKOt4zvoDlw-yz0nzhXcLLqcM"
-
 exclude:
   - .sass-cache/
   - .jekyll-cache/
