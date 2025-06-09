@@ -16,7 +16,7 @@
 
 * Change the publication date to the journal date once published.
 
-* For authors, use **bold** for the our lab members and "&#42;" (which makes star) for the corresponding author.
+* For authors, use <u>underbar</u> for the our lab members and "&#42;" (which makes star) for the corresponding author.
 
 Required: type, title, authors, domestic_or_international, pubs, pub_date, image, abstract
 
@@ -30,7 +30,7 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "paper title" # Title of the paper
 krtitle: # only for domestic papers
-authors: "**Myeongseok Ryu**, **Jiyun Kim**, **Kyunghwan Choi**&#42;" # Author of the paper
+authors: "<u>Myeongseok Ryu</u>, <u>Jiyun Kim</u>, <u>Kyunghwan Choi</u>&#42;" # Author of the paper
 domestic_or_international: "International" # "International" or "Domestic"
 preprint: # Preprint information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: Techrxiv 
@@ -42,7 +42,7 @@ pubs: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "European Control Conference (ECC) 2025"
     doi: # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
-    no: # Leave it blank if not applicable
+    num: # Leave it blank if not applicable
     pp: # Leave it blank if not applicable
     year: # Leave it blank if not applicable
     state: "published" # published, accepted, submitted

@@ -10,7 +10,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "Electronics Letters"
     doi: "10.1049/el.2020.1669" # Leave it blank if not applicable
     vol: "56" # Leave it blank if not applicable
-    no: "20" # Leave it blank if not applicable
+    num: "20" # Leave it blank if not applicable
     pp: "1048-1051"# Leave it blank if not applicable
     year: "2020"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted

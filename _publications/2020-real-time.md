@@ -4,13 +4,13 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Real-Time Optimal Torque Control of Interior Permanent Magnet Synchronous Motors Based on a Numerical Optimization Technique" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Yonghun Kim, Seok-Kyoon Kim&#42;, Kyung-Soo Kim&#42"
+authors: "<u>Kyunghwan Choi</u>, Yonghun Kim, Seok-Kyoon Kim&#42;, Kyung-Soo Kim&#42;"
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE Transactions on Control Systems Technology"
     doi: "10.1109/TCST.2020.3006900" # Leave it blank if not applicable
     vol: "29" # Leave it blank if not applicable
-    no:  # Leave it blank if not applicable
+    num:  "4" # Leave it blank if not applicable
     pp: "1815 - 1822"# Leave it blank if not applicable
     year: "2021"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted

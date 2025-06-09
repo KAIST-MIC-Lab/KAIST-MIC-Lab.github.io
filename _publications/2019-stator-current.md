@@ -10,7 +10,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE Access"
     doi: "10.1109/ACCESS.2019.2904228"# Leave it blank if not applicable
     vol: "vol. 7"# Leave it blank if not applicable
-    no: # Leave it blank if not applicable
+    num: # Leave it blank if not applicable
     pp: "33369-33379"# Leave it blank if not applicable
     year: "2019"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted

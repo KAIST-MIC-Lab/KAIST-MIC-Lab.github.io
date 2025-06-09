@@ -50,7 +50,9 @@
                 
                 <!-- Publications -->
                 {% assign pub = publication.pub | last %}
-                <i><b>{{ pub.name }}</b></i>{% if pub.vol %}, vol. {{ pub.vol }}{% endif %}{% if pub.no %}, no. {{ pub.no }}{% endif %}{% if pub.pp %}, pp. {{ pub.pp }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}
+
+                <i><b>{{ pub.name }}</b></i>{% if pub.vol %}, vol. {{ pub.vol }}{% endif %}{% if pub.num %}, no. {{ pub.num }}{% endif %}{% if pub.pp %}, pp. {{ pub.pp }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}
+                
                 {% if pub.doi %}
                     <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
                 {% elsif pub.url and publication.domestic_or_international contains "Domestic" %} 

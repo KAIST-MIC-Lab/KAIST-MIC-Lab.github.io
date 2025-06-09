@@ -10,7 +10,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IET Power Electronics"
     doi: "10.1049/iet-pel.2018.6021" # Leave it blank if not applicable
     vol: "12" # Leave it blank if not applicable
-    no: "14" # Leave it blank if not applicable
+    num: "14" # Leave it blank if not applicable
     pp: "3767-3773"# Leave it blank if not applicable
     year: "2019"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted

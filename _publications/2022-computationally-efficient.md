@@ -4,13 +4,13 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Computationally Efficient Model Predictive Torque Control of Permanent Magnet Synchronous Machines Using Numerical Techniques" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Yonghun Kim, Seok-Kyoon Kim&#42;, Kyung-Soo Kim&#42"
+authors: "<u>Kyunghwan Choi</u>, Yonghun Kim, Seok-Kyoon Kim&#42;, Kyung-Soo Kim&#42;"
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE Transactions on Control Systems Technology"
     doi: "10.1109/TCST.2021.3113045" # Leave it blank if not applicable
     vol: "30" # Leave it blank if not applicable
-    no:  # Leave it blank if not applicable
+    num:  "4" # Leave it blank if not applicable
     pp: "1774 - 1781"# Leave it blank if not applicable
     year: "2022"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted

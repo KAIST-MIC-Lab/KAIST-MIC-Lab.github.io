@@ -4,13 +4,13 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Effects analysis of light-duty diesel truck hybrid conversion depending on driving style" # Title of the paper
 krtitle: # only for domestic papers
-authors: "Jihye Byun, <u>Kyunghwan Choi&#42</u>"
+authors: "Jihye Byun, <u>Kyunghwan Choi</u>&#42;"
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "Transportation Research Part D: Transport and Environment"
     doi: "https://doi.org/10.1016/j.trd.2021.102958" # Leave it blank if not applicable
     vol: "97" # Leave it blank if not applicable
-    no:  # Leave it blank if not applicable
+    num: # Leave it blank if not applicable
     pp: "102958"# Leave it blank if not applicable
     year: "2021"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted

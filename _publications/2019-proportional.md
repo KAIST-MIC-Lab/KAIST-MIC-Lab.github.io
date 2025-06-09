@@ -10,7 +10,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "Energies"
     doi: "https://doi.org/10.3390/en12081412" # Leave it blank if not applicable
     vol: "12" # Leave it blank if not applicable
-    no: "8" # Leave it blank if not applicable
+    num: "8" # Leave it blank if not applicable
     pp: "1412"# Leave it blank if not applicable
     year: "2019"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted
