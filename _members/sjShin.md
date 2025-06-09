@@ -11,7 +11,7 @@ enddate:  [2025-05-01] # Leave this blank until you leave the lab
 image: /static/img/members/shShin.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/img/members/shShin.jpg #365 x 365 pixels, 72 dpi
 position: Master Student #What is your job title in the Fraser lab?
-subsequent: Ph.D. Student at MPIL #Leave this blank until you leave the lab
+subsequent: Ph.D. Student at MPIL, GIST #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: ssjdooly@gm.gist.ac.kr #Enter your preferred public e-mail address
 scholar:  #Google Scholar User ID, create if you don't have one

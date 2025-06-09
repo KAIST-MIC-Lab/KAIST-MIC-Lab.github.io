@@ -77,27 +77,32 @@ group: members
                   <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/orcid_logo.svg"></a>
                   <a href="http://orcid.org/{{member.orcid}}"> {{member.orcid}}</a> <br>
                 {% endif %}
-                
+
                 {% if member.scholar %}
                   <a href="http://scholar.google.com"><img class="inline-block mem-icon" src="/static/img/logo/gscholar_logo.svg"></a>
-                  <a href= "http://scholar.google.com/citations?user={{member.scholar}}"> {% if member.timeline_name %}{{ member.timeline_name }}{% else %}{{ member.name | split: " " | first }}{% endif %}'s Citations </a> <br>
-                {% endif %}
-
-                {% if member.researchgate %}
-                  <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/researchGate_logo.svg"></a>
-                  <a href="https://www.researchgate.net/profile/{{member.researchgate}}"> {% if member.timeline_name %}{{ member.timeline_name }}{% else %}{{ member.name | split: " " | first }}{% endif %}'s ResearchGate</a> <br>
+                  <a href= "http://scholar.google.com/citations?user={{page.scholar}}">Google Scholar</a> <br>
                 {% endif %}
 
                 {% if member.linkedin %}
                   <a href="http://www.linkedin.com"><img class="inline-block mem-icon" src="/static/img/logo/linkedin_logo.svg"></a>
-                  <a href= "http://www.linkedin.com/in/{{member.linkedin}}"> {{member.linkedin}} </a> <br>
+                  <a href= "http://www.linkedin.com/in/{{page.linkedin}}"> {{page.linkedin}} </a> <br>
                 {% endif %}
-                
+
+                {% if member.researchgate %}
+                          <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/researchGate_logo.svg"></a>
+                          <a href="https://www.researchgate.net/profile/{{page.researchgate}}">ResearchGate</a> <br>
+                        {% endif %}
+
                 {% if member.github %}
                   <a href="http://github.com"><img class="inline-bloc mem-icon" src="/static/img/logo/github_logo.svg"></a>
-                  <a href= "http://github.com/{{member.github}}"> {{member.github}} </a> <br>
+                  <a href= "http://github.com/{{page.github}}">GitHub</a> <br>
                 {% endif %}
-                
+                                
+                <!-- {% if member.iris %}
+                  <a href="https://www.iris.go.kr/enMain.do"><img class="inline-block mem-icon" src="/static/img/logo/iris_logo.png"></a>
+                  {{member.iris}} <br>
+                {% endif %} -->
+
             </div>
             <div class="col-sm-8">
                 {{member.description | markdownify}}

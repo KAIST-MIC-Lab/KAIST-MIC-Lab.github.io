@@ -11,7 +11,7 @@ enddate:  [2025-05-01] # Leave this blank until you leave the lab
 image: /static/img/members/mjKim.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/img/members/mjKim.jpg #365 x 365 pixels, 72 dpi
 position: Master Student #What is your job title in the Fraser lab?
-subsequent: TBU #Leave this blank until you leave the lab
+subsequent: Ph.D. Student at AWEAR Lab, GIST #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: kalswl326@gm.gist.ac.kr #Enter your preferred public e-mail address
 scholar:  #Google Scholar User ID, create if you don't have one
@@ -19,7 +19,13 @@ github:
 orcid:  #ORCID, create if you don't have one
 description: "
 
-To be updated.
+**Minji Kim** received the B.S. degree and Master degree in Department of Mechanical Engineering from **Dong A University** and **Gwangju Institute of Science and Technology (GIST)**,in 2023 and 2025, respectively
+
+She is currently proceeding the Ph.D. degree in Department of Mechanical Engineering from **GIST**, South Korea, in 2025. 
+
+
+She moved to the [**AWEAR Lab**](https://www.awearlab.com) at GIST in May 2025.
+
 
 "
 ---
