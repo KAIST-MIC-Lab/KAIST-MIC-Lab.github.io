@@ -3,7 +3,7 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "Physics-Informed Online Learning for Stator Flux Linkage Estimation in Synchronous Machines"
-krtitle: "상태 관측기 기반 비선형 동기기의 고정자 쇄교자속 추정"
+krtitle: "동기전동기의 실시간 고정자 쇄교자속 추정을 위한 물리정보기반 학습"
 authors: "<u>Seunghun Jang</u>, <u>Kyunghwan Choi</u>&#42;"
 domestic_or_international: "Domestic"
 pub: 
