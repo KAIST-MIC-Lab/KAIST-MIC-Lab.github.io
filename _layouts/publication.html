@@ -10,60 +10,103 @@
   {% endif %}
 </h5> 
 <h6>{{ page.authors | markdownify | remove: '<p>' | remove: '</p>' }}</h6>
-{% assign pub = page.pubs | last %}
-<i>{{ pub.name }}</i> <b>{{ pub.state }}</b>
-    
+
 <div class="row" style="padding-top: 20px; margin-top: -20px">
     
     <div class="col-sm-5">
 
       {% if page.image %}
-        <img class = "img-fluid" src = "{{page.image}}" alt =  "Key Figure" style="max-height: 200px">  
+        <div style ="text-align: center; padding-bottom: 10px">
+          <img class = "img-fluid" src = "{{page.image}}" alt =  "Key Figure" style="max-height: 200px">  
+        </div>
       {% endif %}
 
       <br>
       
-      <li><h6>Access the paper</h6></li>
+      <li>
+        <h5>Access the paper</h5>
+      </li>
     
-      {% for pub in page.pubs reversed %}
-      <i>{{ pub.name }}</i> <b>{{ pub.state }}</b>
-      <ur>
-      {% if pub.doi %}
-      &emsp; <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
-      {% endif %}
-      {% if pub.pdf %}
-      <a href="{{pub.pdf}}" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[PDF]</a>
-      <br>
-      {% endif %}
-      </ur>
-      {% endfor %}
+      {% if page.type contains "Ph.D. Dissertation" or page.type contains "Master's Thesis" %}
+      
+        {% assign pub = page.pub | last %}
+
+        <i>{{ pub.name }}</i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
+        {% if pub.doi %}
+          <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
+        {% endif %}
+        {% if pub.pdf %}
+          <a href="{{pub.pdf}}" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+          {% endif %}
+          
+      {% else %}
+          
+          {% assign pub = page.pub | last %}
+          
+        <i>{{ pub.name }}</i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
+        
+          {% if pub.doi %}
+              <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
+          {% elsif pub.url and page.domestic_or_international contains "Domestic" %} 
+              <a href="{{pub.url}}" title = "URL for {{publication.title}} (opens in new tab)" target="_blank">[DBpia Online]</a>
+          {% endif %}
     
+          <br>
+
+          {% assign pub = page.preprint | last %}
+          
+        <i>{{ pub.name }}</i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
+        
+          {% if pub.doi %}
+            <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
+          {% endif %}
+          {% if pub.pdf %}
+            <a href="{{pub.pdf}}" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+          {% endif %}
+          
+        {% endif %}
+
       <!--Github - optional-->
       {% if page.github %}
-      <li><h6>GitHub Repository</h6></li>
-      {% for record in page.github %}
-      &emsp; <a href="https://www.github.com/{{record.url}}/" alt="GitHub Repository: {{record.url}} (opens in new tab)" target="_blank">{{record.name}}</a>{% if record.description %} ({{record.description}}){% endif %}{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
+      <br>
+        <li>
+          <h5>GitHub Repository</h5>
+        </li>
+
+        {% for record in page.github %}
+          &emsp; <a href="https://www.github.com/{{record.url}}/" alt="GitHub Repository: {{record.url}} (opens in new tab)" target="_blank">{{record.name}}</a>{% if record.description %} ({{record.description}}){% endif %}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
       {% endif %}
     
       <!--additional links - optional-->
       {% if page.links %}
       <br>
-      <h6>Additional Link{% if page.links.size > 1 %}s{% endif %}</h6>
+      <h5>Additional Link{% if page.links.size > 1 %}s{% endif %}</h5>
       {% for link in page.links %}
         <li><a href="{{link.url}}" alt="{{link.name}} (opens in new tab)" target="_blank">{{link.name}}</a></li>
       {% endfor %}
       {% endif %}
+
+
+
+      {% if page.additional %}
+          <li>
+            <h5>Additional Information</h5>
+          </li>
+
+          {{ page.additional | markdownify | remove: '<p>' | remove: '</p>' }}
+      {% endif %}
     </div>
     
     <ul class="col-sm-7">
-      <li><h6>Abstract</h6></li>
+      <li>
+        <h5>Abstract</h5>
+      </h5>
+
       {% if page.abstract %}
-      <h15>
-      {{ page.abstract | markdownify }}
-      </h15>
+        {{ page.abstract | markdownify }}
       {% else %}
-      No abstract available
+        No abstract available
       {% endif %}
     
     </ul>

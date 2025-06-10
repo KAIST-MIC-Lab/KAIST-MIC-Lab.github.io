@@ -46,7 +46,6 @@
                 {% endif %}
 
             {% elsif publication.pub %}
-                {% assign pub_info = publication.pub | last %}
                 
                 <!-- Publications -->
                 {% assign pub = publication.pub | last %}
@@ -90,6 +89,13 @@
                     <a href="{{pre_info.bib}}" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[Cite]</a>
                 {% endif %}
 
+            {% endif %}
+
+            {% if publication.additional %}
+                <br>
+                <ul>
+                    {{ publication.additional | markdownify | remove: '<p>' | remove: '</p>' }}
+                </ul>
             {% endif %}
                 
         </h8>

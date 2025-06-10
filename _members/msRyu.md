@@ -21,7 +21,7 @@ iris: 12654854 #IRIS, create if you don't have one
 researchgate: Myeongseok-Ryu 
 description: "
 **Myeongseok Ryu** received the B.S. degree in Department of Mechanical Engineering from **Incheon National University**, South Korea, in 2023, and the M.S. degree in Department of Mechanical Engineering from **Gwangju Institute of Science and Technology (GIST)**, South Korea, in 2025. 
-He is currently working as a _Part time Contract Research Scientist in the Cho Chun Shik Graduate School of Mobility at the **KAIST**, Daejeon, South Korea, and a member of the MIC Lab.
+He is currently working as a Part time Contract Research Scientist in the Cho Chun Shik Graduate School of Mobility at the **KAIST**, Daejeon, South Korea, and a member of the MIC Lab.
 
 
 His research interests include **adaptive control**, **neural-networks**, and **constrained optimization**.

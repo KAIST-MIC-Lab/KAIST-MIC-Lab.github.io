@@ -62,6 +62,10 @@ abstract: "
   For the comparative study, two benchmark controllers and the proposed controller were evaluated through a numerical simulation of a two-link manipulator system and compared in terms of tracking performance and parameter dependency. 
   The comparative study verified that the proposed controller has better tracking performance and lower parameter dependency.
 "
+
+additional: # additional information such as awards, etc.
+#  - "📄 Awarded **Best Paper Award** at the _2025 European Control Conference (ECC)_."
+
 # links: # additional links;
 #   - name: 
 #     url: 
