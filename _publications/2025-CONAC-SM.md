@@ -12,7 +12,7 @@ preprint:
     state: "published"
     year: "2025"
 pub: 
-  - name: Industrial Electronics Society (IECON)
+  - name: IECON
     doi: 
     year: "2025"
     pdf: "/static/pub/2025-CONAC-SM-IECON.pdf"

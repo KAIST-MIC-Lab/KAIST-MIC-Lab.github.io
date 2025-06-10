@@ -4,8 +4,7 @@ layout: default
 group: members
 ---
 
-<div class="container-fluid">
-<div   style="max-width: 800px; margin: auto;">
+<div class="container-fluid" style="max-width: 800px; margin: auto;"> 
 <h1>MIC Lab Alumni</h1>
 
 {% assign Positions = "Ph.D. Student|Master Student|Intern" | split: "|" %}
@@ -89,9 +88,9 @@ group: members
                 {% endif %}
 
                 {% if member.researchgate %}
-                          <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/researchGate_logo.svg"></a>
-                          <a href="https://www.researchgate.net/profile/{{page.researchgate}}">ResearchGate</a> <br>
-                        {% endif %}
+                  <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/researchGate_logo.svg"></a>
+                  <a href="https://www.researchgate.net/profile/{{page.researchgate}}">ResearchGate</a> <br>
+                {% endif %}
 
                 {% if member.github %}
                   <a href="http://github.com"><img class="inline-bloc mem-icon" src="/static/img/logo/github_logo.svg"></a>

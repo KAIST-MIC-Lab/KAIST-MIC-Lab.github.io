@@ -13,7 +13,7 @@ group: contact
 ## Contact Us
 
 **English Address**  
-Room F405 (Office), Room F418 (Lab)<br>
+Room F405 (Office), Room F417 (Lab)<br>
 193 Munji-ro, Yuseong-gu, Daejeon 34051<br>
 Republic of Korea<br>
 

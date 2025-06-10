@@ -19,7 +19,7 @@ We are always in the market for motivated and talented people, even if we do not
 
 We warmly welcome students with __a strong background in control systems and a keen interest—or prior experience—in applying control theory to mobility systems__. However, prior experience is not mandatory. Students with __strong mathematical thinking and problem-solving skills__ will be well-prepared to begin research in our group and grow as researchers.
 
-If you are interested in joining us, please contact [Prof. Kyunghwan Choi](/contact) via <a href="mailto:kh.choi@kaist.ac.kr">email</a> with your CV and academic transcript attached.
+If you are interested in joining us, please contact [Prof. Kyunghwan Choi]({{ site.url }}/members/khChoi/) via <a href="mailto:kh.choi@kaist.ac.kr">email</a> with your CV and academic transcript attached.
 
 ### Undergraduate Research Internships
 We invite undergraduate students who wish to study or conduct exploratory research on the following topics:
@@ -27,7 +27,7 @@ We invite undergraduate students who wish to study or conduct exploratory resear
 - Neural Network-Based Control
 - Control experiments using vehicle dynamics simulator (CarMaker)
 
-If you are interested, feel free to contact [Prof. Kyunghwan Choi](/contact) via <a href="mailto:kh.choi@kaist.ac.kr">email</a>.
+If you are interested, feel free to contact [Prof. Kyunghwan Choi]({{ site.url }}/members/khChoi/) via <a href="mailto:kh.choi@kaist.ac.kr">email</a>.
 
 
 <!-- 
@@ -45,7 +45,7 @@ As the 3rd rotation period comes to a close, we will talk with the year's rotati
 
 ### Postdoctoral Positions
 
-We welcome postdoctoral applications on a rolling basis. Please contact [Prof. Kyunghwan Choi](/contact) directly via email. While we are open to a wide range of topics related to mobility system control, we are particularly interested in candidates working on:
+We welcome postdoctoral applications on a rolling basis. Please contact [Prof. Kyunghwan Choi]({{ site.url }}/members/khChoi/) directly via <a href="mailto:kh.choi@kaist.ac.kr">email</a>. While we are open to a wide range of topics related to mobility system control, we are particularly interested in candidates working on:
 -	Network-level control of Connected, Automated, and Electrified Vehicles (CAEVs)
 -	Reinforcement learning-based control of mobility systems
 
