@@ -24,7 +24,8 @@
       <br>
       
       <h5><li>Access the paper</li></h5>
-      
+
+      <!-- Dissertations -->
       {% if page.type contains "Ph.D. Dissertation" or page.type contains "Master's Thesis" %}
       
         {% assign pub = page.pub | last %}
@@ -37,6 +38,7 @@
           <a href="{{pub.pdf}}" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
           {% endif %}
           
+      <!-- Publications -->
       {% else %}
           
           {% assign pub = page.pub | last %}
@@ -51,15 +53,25 @@
     
           <br>
 
-          {% assign pub = page.preprint | last %}
-          
-        <i>{{ pub.name }}</i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
-        
-          {% if pub.doi %}
-            <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
-          {% endif %}
           {% if pub.pdf %}
-            <a href="{{pub.pdf}}" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+              <a href="{{pub.pdf}}" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+          {% else %}
+
+            {% if publication.preprint %}
+
+              {% assign pub = page.preprint | last %}
+              
+            <i>{{ pub.name }}</i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
+            
+              {% if pub.doi %}
+                <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
+              {% endif %}
+              {% if pub.pdf %}
+                <a href="{{pub.pdf}}" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+              {% endif %}
+
+            {% endif %}
+            
           {% endif %}
           
         {% endif %}
