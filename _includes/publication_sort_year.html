@@ -57,19 +57,26 @@
                 {% elsif pub.url and publication.domestic_or_international contains "Domestic" %} 
                     <a href="{{pub.url}}" title = "URL for {{publication.title}} (opens in new tab)" target="_blank">[DBpia Online]</a>
                 {% endif %}
-                
-                {% if publication.preprint %}
-                    {% assign pre_info = publication.preprint | last %}
 
-                    {% if pre_info.doi %}
-                        <a href="https://doi.org/{{ pre_info.doi }}" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[Preprint Online]</a>
-                    {% endif %}
-
-                    {% if pre_info.pdf %}
-                        <a href="{{pre_info.pdf}}" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[Preprint Full-Text]</a>
+                {% if pub.pdf %}
+                    <a href="{{pub.pdf}}" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+                {% else %}
+                    
+                    {% if publication.preprint %}
+                        {% assign pre_info = publication.preprint | last %}
+                    
+                        {% if pre_info.doi %}
+                            <a href="https://doi.org/{{ pre_info.doi }}" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[Preprint Online]</a>
+                        {% endif %}
+                    
+                        {% if pre_info.pdf %}
+                            <a href="{{pre_info.pdf}}" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[Preprint Full-Text]</a>
+                        {% endif %}
+                    
                     {% endif %}
                     
                 {% endif %}
+
                 {% if pub.bib %}
                     <a href="{{pub.bib}}" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[Cite]</a>
                 {% endif %}

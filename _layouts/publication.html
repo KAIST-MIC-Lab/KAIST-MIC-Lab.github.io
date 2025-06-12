@@ -23,10 +23,8 @@
 
       <br>
       
-      <li>
-        <h5>Access the paper</h5>
-      </li>
-    
+      <h5><li>Access the paper</li></h5>
+      
       {% if page.type contains "Ph.D. Dissertation" or page.type contains "Master's Thesis" %}
       
         {% assign pub = page.pub | last %}
@@ -69,9 +67,8 @@
       <!--Github - optional-->
       {% if page.github %}
       <br>
-        <li>
-          <h5>GitHub Repository</h5>
-        </li>
+        
+        <h5><li>GitHub Repository</h5></li>
 
         {% for record in page.github %}
           &emsp; <a href="https://www.github.com/{{record.url}}/" alt="GitHub Repository: {{record.url}} (opens in new tab)" target="_blank">{{record.name}}</a>{% if record.description %} ({{record.description}}){% endif %}{% unless forloop.last %}, {% endunless %}
@@ -81,7 +78,7 @@
       <!--additional links - optional-->
       {% if page.links %}
       <br>
-      <h5>Additional Link{% if page.links.size > 1 %}s{% endif %}</h5>
+      <h5><li>Additional Link{% if page.links.size > 1 %}s{% endif %}</h5></li>
       {% for link in page.links %}
         <li><a href="{{link.url}}" alt="{{link.name}} (opens in new tab)" target="_blank">{{link.name}}</a></li>
       {% endfor %}
@@ -90,18 +87,18 @@
 
 
       {% if page.additional %}
-          <li>
-            <h5>Additional Information</h5>
-          </li>
+        <br>
+
+          <h5><li>Additional Information</li></h5>
+          
 
           {{ page.additional | markdownify | remove: '<p>' | remove: '</p>' }}
       {% endif %}
     </div>
     
     <ul class="col-sm-7">
-      <li>
-        <h5>Abstract</h5>
-      </h5>
+
+        <h5><li>Abstract</li></h5>
 
       {% if page.abstract %}
         {{ page.abstract | markdownify }}

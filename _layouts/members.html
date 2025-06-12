@@ -10,9 +10,10 @@
           / {{ page.kr_name }} <br>
         {% endif %}
           
-        {% if page.pronouns %}
+        <!-- {% if page.pronouns %}
           <em>{{page.pronouns}}</em> <br>
-        {% endif %}
+        {% endif %} -->
+        
         {{page.position | markdownify | remove: '<p>' | remove: '</p>' }} <br>
         <em><a href="mailto:{{page.email}}">{{page.email}}</a></em> <br>
         {% if page.website %}

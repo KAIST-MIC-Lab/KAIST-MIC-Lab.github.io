@@ -10,7 +10,7 @@ pub:
     doi: "10.1109/CDC49753.2023.10383827"
     pp: "4197-4202"
     year: "2023"
-    # pdf: "/static/pub/2023-IntegrationErrorBased-FLE.pdf"
+    pdf: "/static/pub/2023-IntegrationErrorBased-FLE.pdf"
     state: "published"
 pub_date: "2023-01-19" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2023-stator-flux-linkage.png"

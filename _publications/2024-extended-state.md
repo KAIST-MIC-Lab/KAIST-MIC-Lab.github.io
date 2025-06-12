@@ -7,11 +7,11 @@ authors: "<u>Seunghun Jang</u>, Bernd Pfeifer, Christoph M. Hackl, <u>Kyunghwan 
 domestic_or_international: "International" # or "domestic"
 preprint:
   - name: 
-    pdf: "/static/pub/2024-extended-state.pdf"
 pub: 
   - name: International Symposium on Industrial Electronics (ISIE)
     doi: "10.1109/ISIE54533.2024.10595772"
     year: "2024"
+    pdf: "/static/pub/2024-extended-state.pdf"
     pp: "1-5"
     state: "published"
 pub_date: "2024-7-19" #Date of publication. Change from Biorxiv date to Journal date once accepted
