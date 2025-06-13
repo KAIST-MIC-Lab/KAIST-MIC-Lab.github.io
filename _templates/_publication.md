@@ -38,7 +38,7 @@ preprint: # Preprint information - REMOVE THIS FIELD IF NOT APPLICABLE!
     year: 2024
     pdf: "/static/pub/2025-imposing-Techrxiv.pdf"
     state: "published" # published, accepted, submitted
-pubs: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
+pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "European Control Conference (ECC) 2025"
     doi: # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
