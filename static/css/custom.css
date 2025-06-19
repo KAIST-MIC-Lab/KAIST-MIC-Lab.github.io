@@ -5,6 +5,15 @@
    }
 }
 
+.custom-color-link {
+  color: rgb(255, 92, 92); 
+}
+
+.custom-color-link:hover {
+  color: rgb(255, 92, 92); 
+  text-decoration: underline; 
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;

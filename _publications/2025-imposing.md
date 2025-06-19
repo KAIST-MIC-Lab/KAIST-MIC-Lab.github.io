@@ -17,6 +17,7 @@ pub:
     year: 2025
     pdf: "/static/pub/2025-imposing-ECC.pdf"
     state: "accepted"
+    pres: "/static/pub/2025-imposing-pres.pdf"
 pub_date: "2025-06-30" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-imposing.png"
 github: 

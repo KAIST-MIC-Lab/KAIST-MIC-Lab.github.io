@@ -30,50 +30,62 @@
       
         {% assign pub = page.pub | last %}
 
-        <i>{{ pub.name }}</i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
+        <i><b>{{ pub.name }}</b></i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
         {% if pub.doi %}
-          <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
+          <a href="https://doi.org/{{ pub.doi }}" class="custom-color-link" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
         {% endif %}
         {% if pub.pdf %}
-          <a href="{{pub.pdf}}" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
-          {% endif %}
+          <a href="{{pub.pdf}}" class="custom-color-link" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+        {% endif %}
+        {% if pub.bib %}
+          <a href="{{pub.bib}}" class="custom-color-link" title = "BibTex for {{page.title}} (opens in new tab)" target="_blank">[Cite]</a>
+        {% endif %}
           
       <!-- Publications -->
       {% else %}
           
-          {% assign pub = page.pub | last %}
-          
-        <i>{{ pub.name }}</i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
-        
-          {% if pub.doi %}
-              <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
-          {% elsif pub.url and page.domestic_or_international contains "Domestic" %} 
-              <a href="{{pub.url}}" title = "URL for {{publication.title}} (opens in new tab)" target="_blank">[DBpia Online]</a>
-          {% endif %}
-    
-          <br>
+          {% if page.pub %}
+            {% assign pub = page.pub | last %}
 
-          {% if pub.pdf %}
-              <a href="{{pub.pdf}}" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
-          {% else %}
+            <i><b>{{ pub.name }}</b></i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
 
-            {% if publication.preprint %}
-
-              {% assign pub = page.preprint | last %}
-              
-            <i>{{ pub.name }}</i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
-            
-              {% if pub.doi %}
-                <a href="https://doi.org/{{ pub.doi }}" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
-              {% endif %}
-              {% if pub.pdf %}
-                <a href="{{pub.pdf}}" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
-              {% endif %}
-
+            {% if pub.url and page.domestic_or_international contains "Domestic" %} 
+              <a href="{{pub.url}}" class="custom-color-link" title = "URL for {{publication.title}} (opens in new tab)" target="_blank">[DBpia Online]</a>
+            {% elsif pub.doi %}
+              <a href="https://doi.org/{{ pub.doi }}" class="custom-color-link" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
             {% endif %}
-            
+
+            {% if pub.pdf %}
+                <a href="{{pub.pdf}}" class="custom-color-link" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+            {% endif %}
+
+            {% if pub.pres %}
+                <a href="{{pub.pres}}" class="custom-color-link" title = "Presentation for {{page.title}} (opens in new tab)" target="_blank">[Presentation]</a>
+            {% endif %}
+
+            {% if pub.bib %}
+                <a href="{{pub.bib}}" class="custom-color-link" title = "BibTex for {{page.title}} (opens in new tab)" target="_blank">[Cite]</a>
+            {% endif %}
           {% endif %}
           
+          {% if page.preprint %}
+          <br>
+            {% assign pre_info = page.preprint | last %}
+
+            <i><b>{{ pre_info.name }}</b></i>{% if pre_info.year %}, {{ pre_info.year }}{% endif %}                
+                                
+            {% if pre_info.doi %}
+                <a href="https://doi.org/{{ pre_info.doi }}" class="custom-color-link" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[Preprint Online]</a>
+            {% endif %}
+            {% if pre_info.pdf %}
+                <a href="{{pre_info.pdf}}" class="custom-color-link" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[Preprint Full-Text]</a>
+            {% endif %}
+            {% if pre_info.bib %}
+                <a href="{{pre_info.bib}}" class="custom-color-link" title = "BibTex for {{page.title}} (opens in new tab)" target="_blank">[Preprint Cite]</a>
+            {% endif %}
+
+          {% endif %}
+
         {% endif %}
 
       <!--Github - optional-->
