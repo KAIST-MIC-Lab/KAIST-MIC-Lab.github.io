@@ -2,7 +2,7 @@
 
 > [!Note]
 > Maintained by Ph.D. student [**Myeongseok Ryu**](https://github.com/DDingR).  
-> Contact me at <a href="mailto:dding_98@gm.gist.ac.kr">dding_98@gm.gist.ac.kr</a> for any questions or suggestions. 
+> Contact me at <a href="mailto:dding_98@kaist.ac.kr">dding_98@kaist.ac.kr</a> for any questions or suggestions. 
 
 Forked from [fraser-lab.github.io](https://fraserlab.com/2020/05/03/Clone-this-website/).
 
@@ -17,7 +17,7 @@ https://mic.gist.ac.kr/prog/lectureMaster/mic/ALL/65352/list.do
 
 > [!Note]
 > Go to `_templates/` to contribute to the website.  
-> Or just contact maintainer **Myeongseok Ryu** for any questions or suggestions.
+> Or just contact maintainer **Myeongseok Ryu**.
 
 - Philosophy page: `./_data/philosophy.yml`
 - Research page: `./research/`
