@@ -39,10 +39,10 @@
                 <i><b>{{ diss_info.name }}</b></i>{% if diss_info.year %}, {{ diss_info.year }}{% endif %}                
 
                 {% if diss_info.pdf %}
-                    <a href="{{diss_info.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+                    <a href="{{diss_info.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[📃 Full-Text]</a>
                 {% endif %}
                 {% if diss_info.bib %}
-                    <a href="{{diss_info.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[Cite]</a>
+                    <a href="{{diss_info.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[💾 Cite]</a>
                 {% endif %}
 
             {% elsif publication.pub %}
@@ -57,27 +57,27 @@
                 {% endif %}
 
                 {% if pub.url and publication.domestic_or_international contains "Domestic" %} 
-                    <a href="{{pub.url}}" class="custom-color-link" title = "URL for {{publication.title}} (opens in new tab)" target="_blank">[DBpia Online]</a>
+                    <a href="{{pub.url}}" class="custom-color-link" title = "URL for {{publication.title}} (opens in new tab)" target="_blank">[🌐 DBpia Online]</a>
                 {% else %}
                     {% if pub.doi %}
-                        <a href="https://doi.org/{{ pub.doi }}" class="custom-color-link" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[Online]</a>
+                        <a href="https://doi.org/{{ pub.doi }}" class="custom-color-link" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[🌐 Online]</a>
                     {% elsif pre_info.doi and publication.preprint %}
-                        <a href="https://doi.org/{{ pre_info.doi }}" class="custom-color-link" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[Preprint Online]</a>
+                        <a href="https://doi.org/{{ pre_info.doi }}" class="custom-color-link" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[🌐 Preprint Online]</a>
                     {% endif %}
                 {% endif %}
 
                 {% if pub.pdf %}
-                    <a href="{{pub.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+                    <a href="{{pub.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[📃 Full-Text]</a>
                 {% elsif pre_info.pdf and publication.preprint %}
-                    <a href="{{pre_info.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[Full-Text]</a>
+                    <a href="{{pre_info.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[📃 Full-Text]</a>
                 {% endif %}
 
                 {% if pub.pres %}
-                    <a href="{{pub.pres}}" class="custom-color-link" title = "Presentation for {{publication.title}} (opens in new tab)" target="_blank">[Presentation]</a>
+                    <a href="{{pub.pres}}" class="custom-color-link" title = "Presentation for {{publication.title}} (opens in new tab)" target="_blank">[🎥 Presentation]</a>
                 {% endif %}
 
                 {% if pub.bib %}
-                    <a href="{{pub.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[Cite]</a>
+                    <a href="{{pub.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[💾 Cite]</a>
                 {% endif %}
 
             {% else %}
@@ -86,13 +86,13 @@
                 <i><b>{{ pre_info.name }}</b></i>{% if pre_info.year %}, {{ pre_info.year }}{% endif %}                
                                 
                 {% if pre_info.doi %}
-                    <a href="https://doi.org/{{ pre_info.doi }}" class="custom-color-link" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[Preprint Online]</a>
+                    <a href="https://doi.org/{{ pre_info.doi }}" class="custom-color-link" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[🌐 Preprint Online]</a>
                 {% endif %}
                 {% if pre_info.pdf %}
-                    <a href="{{pre_info.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[Preprint Full-Text]</a>
+                    <a href="{{pre_info.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[📃 Preprint Full-Text]</a>
                 {% endif %}
                 {% if pre_info.bib %}
-                    <a href="{{pre_info.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[Preprint Cite]</a>
+                    <a href="{{pre_info.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[💾 Preprint Cite]</a>
                 {% endif %}
 
             {% endif %}
