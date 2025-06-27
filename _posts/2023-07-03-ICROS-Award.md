@@ -5,7 +5,7 @@ author: Myeongseok Ryu
 layout: post
 group: news
 tags: award conference
-img: /static/posts/2023-06-23-ICROS-Award1.png
+img: /static/posts/2023-06-23-ICROS-Award0.png
 ---
 <div class="container-fluid">
 
