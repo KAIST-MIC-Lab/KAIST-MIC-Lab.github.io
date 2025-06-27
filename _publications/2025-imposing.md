@@ -14,7 +14,8 @@ preprint:
 pub:
   - name: "European Control Conference (ECC)"
     doi: 
-    year: 2025
+    year: "2025"
+    pp: "380 - 385"
     pdf: "/static/pub/2025-imposing-ECC.pdf"
     state: "accepted"
     pres: "/static/pub/2025-imposing-pres.pdf"
