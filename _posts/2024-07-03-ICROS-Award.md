@@ -4,7 +4,7 @@ title: Institute of Control, Robotics and Systems (ICROS) 2024 Best Paper Award
 author: Myeongseok Ryu
 layout: post
 group: news
-tags: award, conference
+tags: award conference
 img: /static/posts/2024-07-03-ICROS-Award.png
 ---
 <div class="container-fluid">
