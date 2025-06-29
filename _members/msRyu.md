@@ -10,7 +10,7 @@ startdate: [2023-03-01] #Enter your start date
 enddate: # [2025-02-02] # Leave this blank until you leave the lab
 image: /static/img/members/msRyu.jpg 
 altimage: /static/img/members/msRyu-alt.jpg 
-position: Ph.D. Student #What is your job title in the Fraser lab?
+position: "Ph.D. Student" #What is your job title in the Fraser lab?
 subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: dding_98@kaist.ac.kr #Enter your preferred public e-mail address

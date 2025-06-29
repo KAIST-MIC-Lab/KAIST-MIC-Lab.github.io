@@ -5,7 +5,7 @@ title: Kyunghwan Choi, Ph.D. #This is the title of your page. It will be display
 name: Kyunghwan Choi
 kr_name: 최경환
 timeline_name: Kyunghwan
-startdate: [2025-05-13]
+startdate: [2022-08-31]
 enddate: # []
 image: /static/img/members/khChoi.jpg
 # 마우스 위로 올리면 나오는 이미지

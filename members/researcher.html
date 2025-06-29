@@ -5,129 +5,134 @@ group: members
 ---
 
 <div class="container-fluid" style="max-width: 800px; margin: auto;"> 
-<h1>Current Members</h1>
+  
+  <h1>Current Members</h1>
 
-<!-- {% assign Positions = "Principal Investigator|Ph.D. Student|Master Student|Visiting Researcher|Intern" | split: "|" %} -->
-{% assign Positions = "Principal Investigator|Ph.D. Student|Master Student|Intern" | split: "|" %}
+  {% assign Positions = "Principal Investigator|Ph.D. Student|Master Student|Intern" | split: "|" %}
 
-<hr>
-
-<br>
-<h4>Quick Links</h4>
-
-{% for position in Positions %}
-{% assign filtered = "" | split: "" %}
-  {% for member in site.members %}
-    {% if member.subsequent %}
-      {% continue %}
-    {% else %}
-      {% if member.position == position %}
-        {% assign filtered = filtered | push: member %}
-      {% endif %}    
-    {% endif %}
-  {% endfor %}
-  <li><a href="#{{ position }}">{{ position }}s ({{ filtered.size }})</a></li>
-{% endfor %}
-<hr>
-<br>
-
-{% for position in Positions %}
-
-{% assign sorted = site.members | where: "position", position | sort: "startdate" %}
-
-  <div id = "{{ position }}">
-  <h2>{{ position }}s</h2>
   <hr>
-  <div>
 
+  <br>
+  <h4>Quick Links</h4>
+
+  {% for position in Positions %}
   {% assign filtered = "" | split: "" %}
-  {% for member in sorted %}
-    {% if member.subsequent %}
-      {% continue %}
-    {% else %}
-      {% assign filtered = filtered | push: member %}
-    {% endif %}
+    {% for member in site.members %}
+      {% if member.subsequent %}
+        {% continue %}
+      {% else %}
+        {% if member.position == position %}
+          {% assign filtered = filtered | push: member %}
+        {% endif %}    
+      {% endif %}
+    {% endfor %}
+    <li><a href="#{{ position }}">{{ position }}s ({{ filtered.size }})</a></li>
   {% endfor %}
+  <hr>
+  <br>
+
+  {% for position in Positions %}
+
+  {% assign sorted = site.members | where: "position", position | sort: "startdate" %}
+
+    <div id = "{{ position }}">
+    <h2>{{ position }}s</h2>
+    <hr>
+
+    {% assign filtered = "" | split: "" %}
+    {% for member in sorted %}
+      {% if member.subsequent %}
+        {% continue %}
+      {% else %}
+        {% assign filtered = filtered | push: member %}
+      {% endif %}
+    {% endfor %}
 
 
-  {% if filtered.size > 0 %}
-    <ul>
-      {% for member in filtered %}
+    {% if filtered.size > 0 %}
+      <ul>
+        {% for member in filtered %}
 
-        <!-- The paddingtop and margin-top edits allow anchors to link properly. -->
-        <div id = "{{member.name}}" class="row" style="padding-top: 60px; margin-top: -60px;">
-          <div class="col-sm-4">
-                <img class="img-fluid" src="{{member.image}}" {% if member.altimage %} onmouseover="this.src='{{member.altimage}}';" onmouseout="this.src='{{member.image}}';" {% endif %} alt="{{member.name}}"; width="365"; height="365"><br>
+          <!-- The paddingtop and margin-top edits allow anchors to link properly. -->
+          <div id = "{{member.name}}" class="row" style="padding-top: 60px; margin-top: -60px;">
+            <div class="col-sm-4">
+                  <img class="img-fluid" src="{{member.image}}" {% if member.altimage %} onmouseover="this.src='{{member.altimage}}';" onmouseout="this.src='{{member.image}}';" {% endif %} alt="{{member.name}}"; width="365"; height="365"><br>
 
-                {% if member.position == "Principal Investigator" %}
-                  <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}, Ph.D.</a> <br>
-                  {{ member.kr_name }} <br>
-                {% else %}
-                  <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}</a>
-                  / {{ member.kr_name }} <br>
-                {% endif %}
+                  {% if member.position == "Principal Investigator" %}
+                    <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}, Ph.D.</a> <br>
+                    {{ member.kr_name }} <br>
+                  {% else %}
+                    <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}</a>
+                    / {{ member.kr_name }} <br>
+                  {% endif %}
+                  
+                  <!-- {% if member.pronouns %} -->
+                    <!-- <em>{{member.pronouns}}</em> <br> -->
+                  <!-- {% endif %} -->
+
+                  {{member.position | markdownify | remove: '<p>' | remove: '</p>' }} <br>
+                  <em><a href="mailto:{{member.email}}">{{member.email}}</a></em> <br>
+
+                  {% if member.website %}
+                    <a style="overflow-wrap: break-word;" href= "{{member.website}}">{{member.website}}</a> <br>
+                  {% endif %}
+
+                  {% if member.orcid %}
+                    <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/orcid_logo.svg"></a>
+                    <a href="http://orcid.org/{{member.orcid}}"> {{member.orcid}}</a> <br>
+                  {% endif %}
+
+                  {% if member.scholar %}
+                    <a href="http://scholar.google.com"><img class="inline-block mem-icon" src="/static/img/logo/gscholar_logo.svg"></a>
+                    <a href= "http://scholar.google.com/citations?user={{member.scholar}}">Google Scholar</a> <br>
+                  {% endif %}
+
+                  {% if member.linkedin %}
+                    <a href="http://www.linkedin.com"><img class="inline-block mem-icon" src="/static/img/logo/linkedin_logo.svg"></a>
+                    <a href= "http://www.linkedin.com/in/{{member.linkedin}}"> {{member.linkedin}} </a> <br>
+                  {% endif %}
+
+                  {% if member.researchgate %}
+                    <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/researchGate_logo.svg"></a>
+                    <a href="https://www.researchgate.net/profile/{{member.researchgate}}">ResearchGate</a> <br>
+                  {% endif %}
+
+                  {% if member.github %}
+                    <a href="http://github.com"><img class="inline-bloc mem-icon" src="/static/img/logo/github_logo.svg"></a>
+                    <a href= "http://github.com/{{member.github}}">GitHub</a> <br>
+                  {% endif %}
+
+                  <!-- {% if member.iris %}
+                    <a href="https://www.iris.go.kr/enMain.do"><img class="inline-block mem-icon" src="/static/img/logo/iris_logo.png"></a>
+                    {{member.iris}} <br>
+                  {% endif %} -->
+
+              </div>
+              <div class="col-sm-8">
+                  {{member.description | markdownify}}
                 
-                <!-- {% if member.pronouns %} -->
-                  <!-- <em>{{member.pronouns}}</em> <br> -->
-                <!-- {% endif %} -->
-
-                {{member.position | markdownify | remove: '<p>' | remove: '</p>' }} <br>
-                <em><a href="mailto:{{member.email}}">{{member.email}}</a></em> <br>
-
-                {% if member.website %}
-                  <a style="overflow-wrap: break-word;" href= "{{member.website}}">{{member.website}}</a> <br>
-                {% endif %}
-
-                {% if member.orcid %}
-                  <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/orcid_logo.svg"></a>
-                  <a href="http://orcid.org/{{member.orcid}}"> {{member.orcid}}</a> <br>
-                {% endif %}
-
-                {% if member.scholar %}
-                  <a href="http://scholar.google.com"><img class="inline-block mem-icon" src="/static/img/logo/gscholar_logo.svg"></a>
-                  <a href= "http://scholar.google.com/citations?user={{member.scholar}}">Google Scholar</a> <br>
-                {% endif %}
-
-                {% if member.linkedin %}
-                  <a href="http://www.linkedin.com"><img class="inline-block mem-icon" src="/static/img/logo/linkedin_logo.svg"></a>
-                  <a href= "http://www.linkedin.com/in/{{member.linkedin}}"> {{member.linkedin}} </a> <br>
-                {% endif %}
-
-                {% if member.researchgate %}
-                  <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/researchGate_logo.svg"></a>
-                  <a href="https://www.researchgate.net/profile/{{member.researchgate}}">ResearchGate</a> <br>
-                {% endif %}
-
-                {% if member.github %}
-                  <a href="http://github.com"><img class="inline-bloc mem-icon" src="/static/img/logo/github_logo.svg"></a>
-                  <a href= "http://github.com/{{member.github}}">GitHub</a> <br>
-                {% endif %}
-
-                <!-- {% if member.iris %}
-                  <a href="https://www.iris.go.kr/enMain.do"><img class="inline-block mem-icon" src="/static/img/logo/iris_logo.png"></a>
-                  {{member.iris}} <br>
-                {% endif %} -->
-
+                  {% if member.cv %}
+                    Curriculum Vitae (CV) can be found <a href="{{ member.cv }}" title = "{{member.name}}'s CV" target="_blank">here</a>. <br>
+                  {% endif %}
+                  Further details are available <a href="{{ member.url }}" title = "More about {{member.name}} (opens in new tab)" target="_blank">here</a>.
             </div>
-            <div class="col-sm-8">
-                {{member.description | markdownify}}
-              
-                {% if member.cv %}
-                  Curriculum Vitae (CV) can be found <a href="{{ member.cv }}" title = "{{member.name}}'s CV" target="_blank">here</a>. <br>
-                {% endif %}
-                Further details are available <a href="{{ member.url }}" title = "More about {{member.name}} (opens in new tab)" target="_blank">here</a>.
           </div>
-
-        </div>
-        
-        <hr>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <p>
-      We currently have no {{ position }}s in the lab.
-    </p>
-  {% endif %}
-{% endfor %}
+          
+          <hr>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>
+        We currently have no {{ position }}s in the lab.
+      </p>
+    {% endif %}
+  </div>
+  {% endfor %}
 </div>
 
+<div class="container-fluid" style="text-align: center;">
+  <hr>
+  <h1>History of MIC Lab</h1>
+  <br>
+  {% include member_diagram.html %}
+</div>

@@ -6,8 +6,8 @@ title: Minji Kim #This is the title of your page. It will be displayed in the na
 name: Minji Kim #Include "Ph.D."" if applicable
 kr_name: 김민지 #Your name in Korean, if applicable
 timeline_name: Minji #If you would like your name to appear differently on the Lab timeline, fill out this line.
-startdate: [2024-03-01] #Enter your start date
-enddate:  [2025-05-01] # Leave this blank until you leave the lab
+startdate: [2023-03-01] #Enter your start date
+enddate:  [2025-03-01] # Leave this blank until you leave the lab
 image: /static/img/members/mjKim.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/img/members/mjKim.jpg #365 x 365 pixels, 72 dpi
 position: Master Student #What is your job title in the Fraser lab?

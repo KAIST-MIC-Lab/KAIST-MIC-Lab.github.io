@@ -1,8 +1,8 @@
 
 @media (min-width: 992px) {
-   .navbar-collapse {
-       display: none !important;
-   }
+  .navbar-collapse {
+      display: none !important;
+  }
 }
 
 .custom-color-link {

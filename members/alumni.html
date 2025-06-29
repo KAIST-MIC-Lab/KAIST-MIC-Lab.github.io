@@ -34,7 +34,6 @@ group: members
   <div id = "{{ position }}">
   <h2>{{ position }}s</h2>
   <hr>
-  <div>
 
   {% assign filtered = "" | split: "" %}
   {% for member in sorted %}
@@ -123,5 +122,6 @@ group: members
       We currently have no {{ position }}s alumni in the lab.
     </p>
   {% endif %}
+  </div>  
 {% endfor %}
 </div>
