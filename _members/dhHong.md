@@ -21,7 +21,9 @@ description: "
 
 **Donghwa Hong** is currently pursuing an M.S. degree in Mechanical Engineering at the **Gwangju Institute of Science and Technology (GIST)**, South Korea.
 
+
 His research interests include **robot control**, **neural networks**, and **model identification**.
+
 
 He received his B.S. degree in Physics from **Yonsei University** (Wonju) in 2023. 
 
