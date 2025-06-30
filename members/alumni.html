@@ -13,6 +13,7 @@ group: members
 <br>
 <h4>Quick Links</h4>
 
+<ul>
 {% for position in Positions %}
 {% assign filtered = "" | split: "" %}
   {% for member in site.members %}
@@ -24,7 +25,9 @@ group: members
   {% endfor %}
   <li><a href="#{{ position }}">{{ position }}s ({{ filtered.size }})</a></li>
 {% endfor %}
+</ul>
 <hr>
+
 <br>
 
 {% for position in Positions %}

@@ -53,31 +53,32 @@
 <br>
 <h4>Quick Links</h4>
 
-	{% if underReview.size > 0 %}
-		<li><a href="#Papers Under Review">Papers Under Review ({{ underReview.size }})</a></li>
-	{% endif %}
-	{% if intJour.size > 0 %}
-		<li><a href="#International Journal Paper">International Journal Papers ({{ intJour.size }})</a></li>
-	{% endif %}
-	{% if intConf.size > 0 %}
-		<li><a href="#International Conference Paper">International Conference Papers ({{ intConf.size }})</a></li>
-	{% endif %}
-	{% if domJour.size > 0 %}
-		<li><a href="#Domestic Journal Paper">Domestic Journal Papers ({{ domJour.size }})</a></li>
-	{% endif %}
-	{% if domConf.size > 0 %}
-		<li><a href="#Domestic Conference Paper">Domestic Conference Papers ({{ domConf.size }})</a></li>
-	{% endif %}
-	{% if diss.size > 0 %}
-		<li><a href="#Ph.D. Dissertation">Ph.D. Dissertations ({{ diss.size }})</a></li>
-	{% endif %}
-	{% if thes.size > 0 %}
-		<li><a href="#Master's Thesis">Master's Theses ({{ thes.size }})</a></li>
-	{% endif %}
-	{% if preprint.size > 0 %}
-		<li><a href="#Preprint">Preprints ({{ preprint.size }})</a></li>
-	{% endif %}
-
+	<ul>
+		{% if underReview.size > 0 %}
+			<li><a href="#Papers Under Review">Papers Under Review ({{ underReview.size }})</a></li>
+		{% endif %}
+		{% if intJour.size > 0 %}
+			<li><a href="#International Journal Paper">International Journal Papers ({{ intJour.size }})</a></li>
+		{% endif %}
+		{% if intConf.size > 0 %}
+			<li><a href="#International Conference Paper">International Conference Papers ({{ intConf.size }})</a></li>
+		{% endif %}
+		{% if domJour.size > 0 %}
+			<li><a href="#Domestic Journal Paper">Domestic Journal Papers ({{ domJour.size }})</a></li>
+		{% endif %}
+		{% if domConf.size > 0 %}
+			<li><a href="#Domestic Conference Paper">Domestic Conference Papers ({{ domConf.size }})</a></li>
+		{% endif %}
+		{% if diss.size > 0 %}
+			<li><a href="#Ph.D. Dissertation">Ph.D. Dissertations ({{ diss.size }})</a></li>
+		{% endif %}
+		{% if thes.size > 0 %}
+			<li><a href="#Master's Thesis">Master's Theses ({{ thes.size }})</a></li>
+		{% endif %}
+		{% if preprint.size > 0 %}
+			<li><a href="#Preprint">Preprints ({{ preprint.size }})</a></li>
+		{% endif %}
+	</ul>
 <hr>
 <br>
 
