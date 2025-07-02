@@ -12,7 +12,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     vol:  # Leave it blank if not applicable
     num:  # Leave it blank if not applicable
     pp: "1133-1138" # Leave it blank if not applicable
-    year: "2017" # Leave it blank if not applicable
+    year: "2016" # Leave it blank if not applicable
     state: "published" # published, accepted, submitted
 pub_date: "2016-10-09" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2016-two-channel.png" # Representative image of the paper
