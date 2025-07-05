@@ -8,7 +8,7 @@ domestic_or_international: "International" # or "domestic"
 preprint:
   - name: 
 pub: 
-  - name: International Symposium on Industrial Electronics (ISIE)
+  - name: IEEE International Symposium on Industrial Electronics (ISIE)
     doi: "10.1109/ISIE54533.2024.10595772"
     year: "2024"
     pdf: "/static/pub/2024-extended-state.pdf"

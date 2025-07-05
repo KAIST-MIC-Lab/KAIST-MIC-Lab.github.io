@@ -7,7 +7,7 @@ krtitle: # only for domestic papers
 authors: "<u>Kyunghwan Choi</u>, Ki-Bum Park&#42;"
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
-  - name: "International Symposium on Industrial Electronics (ISIE)"
+  - name: "IEEE International Symposium on Industrial Electronics (ISIE)"
     doi: "10.1109/ISIE51358.2023.10228177" # Leave it blank if not applicable
     vol:  # Leave it blank if not applicable
     num:  # Leave it blank if not applicable

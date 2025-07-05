@@ -6,11 +6,11 @@ title: "Online Actor Critic Learning for Optimal Tracking in Servo Positioning S
 authors: "<u>Hyochan Lee</u>, <u>Kyunghwan Choi</u>&#42;"
 domestic_or_international: "International" # or "domestic"
 pub: 
-  - name: IECON
+  - name: IEEE IECON
     doi: 
     year: "2025"
     pdf: "/static/pub/2025-online-actor.pdf"
-    state: "submitted"
+    state: "accepted"
 pub_date: "2025-10-14" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-online-actor.png"
 abstract: "

@@ -24,7 +24,13 @@ description: "
 He is currently proceeding the Ph.D. degree in the Cho Chun Shik Graduate School of Mobility at the **KAIST**, Daejeon, South Korea, and a member of the MIC Lab.
 
 
-His research interests include **adaptive control**, **neural-networks**, and **constrained optimization**.
+His research interests include **neuro-adaptive control**, **contraction theory**, and **online optimization**.
+
+
+Selected research is **Constrained Optimization-Based Neuro-Adaptive Control (CONAC)**.
+
+Related publications include:[[1]](/publications/2025-imposing/), [[2]](/publications/2025-CONAC-SM/), [[3]](/publications/2025-CONAC-Robot/).
+
 "
 ---
 <div class="row">
