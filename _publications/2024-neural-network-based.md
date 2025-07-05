@@ -9,7 +9,7 @@ preprint:
   - name: 
     pdf: 
 pub: 
-  - name: International Symposium on Industrial Electronics (ISIE)
+  - name: IEEE International Symposium on Industrial Electronics (ISIE)
     doi: "10.1109/ISIE54533.2024.10595703"
     year: "2024"
     pp: "1-5"

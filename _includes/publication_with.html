@@ -1,7 +1,7 @@
 <!-- Only publications by of Target name -->
 <!-- assign author name in targetName -->
 
- <!-- TODO: Add patent information -->
+<!-- TODO: Add patent information -->
 
 <!-- Filtering -->
 {% assign preprint = "" | split: "" %}
@@ -23,8 +23,8 @@
 			{% assign pub_info = pub.pub | last %}
 
 			<!-- Papers Under Review -->
-			{% if pub_info.state contains "submitted" or pub_info.state contains "accepted" %}
-				{% assign underReview = underReview | push: pub %}
+			{% if pub_info.state contains "submitted" %}
+			{% assign underReview = underReview | push: pub %}
 
 			<!-- Domestic or International -->
 			{% elsif pub.domestic_or_international == "International" and pub.type contains "Journal Paper" %}

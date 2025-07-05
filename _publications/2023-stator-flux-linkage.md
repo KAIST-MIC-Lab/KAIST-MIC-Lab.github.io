@@ -6,7 +6,7 @@ title: "Stator Flux Linkage Estimation of Synchronous Machines Based on Integrat
 authors: "<u>Seunghun Jang</u>, <u>Kyunghwan Choi</u>&#42;"
 domestic_or_international: "International" # or "domestic"
 pub: 
-  - name: Conference on Decision and Control (CDC)
+  - name: IEEE Conference on Decision and Control (CDC)
     doi: "10.1109/CDC49753.2023.10383827"
     pp: "4197-4202"
     year: "2023"
