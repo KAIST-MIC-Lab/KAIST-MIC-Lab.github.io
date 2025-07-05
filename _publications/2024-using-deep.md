@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Using Deep Reinforcement Learning for Intelligent Gain Adjustment of a Disturbance Observer"
 krtitle: "외란관측기의 심층강화학습 기반 지능형 자동 동조 기법"
-authors: "<u>Hyochan Lee</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Hyochan Lee"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: 
   - name: 제어로봇시스템학회 (ICROS)

@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Data-driven Modeling of Model Residuals for Linear Model Predictive Control of Nonlinear Systems"
 krtitle: "비선형 시스템의 선형모델예측제어를 위한 데이터 기반 시스템 잔차 모델링"
-authors: "<u>Myeongseok Ryu</u>, <u>Kyunghwan Choi</u>&#42;"
+authors: 
+  - name: "Myeongseok Ryu"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: 
   - name: 제어로봇시스템학회 (ICROS)

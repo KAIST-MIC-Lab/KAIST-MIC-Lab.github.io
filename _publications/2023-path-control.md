@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Path Control of a Connected and Automated Vehicle at Intersections and Merging Zones Using Attention Mechanism-Based Reinforcement Learning"
 krtitle: "어텐션 메커니즘 기반 강화학습을 활용한 교차로 및 합류 구간에서의 커넥티드 자율주행차 경로 제어"
-authors: "<u>Minseok Seo</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Minseok Seo"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: # Publication information
   - name: 한국자동차공학회 추계학술대회 (KSAE)

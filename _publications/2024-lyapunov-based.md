@@ -2,8 +2,11 @@
 type: "Journal Paper"
 layout: publication
 group: publications
-title: "A Lyapunov-based approach to nonlinear programming and its application to nonlinear model predictive torque control"
-authors: "<u>Kyunghwan Choi</u>, Christoph M Hackl&#42;"
+title: "A Lyapunov-Based Approach to Nonlinear Programming and Its Application to Nonlinear Model Predictive Torque Control"
+authors: 
+  - name: "Kyunghwan Choi"
+  - name: "Christoph M. Hackl"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "Domestic"
 preprint: 
   - name: Techrxiv

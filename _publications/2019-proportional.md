@@ -4,15 +4,20 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Proportional-Type Sensor Fault Diagnosis Algorithm for DC/DC Boost Converters Based on Disturbance Observer" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Kyung-Soo Kim&#42;, Seok-Kyoon Kim&#42;"
+authors:
+  - name: "Kyunghwan Choi"
+  - name: "Kyung-Soo Kim"
+    corresponding: true # true if this author is the corresponding author
+  - name: "Seok-Kyoon Kim"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "Energies"
-    doi: "https://doi.org/10.3390/en12081412" # Leave it blank if not applicable
+    doi: "10.3390/en12081412" # Leave it blank if not applicable
     vol: "12" # Leave it blank if not applicable
     num: "8" # Leave it blank if not applicable
-    pp: "1412"# Leave it blank if not applicable
-    year: "2019"# Leave it blank if not applicable
+    pp: "1412" # Leave it blank if not applicable
+    year: "2019" # Leave it blank if not applicable
     state: "published" # published, accepted, submitted
 pub_date: "2019-04-12" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2019-proportional.png" # Representative image of the paper

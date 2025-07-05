@@ -3,7 +3,10 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "Integral Error-Based Adaptive Neural Identifier for a Class of Uncertain Nonlinear Systems"
-authors: "<u>Donghwa Hong</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Donghwa Hong"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International"
 pub:
   - name: "International Conference on Control, Automation and Systems (ICCAS)"

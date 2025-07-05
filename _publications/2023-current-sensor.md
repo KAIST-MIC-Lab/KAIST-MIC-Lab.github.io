@@ -2,9 +2,13 @@
 type: "Journal Paper" # Conference Paper, Journal Paper, Ph.D. Thesis, Master's Thesis
 layout: publication # Do not change this
 group: publications # Do not change this
-title: "A current sensor fault-detecting method for onboard battery management systems of electric vehicles based on disturbance observer and normalized residuals" # Title of the paper
+title: "A Current Sensor Fault-detecting Method for Onboard Battery Management Systems of Electric Vehicles Based on Disturbance Observer and Normalized Residuals" # Title of the paper
 krtitle: # only for domestic papers
-authors: "Wooyong Kim,  Kunwoo Na, <u>Kyunghwan Choi</u>&#42;"
+authors: # List of authors
+  - name: "Wooyong Kim"
+  - name: "Kunwoo Na"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "International Journal of Control, Automation and Systems"

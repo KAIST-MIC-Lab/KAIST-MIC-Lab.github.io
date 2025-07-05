@@ -4,7 +4,11 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Stack Degradation Protection of FCEVs via Predictive Energy Management Strategy with Segmented Roads" # Title of the paper
 krtitle: # only for domestic papers
-authors: "Geunyoung Park, <u>Kyunghwan Choi</u>, Dongsuk Kum&#42;"
+authors: # List of authors
+  - name: "Geunyoung Park"
+  - name: "Kyunghwan Choi"
+  - name: "Dongsuk Kum"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "American Control Conference (ACC)"

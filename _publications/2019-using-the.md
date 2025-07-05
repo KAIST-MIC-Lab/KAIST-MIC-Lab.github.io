@@ -4,7 +4,13 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Using the Stator Current Ripple Model for Real-time Estimation of Full Parameters of a Permanent Magnet Synchronous Motor" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Yonghun Kim, Kyung-Soo Kim&#42;, Seok-Kyoon Kim&#42;"
+authors: 
+  - name: "Kyunghwan Choi"
+  - name: "Yonghun Kim"
+  - name: "Kyung-Soo Kim"
+    corresponding: true # true if this author is the corresponding author
+  - name: "Seok-Kyoon Kim"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE Access"

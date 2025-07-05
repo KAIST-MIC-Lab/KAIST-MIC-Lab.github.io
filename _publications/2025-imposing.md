@@ -3,7 +3,11 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "Imposing a Weight Norm Constraint for Neuro-Adaptive Control"
-authors: "<u>Myeongseok Ryu</u>, <u>Jiyun Kim</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Myeongseok Ryu"
+  - name: "Jiyun Kim"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
 preprint: 
   - name: Techrxiv

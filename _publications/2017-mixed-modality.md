@@ -4,7 +4,13 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Mixed-Modality Stimulation to Evoke Two Modalities Simultaneously in One Channel for Electrocutaneous Sensory Feedback" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Pyungkang Kim, Kyung-Soo Kim&#42;, Soohyun Kim&#42;"
+authors: 
+  - name: "Kyunghwan Choi"
+  - name: "Pyungkang Kim"
+  - name: "Kyung-Soo Kim"
+    corresponding: true # true if this author is the corresponding author
+  - name: "Soohyun Kim"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE Transactions on Neural Systems and Rehabilitation Engineering"

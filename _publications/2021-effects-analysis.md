@@ -2,13 +2,16 @@
 type: "Journal Paper" # Conference Paper, Journal Paper, Ph.D. Thesis, Master's Thesis
 layout: publication # Do not change this
 group: publications # Do not change this
-title: "Effects analysis of light-duty diesel truck hybrid conversion depending on driving style" # Title of the paper
+title: "Effects Analysis of Light-duty Diesel Truck Hybrid Conversion Depending on Driving Style" # Title of the paper
 krtitle: # only for domestic papers
-authors: "Jihye Byun, <u>Kyunghwan Choi</u>&#42;"
+authors: # List of authors
+  - name: "Jihye Byun"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "Transportation Research Part D: Transport and Environment"
-    doi: "https://doi.org/10.1016/j.trd.2021.102958" # Leave it blank if not applicable
+    doi: "10.1016/j.trd.2021.102958" # Leave it blank if not applicable
     vol: "97" # Leave it blank if not applicable
     num: # Leave it blank if not applicable
     pp: "102958"# Leave it blank if not applicable

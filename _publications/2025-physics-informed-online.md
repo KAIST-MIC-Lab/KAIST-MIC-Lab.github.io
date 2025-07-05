@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Physics-Informed Online Learning for Stator Flux Linkage Estimation in Synchronous Machines"
 krtitle: "동기전동기의 실시간 고정자 쇄교자속 추정을 위한 물리정보기반 학습"
-authors: "<u>Seunghun Jang</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Seunghun Jang"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: 
   - name: 제어로봇시스템학회 (ICROS)

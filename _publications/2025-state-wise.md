@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "State-wise Safety in Autonomous Driving via Lagrangian-based Constrained Reinforcement Learning"
 krtitle: "라그랑지안 기반 제약 강화 학습을 통한 자율주행 시스템의 상태별 안정성 보장"
-authors: "<u>Minseok Seo</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Minseok Seo"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: # Publication information
   - name: 한국자동차공학회 춘계학술대회 (KSAE) 

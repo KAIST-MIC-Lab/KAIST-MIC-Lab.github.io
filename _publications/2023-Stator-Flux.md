@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Sator Flux Linkage Estimation Method of Synchronous Machines Based on Integration Error Estimation"
 krtitle: "적분 오차 추정 기반 동기 전동기의 쇄교 자속 추정 기법"
-authors: "<u>Seunghun Jang</u>, <u>Kyunghwan Choi</u>&#42;"
+authors: 
+  - name: "Seunghun Jang"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: 
   - name: 제어로봇시스템학회 (ICROS)

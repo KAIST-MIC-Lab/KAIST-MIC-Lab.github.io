@@ -4,7 +4,13 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Output Voltage Tracking Controller Embedding Auto-tuning Algorithm for DC/DC Boost Converters" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Yonghun Kim, Kyung-Soo Kim&#42;, Seok-Kyoon Kim&#42;"
+authors: # List of authors
+  - name: "Kyunghwan Choi"
+  - name: "Yonghun Kim"
+  - name: "Kyung-Soo Kim"
+    corresponding: true # true if this author is the corresponding author
+  - name: "Seok-Kyoon Kim"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IET Power Electronics"

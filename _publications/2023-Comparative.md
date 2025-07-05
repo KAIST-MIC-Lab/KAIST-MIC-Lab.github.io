@@ -3,7 +3,12 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "A Comparative Study of Reinforcement Learning and Analytical Methods for Optimal Control"
-authors: "<u>Myeongseok Ryu</u>, <u>Junseo Ha</u>, <u>Minji Kim</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Myeongseok Ryu"
+  - name: "Junseo Ha"
+  - name: "Minji Kim"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "Domestic"
 preprint:
   # - pdf: "/static/pub/2023-comparative.pdf"

@@ -4,7 +4,11 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Cooperative Merging in Mixed Traffic Based on Strategic Influence of Connected Automated Vehicles on Human-Driven Vehicle Behavior" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>&#42;, <u>Seongjae Shin</u>, <u>Minseok Seo</u>"
+authors:
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
+  - name: "Seongjae Shin"
+  - name: "Minseok Seo"
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "Advanced Intelligent Systems"

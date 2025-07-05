@@ -4,7 +4,12 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Two-Channel Electrotactile Stimulation for Sensory Feedback of Fingers of Prosthesis" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Pyungkang Kim, Kyung-Soo Kim&#42;, Soohyun Kim"
+authors: 
+  - name: Kyunghwan Choi
+  - name: Pyungkang Kim
+  - name: Kyung-Soo Kim
+    corresponding: true # true if this author is the corresponding author
+  - name: Soohyun Kim
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"

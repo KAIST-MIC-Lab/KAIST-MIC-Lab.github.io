@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Stator Flux Linkage Estimation of Nonlinear Synchronous Machines Based on the State Observer"
 krtitle: "상태 관측기 기반 비선형 동기기의 고정자 쇄교자속 추정"
-authors: "<u>Seunghun Jang</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Seunghun Jang"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: 
   - name: 제어로봇시스템학회 (ICROS)

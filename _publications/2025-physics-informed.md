@@ -3,7 +3,11 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "Physics-Informed Online Learning of Flux Linkage Model for Synchronous Machine"
-authors: "<u>Seunghun Jang</u>, <u>Myeongseok Ryu</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Seunghun Jang"
+  - name: "Myeongseok Ryu"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
 preprint: 
   - name: Techrxiv

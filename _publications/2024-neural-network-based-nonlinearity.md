@@ -4,7 +4,10 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Neural Network-based Nonlinearity Estimation of Voltage Source Inverter for Synchronous Machine Drives" # Title of the paper
 krtitle: "동기전동기 구동용 전압원 인버터의 인공 신경망 기반 비선형성 추정" # only for domestic papers
-authors: "<u>Yeongho Jeong</u>, <u>Kyunghwan Choi</u>&#42;" # Author of the paper
+authors: # List of authors
+  - name: "Yeongho Jeong"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "제어로봇시스템학회 (ICROS)"

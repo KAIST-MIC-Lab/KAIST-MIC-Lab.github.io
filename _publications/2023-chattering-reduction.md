@@ -2,9 +2,15 @@
 type: "Journal Paper" # Conference Paper, Journal Paper, Ph.D. Thesis, Master's Thesis
 layout: publication # Do not change this
 group: publications # Do not change this
-title: "Chattering reduction of sliding mode control via nonlinear disturbance observer for anti-lock braking system and verification with carsim simulation" # Title of the paper
+title: "Chattering Reduction of Sliding Mode Control via Nonlinear Disturbance Observer for Anti-lock Braking System and Verification with Carsim Simulation" # Title of the paper
 krtitle: # only for domestic papers
-authors: "Minseong Choi,  <u>Kyunghwan Choi</u>, Minsu Cho, Minyoung Lee,  Kyung-Soo Kim&#42;"
+authors: # List of authors
+  - name: "Minseong Choi"
+  - name: "Kyunghwan Choi"
+  - name: "Minsu Cho"
+  - name: "Minyoung Lee"
+  - name: "Kyung-Soo Kim"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "International Journal of Automotive Technology"

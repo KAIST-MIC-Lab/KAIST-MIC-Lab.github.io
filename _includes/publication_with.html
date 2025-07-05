@@ -14,8 +14,17 @@
 {% assign thes = "" | split: "" %}
 
 {% for pub in site.publications %}
+
+	{% assign isHas = "false" %}
+
+	{% for author in pub.authors %}
+		{% if author.name contains targetName %}
+			{% assign isHas = "true" %}
+			{% break %}
+		{% endif %}
+	{% endfor %}
 	
-	{% if pub.authors contains {{targetName}} %}
+	{% if isHas contains "true" %}
 		
 		<!-- Not Preprint -->
 		{% if pub.pub %}

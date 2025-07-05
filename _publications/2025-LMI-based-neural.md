@@ -3,7 +3,10 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "LMI-based Neural Network Observer for State and Nonlinearity Estimation"
-authors: "<u>Yeongho Jeong</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Yeongho Jeong"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
 preprint: 
   - name: 

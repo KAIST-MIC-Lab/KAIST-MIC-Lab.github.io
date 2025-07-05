@@ -4,7 +4,11 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Generalized Model Predictive Torque Control of Synchronous Machine" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Jongseok Kim, Ki-Bum Park&#42;"
+authors: # List of authors
+  - name: "Kyunghwan Choi"
+  - name: "Jongseok Kim"
+  - name: "Ki-Bum Park"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE/ASME TRANSACTIONS ON MECHATRONICS"

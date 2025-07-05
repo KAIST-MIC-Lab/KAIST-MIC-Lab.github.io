@@ -9,7 +9,25 @@
     <i>{{ page.krtitle }}</i>
   {% endif %}
 </h5> 
-<h6>{{ page.authors | markdownify | remove: '<p>' | remove: '</p>' }}</h6>
+<h8>
+    {% for author in page.authors %}
+      {% assign memberName = author.name %}
+      {% include memberLink.html %}
+      
+      {%- if memberUrl != "not Included" -%}
+      {%- if memberName contains page.name -%}
+          <a href="{{ site.url }}/members/{{ memberUrl }}" title = "{{memberName}}'s profile (opens in new tab)" target="_blank" style="color: rgb(0, 0, 0)"><b>{{ memberName }}</b></a>
+      {%- else -%}
+          <a href="{{ site.url }}/members/{{ memberUrl }}" title = "{{memberName}}'s profile (opens in new tab)" target="_blank" style="color: rgb(0, 0, 0)">{{ memberName }}</a>
+      {%- endif -%}
+      {%- else -%}
+          <a style="color: rgba(0, 0, 0, 0.498)">{{ memberName }}</a>
+      {%- endif -%}
+      {%- if author.corresponding -%}&#42;{% endif %}
+      {%- if forloop.last == false -%}, {% endif %}
+
+    {% endfor %}
+</h8>
 
 <div class="row" style="padding-top: 20px; margin-top: -20px">
     

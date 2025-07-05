@@ -1,3 +1,4 @@
+
 {% assign sorted = data | sort: "pub_date" | reverse %}
 
     {% assign last_year = "" %}
@@ -26,7 +27,23 @@
         <br>
 
         <h8>
-            {{ publication.authors | markdownify | remove: '<p>' | remove: '</p>' }}
+            {% for author in publication.authors %}
+                {% assign memberName = author.name %}
+                {% include memberLink.html %}
+                
+                {%- if memberUrl != "not Included" -%}
+                    {%- if memberName contains page.name -%}
+                        <a href="{{ site.url }}/members/{{ memberUrl }}" title = "{{memberName}}'s profile (opens in new tab)" target="_blank" style="color: rgb(0, 0, 0)"><b>{{ memberName }}</b></a>
+                    {%- else -%}
+                        <a href="{{ site.url }}/members/{{ memberUrl }}" title = "{{memberName}}'s profile (opens in new tab)" target="_blank" style="color: rgb(0, 0, 0)">{{ memberName }}</a>
+                    {%- endif -%}
+                {%- else -%}
+                    <a style="color: rgba(0, 0, 0, 0.498)">{{ memberName }}</a>
+                {%- endif -%}
+                {%- if author.corresponding -%}&#42;{% endif %}
+                {%- if forloop.last == false -%}, {% endif %}
+                
+            {% endfor %}
         </h8>
 
         <br>
@@ -51,7 +68,7 @@
                 {% assign pub = publication.pub | last %}
 
                 <i><b>{{ pub.name }}</b></i>
-                {% if pub.state contains "accepted" %}(<b>accepted</b>, in press){% endif %}{% if pub.vol %}, vol. {{ pub.vol }}{% endif %}{% if pub.num %}, no. {{ pub.num }}{% endif %}{% if pub.pp %}, pp. {{ pub.pp }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}
+                {%- if pub.state contains "accepted" -%}(<b>accepted</b>, in press){%- endif -%}{% if pub.vol %}, vol. {{ pub.vol }}{% endif %}{% if pub.num %}, no. {{ pub.num }}{% endif %}{% if pub.pp %}, pp. {{ pub.pp }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}
                 
                 {% if publication.preprint %}
                     {% assign pre_info = publication.preprint | last %}

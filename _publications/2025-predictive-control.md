@@ -4,7 +4,11 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Predictive Control of a Dog-Clutch Transmission via a Transformer-Based Velocity Prediction" # Title of the paper
 krtitle: # only for domestic papers
-authors: "Geunyoung Park, <u>Kyunghwan Choi</u>,  Dongsuk Kum&#42;"
+authors:
+  - name: "Geunyoung Park"
+  - name: "Kyunghwan Choi"
+  - name: "Dongsuk Kum"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: " IEEE Transactions on Vehicular Technology"

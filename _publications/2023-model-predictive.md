@@ -4,7 +4,10 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Model Predictive Torque Control of Synchronous Machines Without a Current or Stator Flux Reference Generator" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Ki-Bum Park&#42;"
+authors: 
+  - name: "Kyunghwan Choi"
+  - name: "Ki-Bum Park"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE International Symposium on Industrial Electronics (ISIE)"

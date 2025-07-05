@@ -4,7 +4,12 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Adaptive Equivalent Consumption Minimization Strategy (A-ECMS) for the HEVs With a Near-Optimal Equivalent Factor Considering Driving Conditions" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Jihye Byun, Sangmin Lee, In Gwun Jang"
+authors: 
+  - name: "Kyunghwan Choi"
+  - name: "Jihye Byun"
+  - name: "Sangmin Lee"
+  - name: "In Gwun Jang"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE Transactions on Vehicular Technology"

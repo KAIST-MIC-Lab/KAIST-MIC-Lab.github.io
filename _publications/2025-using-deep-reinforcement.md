@@ -3,7 +3,12 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "Using Deep Reinforcement Learning for Dynamic Gain Adjustment of a Disturbance Observer"
-authors: "<u>Hyochan Lee</u>, <u>Kyunghwan Choi</u>&#42;, Wooyong Kim&#42;"
+authors:
+  - name: "Hyochan Lee"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
+  - name: "Wooyong Kim"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
 preprint: 
   - name: "TechRxiv"

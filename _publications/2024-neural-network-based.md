@@ -3,7 +3,11 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "Neural Network-based Nonlinearity Estimation of Voltage Source Inverter for Synchronous Machine Drives"
-authors: "<u>Yeongho Jeong</u>, <u>Seunghun Jang</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Yeongho Jeong"
+  - name: "Seunghun Jang"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
 preprint:
   - name: 

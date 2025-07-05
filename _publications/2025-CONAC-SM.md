@@ -4,7 +4,13 @@ layout: publication
 group: publications
 title: "Constrained Optimization-Based Neuro-Adaptive Control (CONAC) for Synchronous Machine Drives Under Voltage Constraints"
 domestic_or_international: "International" # or "Domestic"
-authors: "<u>Myeongseok Ryu</u>, Niklas Monzen, Pascal Seitter, <u>Kyunghwan Choi</u>, Christoph M. Hackl&#42;"
+authors:
+  - name: "Myeongseok Ryu"
+  - name: "Niklas Monzen"
+  - name: "Pascal Seitter"
+  - name: "Kyunghwan Choi"
+  - name: "Christoph M. Hackl"
+    corresponding: true # true if this author is the corresponding author
 preprint: 
   - name: Techrxiv
     doi: "10.36227/techrxiv.174585949.94234666/v1"

@@ -3,7 +3,12 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "Reinforcement Learning-Based Collision Avoidance of a Connected and Automated Vehicle at Merging Roads"
-authors: "<u>Minseok Seo</u>, <u>Seongjae Shin</u>, Kyungjoong Kim, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Minseok Seo"
+  - name: "Seongjae Shin"
+  - name: "Kyungjoong Kim"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "Domestic"
 preprint:
   # - pdf: "/static/pub/2023-reinforcement-learning.pdf"

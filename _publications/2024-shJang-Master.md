@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Online Stator Flux Linkage Estimation of Synchronous Machines"
 krtitle: "동기전동기의 온라인 고정자 쇄교 자속 추정"
-authors: "<u>Seunghun Jang</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Seunghun Jang"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 pub: # Publication information
   - name: Gwangju Institute of Science and Technology (GIST) Library
     doi: 

@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Online Reinforcement Learning for Optimal Tracking in Servo Positioning Systems"
 krtitle: "온라인 강화학습 기반 서보 시스템의 최적 각도 추종 제어"
-authors: "<u>Hyochan Lee</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Hyochan Lee"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: 
   - name: 제어로봇시스템학회 (ICROS)

@@ -4,7 +4,13 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Performance Comparison of Long-Horizon FCS-MPC for IPMSM Considering THDi and Inverter Loss" # Title of the paper
 krtitle: # only for domestic papers
-authors: "Jongseok Kim, Youngseok Lee, <u>Kyunghwan Choi</u>, Jiho Song, Ki-Bum Park&#42;"
+authos: 
+  - name: "Jongseok Kim"
+  - name: "Youngseok Lee"
+  - name: "Kyunghwan Choi"
+  - name: "Jiho Song"
+  - name: "Ki-Bum Park"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "International Conference on Power Electronics and ECCE Asia (ICPE 2023 - ECCE Asia)"

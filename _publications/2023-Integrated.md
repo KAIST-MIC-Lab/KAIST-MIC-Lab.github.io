@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Integrated Motion Control of Four in-Wheel Motor Actuated Vehicles Considering Path Tracking, Ride Comfort, and Energy Efficiency"
 krtitle: "경로 추종, 동적 승차감, 그리고 에너지 효율을 고려한 전륜 인휠모터 자동차의 통합 운동 제어"
-authors: "<u>Myeongseok Ryu</u>, <u>Kyunghwan Choi</u>&#42;"
+authors: # List of authors
+  - name: "Myeongseok Ryu"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: 
   - name: 한국자동차공학회 추계학술대회 (KSAE)

@@ -64,8 +64,13 @@
 
           {% assign isTherePubs = "no" %}
           {% for pub in site.publications %}
-            {% if pub.authors contains page.name %}
-              {% assign isTherePubs = "yes" %}
+            {% for author in pub.authors %}
+              {% if author.name contains page.name %}
+                {% assign isTherePubs = "yes" %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% if isTherePubs == "yes" %}
               {% break %}
             {% endif %}
           {% endfor %}

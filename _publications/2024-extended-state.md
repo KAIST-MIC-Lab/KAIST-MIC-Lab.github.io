@@ -3,7 +3,12 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "Extended State Observer Based Stator Flux Linkage Estimation of Nonlinear Synchronous Machines"
-authors: "<u>Seunghun Jang</u>, Bernd Pfeifer, Christoph M. Hackl, <u>Kyunghwan Choi</u>&#42;"
+authors: 
+  - name: "Seunghun Jang"
+  - name: "Bernd Pfeifer"
+  - name: "Christoph M. Hackl"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
 preprint:
   - name: 

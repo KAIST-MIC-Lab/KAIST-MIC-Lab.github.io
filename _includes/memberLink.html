@@ -1,0 +1,33 @@
+
+{% if memberName contains "Kyunghwan Choi" %}
+    {% assign memberUrl = "khChoi" %}
+{% elsif memberName contains "Myeongseok Ryu" %}
+    {% assign memberUrl = "msRyu" %}
+{% elsif memberName contains "Seongjae Shin" %}
+    {% assign memberUrl = "sjShin" %}
+{% elsif memberName contains "Seunghun Jang" %}
+    {% assign memberUrl = "shJang" %}
+{% elsif memberName contains "Minji Kim" %}
+    {% assign memberUrl = "mjKim" %}
+{% elsif memberName contains "Minseok Seo" %}
+    {% assign memberUrl = "msSeo" %}
+{% elsif memberName contains "Yeonho Jeong" %}
+    {% assign memberUrl = "yhJeong" %}
+{% elsif memberName contains "Hyochan Lee" %}
+    {% assign memberUrl = "hcLee" %}
+{% elsif memberName contains "Jiyun Kim" %}
+    {% assign memberUrl = "jyKim" %}
+{% elsif memberName contains "Donghwa Hong" %}
+    {% assign memberUrl = "dhHong" %}
+{% elsif memberName contains "Jaejoon Kim" %}
+    {% assign memberUrl = "jjKim" %}
+{% elsif memberName contains "Changeun Park" %}
+    {% assign memberUrl = "cePark" %}
+
+<!-- ADD MORE HERE -->
+
+<!-- ADD MORE HERE -->
+
+{% else %}
+    {% assign memberUrl = "not Included" %}
+{% endif %}

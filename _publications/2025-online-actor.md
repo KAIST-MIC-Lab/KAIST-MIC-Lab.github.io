@@ -3,7 +3,10 @@ type: "Conference Paper"
 layout: publication
 group: publications
 title: "Online Actor Critic Learning for Optimal Tracking in Servo Positioning Systems"
-authors: "<u>Hyochan Lee</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Hyochan Lee"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
 pub: 
   - name: IEEE IECON

@@ -4,7 +4,10 @@ layout: publication
 group: publications
 title: "Approximation-based Steering Controller with Deep Neural Network"
 krtitle: "심층신경망 근사기반 조향 제어기"
-authors: "<u>Myeongseok Ryu</u>, <u>Kyunghwan Choi</u>&#42;"
+authors:
+  - name: "Myeongseok Ryu"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "Domestic"
 pub: 
   - name: 제어로봇시스템학회 (ICROS)

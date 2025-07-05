@@ -4,7 +4,13 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Current and Position Sensor Fault Diagnosis Algorithm for PMSM Drives Based on Robust State Observer" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Kyunghwan Choi</u>, Yonghun Kim, Seok-Kyoon Kim&#42;, Kyung-Soo Kim&#42;"
+authors: # List of authors
+  - name: "Kyunghwan Choi"
+  - name: "Yonghun Kim"
+  - name: "Seok-Kyoon Kim"
+    corresponding: true # true if this author is the corresponding author
+  - name: "Kyung-Soo Kim"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE Transactions on Industrial Electronics "
