@@ -16,9 +16,7 @@
 
 * Change the publication date to the journal date once published.
 
-* For authors, use <u>underbar</u> for the our lab members and "&#42;" (which makes star) for the corresponding author.
-
-Required: type, title, authors, domestic_or_international, pubs, pub_date, image, abstract
+Required: type, title, authors, domestic_or_international, pub, pub_date, image, abstract
 
 - This template is made by Myeongseok Ryu on 2025-05-09.
 
@@ -30,7 +28,11 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "paper title" # Title of the paper
 krtitle: # only for domestic papers
-authors: "<u>Myeongseok Ryu</u>, <u>Jiyun Kim</u>, <u>Kyunghwan Choi</u>&#42;" # Author of the paper
+author: 
+  - name: "Myeongseok Ryu"
+  - name: "Jiyun Kim"
+  - name: "Kyunghwan Choi"
+    corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 preprint: # Preprint information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: Techrxiv 
@@ -43,15 +45,15 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     doi: # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
     num: # Leave it blank if not applicable
-    pp: # Leave it blank if not applicable
-    year: # Leave it blank if not applicable
+    pp: # "380-385" # Leave it blank if not applicable
+    year: # "2025" # Leave it blank if not applicable
     state: "published" # published, accepted, submitted
 pub_date: "2025-06-30" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2025-imposing.png" # Representative image of the paper
 github: # Leave this blank if not applicable
-  - name: "CONAC/ECC25-weight-constraint" # GitHub repository name
-    url: "KAIST-MIC-Lab/CoNAC/tree/ECC25-weight-constraint" # GitHub repository URL
-    description: "Code for the paper" # Description of the repository
+  - name: # "CONAC/ECC25-weight-constraint" # GitHub repository name
+    url: # "KAIST-MIC-Lab/CoNAC/tree/ECC25-weight-constraint" # GitHub repository URL
+    description: # "Code for the paper" # Description of the repository
 # abstract; emphasize the important part using **bold** or *italic* of markdown syntax
 abstract: "
   In this paper, a **neuro–adaptive controller** with weight norm constraints is proposed for uncertain Euler‒Lagrange systems. 

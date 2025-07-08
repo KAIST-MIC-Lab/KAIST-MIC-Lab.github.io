@@ -16,7 +16,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     doi: "10.1109/TVT.2021.3127691" # Leave it blank if not applicable
     vol: "71" # Leave it blank if not applicable
     num: "3" # Leave it blank if not applicable
-    pp: "2538 - 2549"# Leave it blank if not applicable
+    pp: "2538-2549"# Leave it blank if not applicable
     year: "2022"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted
 pub_date: "2022-11-12" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.

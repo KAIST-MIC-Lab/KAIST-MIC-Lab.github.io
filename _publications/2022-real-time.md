@@ -14,7 +14,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     doi: "10.1109/LCSYS.2022.3228946" # Leave it blank if not applicable
     vol: "7" # Leave it blank if not applicable
     no:  # Leave it blank if not applicable
-    pp: "943 - 948"# Leave it blank if not applicable
+    pp: "943-948"# Leave it blank if not applicable
     year: "2022"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted
 pub_date: "2022-12-01" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.

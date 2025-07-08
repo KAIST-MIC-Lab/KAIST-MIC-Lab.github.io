@@ -11,11 +11,11 @@ authors:
 pub: # Publication information
   - name: Gwangju Institute of Science and Technology (GIST) Library
     doi: 
-    pdf: "/static/dissertations/2024-shJang-Master.pdf"
+    pdf: "/static/pub/2024-shJang-Master.pdf"
     year: "2024"
     state: "published"
 pub_date: "2024-09-01" # abstract; emphasize the important part using **bold** or *italic* of markdown syntax
-image: "/static/dissertations/2024-shJang-Master.png"
+image: "/static/pub/2024-shJang-Master.png"
 abstract: "
   In this thesis, online flux linkage estimators for synchronous machines (SMs) are proposed.
   The proposed flux estimators are generally applicable to all types of synchronous
