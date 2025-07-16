@@ -62,6 +62,7 @@
                     <a href="{{diss_info.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[💾 Cite]</a>
                 {% endif %}
 
+
             {% elsif publication.pub %}
                 
                 <!-- Publications -->
@@ -80,7 +81,7 @@
                     {% if pub.doi %}
                         <a href="https://doi.org/{{ pub.doi }}" class="custom-color-link" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[🌐 Online]</a>
                     {% elsif pre_info.doi and publication.preprint %}
-                        <a href="https://doi.org/{{ pre_info.doi }}" class="custom-color-link" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[🌐 Preprint Online]</a>
+                        <a href="https://doi.org/{{ pre_info.doi }}" class="custom-color-link" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[🌐 Preprint]</a>
                     {% endif %}
                 {% endif %}
 
@@ -96,6 +97,16 @@
 
                 {% if pub.bib %}
                     <a href="{{pub.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[💾 Cite]</a>
+                {% endif %}
+                                
+                {% if publication.github %}
+                    {% assign github = publication.github | last %}
+                        <a href="https://www.github.com/{{github.url}}"
+                            class="custom-color-link"
+                            title="GitHub for {{publication.title}} (opens in new tab)"
+                            target="_blank">
+                            [<img class="inline-bloc mem-icon" src="/static/img/logo/github_logo.svg" alt="GitHub logo"> Code]
+                        </a>
                 {% endif %}
 
             {% else %}
