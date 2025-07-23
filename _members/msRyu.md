@@ -36,14 +36,9 @@ Related publications include:[[1]](/publications/2025-imposing/), [[2]](/publica
 <div class="row">
 <div>
 
-<h3>Professional Experience</h3>
-<ul>
-    <li>May 2025 - Present, Part time Contract Research Scientist, <b>KAIST</b>, South Korea</li>
-</ul>
-
 <h3>Education</h3>
 <ul>
-    <!-- <li>September 2025 - ..., Ph.D. in CCS Graduate School of Mobility, <b>KAIST</b>, South Korea</li> -->
+    <li>September 2025 - Present, Ph.D. in CCS Graduate School of Mobility, <b>KAIST</b>, South Korea</li>
     <li><s>March 2025 - May 2025, Ph.D. in Mechanical Engineering, <b>GIST</b>, South Korea,</s></li> 
         <ul> 
             <li>Withdrew for further studies</li>
@@ -52,11 +47,17 @@ Related publications include:[[1]](/publications/2025-imposing/), [[2]](/publica
     <li>May 2017 - February 2023, B.S. in Mechanical Engineering, <b>Incheon National University</b>, South Korea</li>
 </ul>
 
+<h3>Professional Experience</h3>
+<ul>
+    <li>May 2025 - August 2025, Part time Contract Research Scientist, <b>KAIST</b>, South Korea</li>
+</ul>
+
 <h3>Grant and Awards</h3>
 <ul>
+    <li>2025, <b>Best Presentation Award</b>, IEEE International Workshop on Intelligent Systems (IWIS)</li>
     <li>2025, <b>European Control Association (EUCA) Student Support</b>; 400 EUR</li>
     <li>2024, <b>Graduate International Research Experience Fellowship Certificate (IREF), GIST</b>; 16,000,000 KRW</li>
-    <li>2023, <b>Best Paper Award</b>, Institute of Control, Robotics and Systems</li>
+    <li>2023, <b>Best Paper Award</b>, Institute of Control, Robotics and Systems (ICROS)</li>
 </ul>
 
 </div>

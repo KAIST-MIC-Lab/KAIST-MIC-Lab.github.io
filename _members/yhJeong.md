@@ -7,11 +7,11 @@ name: Yeongho Jeong #Include "Ph.D."" if applicable
 kr_name: 정영호
 timeline_name: Yeongho #If you would like your name to appear differently on the Lab timeline, fill out this line.
 startdate: [2023-09-01] #Enter your start date
-enddate: # [2025-08-14] # Leave this blank until you leave the lab
+enddate:  [2025-06-31] # Leave this blank until you leave the lab
 image: /static/img/members/yhJeong.jpg 
 altimage: #/static/img/members/msSeo.jpg 
 position: Master Student #What is your job title in the Fraser lab?
-subsequent: #Leave this blank until you leave the lab
+subsequent: TBD #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: bbang988@gm.gist.ac.kr  #Enter your preferred public e-mail address
 scholar: btNp4v4AAAAJ&hl #Google Scholar User ID, create if you don't have one
