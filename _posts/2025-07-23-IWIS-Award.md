@@ -5,7 +5,7 @@ author: Myeongseok Ryu
 layout: post
 group: news
 tags: award conference
-img: /static/posts/2025-07-23-IWIS-Award.jpg
+img: /static/posts/2025-07-23-IWIS-Award.png
 ---
 <div class="container-fluid">
 
@@ -14,7 +14,7 @@ Ph.D. student **Myeongseok Ryu** received the **Best Presentation Award** at the
 **Congratulations!**
 
 <div style="text-align: center;">
-<img class="img-fluid" src="/static/posts/2025-07-23-IWIS-Award.jpg" style="width: 60%; height: auto;">
+<img class="img-fluid" src="/static/posts/2025-07-23-IWIS-Award.png" style="width: 60%; height: auto;">
 </div>
 
 </div>

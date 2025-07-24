@@ -20,8 +20,8 @@ orcid: 0009-0004-3279-5765 #ORCID, create if you don't have one
 iris: 12654854 #IRIS, create if you don't have one
 researchgate: Myeongseok-Ryu 
 description: "
-**Myeongseok Ryu** received the B.S. degree in Department of Mechanical Engineering from **Incheon National University**, South Korea, in 2023, and the M.S. degree in Department of Mechanical Engineering from **Gwangju Institute of Science and Technology (GIST)**, South Korea, in 2025. 
-He is currently proceeding the Ph.D. degree in the Cho Chun Shik Graduate School of Mobility at the **KAIST**, Daejeon, South Korea, and a member of the MIC Lab.
+**Myeongseok Ryu** received a B.S. degree in Department of Mechanical Engineering from **Incheon National University**, South Korea, in 2023, and a M.S. degree in Department of Mechanical Engineering from **Gwangju Institute of Science and Technology (GIST)**, South Korea, in 2025. 
+He is currently pursuing a Ph.D. degree at the Cho Chun Shik Graduate School of Mobility, **KAIST**, Daejeon, South Korea, and is a member of the MIC Lab.
 
 
 His research interests include **neuro-adaptive control**, **contraction theory**, and **online optimization**.
@@ -29,7 +29,7 @@ His research interests include **neuro-adaptive control**, **contraction theory*
 
 Selected research is **Constrained Optimization-Based Neuro-Adaptive Control (CONAC)**.
 
-Related publications include:[[1]](/publications/2025-imposing/), [[2]](/publications/2025-CONAC-SM/), [[3]](/publications/2025-CONAC-Robot/).
+Related publications include: **[[1]](/publications/2025-imposing/)**, **[[2]](/publications/2025-CONAC-SM/)**, **[[3]](/publications/2025-CONAC-Robot/)**.
 
 "
 ---
