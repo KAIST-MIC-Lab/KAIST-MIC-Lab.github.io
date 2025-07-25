@@ -2,7 +2,10 @@
 <div id = "{{page.name}}" class="row" style="padding-top: 60px; margin-top: -60px;">
     <div class="col-sm-3">
         <img class="img-fluid" src="{{page.image}}" {% if page.altimage %} onmouseover="this.src='{{page.altimage}}';" onmouseout="this.src='{{page.image}}';" {% endif %} alt="{{page.name}}"; width="265"; height="365"><br>
-        {% if page.position == "Principal Investigator" %}
+
+        {% assign last_position = page.positions | last %}
+
+        {% if last_position.name == "Principal Investigator" %}
           {{page.name}}, Ph.D. <br>
           {{ page.kr_name }} <br>
         {% else %}
@@ -13,8 +16,8 @@
         <!-- {% if page.pronouns %}
           <em>{{page.pronouns}}</em> <br>
         {% endif %} -->
-        
-        {{page.position | markdownify | remove: '<p>' | remove: '</p>' }} <br>
+
+        {{last_position.name | markdownify | remove: '<p>' | remove: '</p>' }} <br>
         <em><a href="mailto:{{page.email}}">{{page.email}}</a></em> <br>
         {% if page.website %}
           <a style="overflow-wrap: break-word;" href= "{{page.website}}">{{page.website}}</a> <br>

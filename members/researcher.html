@@ -4,7 +4,7 @@ layout: default
 group: members
 ---
 
-<div class="container-fluid" style="max-width: 800px; margin: auto;"> 
+<div class="container-fluid" style="max-width: 700px; margin: auto;"> 
   
   <h1>Current Members</h1>
 
@@ -21,10 +21,13 @@ group: members
     {% for member in site.members %}
       {% if member.subsequent %}
         {% continue %}
-      {% else %}
-        {% if member.position == position %}
+      {% elsif member.positions %}
+        {% assign last_position = member.positions | last %}
+        {% if last_position.name == position %}
           {% assign filtered = filtered | push: member %}
         {% endif %}    
+      {% else %}
+        Warning: {{ member.name }} does not have a position defined. Please check the member's file.
       {% endif %}
     {% endfor %}
     <li><a href="#{{ position }}">{{ position }}s ({{ filtered.size }})</a></li>
@@ -36,7 +39,18 @@ group: members
 
   {% for position in Positions %}
 
-  {% assign sorted = site.members | where: "position", position | sort: "startdate" %}
+  {% assign sorted = "" | split: "" %}
+  {% assign members = site.members | sort: "sortdate" %}
+  {% for member in members %}
+    {% if member.subsequent %}
+      {% continue %}
+    {% elsif member.positions %}
+      {% assign last_position = member.positions | last %}
+      {% if last_position.name == position %}
+        {% assign sorted = sorted | push: member %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
     <div id = "{{ position }}">
     <h2>{{ position }}s</h2>
@@ -61,7 +75,9 @@ group: members
             <div class="col-sm-4">
                   <img class="img-fluid" src="{{member.image}}" {% if member.altimage %} onmouseover="this.src='{{member.altimage}}';" onmouseout="this.src='{{member.image}}';" {% endif %} alt="{{member.name}}"; width="365"; height="365"><br>
 
-                  {% if member.position == "Principal Investigator" %}
+                  {% assign last_position = member.positions | last %}
+
+                  {% if last_position.name == "Principal Investigator" %}
                     <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}, Ph.D.</a> <br>
                     {{ member.kr_name }} <br>
                   {% else %}
@@ -73,7 +89,7 @@ group: members
                     <!-- <em>{{member.pronouns}}</em> <br> -->
                   <!-- {% endif %} -->
 
-                  {{member.position | markdownify | remove: '<p>' | remove: '</p>' }} <br>
+                  {{last_position.name | markdownify | remove: '<p>' | remove: '</p>' }} <br>
                   <em><a href="mailto:{{member.email}}">{{member.email}}</a></em> <br>
 
                   {% if member.website %}

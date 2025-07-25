@@ -6,11 +6,13 @@ title: Donghwa Hong #This is the title of your page. It will be displayed in the
 name: Donghwa Hong #Include "Ph.D."" if applicable
 kr_name: 홍동화 #Your name in Korean, if applicable
 timeline_name: Donghwa #If you would like your name to appear differently on the Lab timeline, fill out this line.
-startdate: [2024-03-01] #Enter your start date
-enddate: # [2025-02-02] # Leave this blank until you leave the lab
+sortdate: [2024-03-01] # for sorting
+positions:
+  - name: "Master Student" #Enter your position in the lab
+    startdate: [2024-03-01] #Enter your start date
+    enddate: [] #Enter your end date, or leave blank if you are still in the lab
 image: /static/img/members/dhHong.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/img/members/dhHong-alt.jpg #365 x 365 pixels, 72 dpi
-position: Master Student #What is your job title in the Fraser lab?
 subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: fairytalef00@gm.gist.ac.kr #Enter your preferred public e-mail address

@@ -6,11 +6,13 @@ title: Changeun Park #This is the title of your page. It will be displayed in th
 name: Changeun Park #Include "Intern"" if applicable 
 kr_name: 박창은 #Your name in Korean, if applicable
 timeline_name: Changeun #If you would like your name to appear differently on the Lab timeline, fill out this line. 
-startdate: [2024-12-26] #Enter your start date 
-enddate: [2025-04-01] # Leave this blank until you leave the lab 
+sortdate: [2024-12-26] # for sorting
+positions:
+  - name: "Intern" #Enter your position in the lab
+    startdate: [2024-12-26] #Enter your start date
+    enddate: [2025-04-01] #Enter your end date, or leave blank if you are still in the lab
 image: /static/img/members/cePark.jpg #365 x 365 pixels 72 dpi 
 altimage: /static/img/members/cePark-alt.jpg #365 x 365 pixels, 72 dpi 
-position: Intern #What is your job title in the Fraser lab? 
 subsequent: TBU #Leave this blank until you leave the lab 
 pronouns: he/him/his 
 email: qpalskzm1030@gm.gist.ac.kr #Enter your preferred public e-mail address 

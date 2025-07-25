@@ -4,7 +4,7 @@ layout: default
 group: members
 ---
 
-<div class="container-fluid" style="max-width: 800px; margin: auto;"> 
+<div class="container-fluid" style="max-width: 700px; margin: auto;"> 
 <h1>MIC Lab Alumni</h1>
 
 {% assign Positions = "Ph.D. Student|Master Student|Intern" | split: "|" %}
@@ -18,9 +18,12 @@ group: members
 {% assign filtered = "" | split: "" %}
   {% for member in site.members %}
     {% if member.subsequent %}
-      {% if member.position == position %}
+
+      {% assign last_position = member.positions | last %}
+      {% if last_position.name == position %}
         {% assign filtered = filtered | push: member %}
       {% endif %}    
+
     {% endif %}
   {% endfor %}
   <li><a href="#{{ position }}">{{ position }}s ({{ filtered.size }})</a></li>
@@ -32,7 +35,16 @@ group: members
 
 {% for position in Positions %}
 
-{% assign sorted = site.members | where: "position", position | sort: "startdate" %}
+  {% assign sorted = "" | split: "" %}
+  {% assign members = site.members | sort: "sortdate" | reverse %}
+  {% for member in members %}
+    {% if member.subsequent %}
+      {% assign last_position = member.positions | last %}
+      {% if last_position.name == position %}
+        {% assign sorted = sorted | push: member %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
   <div id = "{{ position }}">
   <h2>{{ position }}s</h2>
@@ -55,7 +67,9 @@ group: members
           <div class="col-sm-4">
                 <img class="img-fluid" src="{{member.image}}" {% if member.altimage %} onmouseover="this.src='{{member.altimage}}';" onmouseout="this.src='{{member.image}}';" {% endif %} alt="{{member.name}}"; width="365"; height="365"><br>
 
-                {% if member.position == "Principal Investigator" %}
+                {% assign last_position = member.positions | last %}
+
+                {% if last_position.name == "Principal Investigator" %}
                   <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}, Ph.D.</a> <br>
                   {{ member.kr_name }} <br>
                 {% else %}

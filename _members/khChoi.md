@@ -5,13 +5,15 @@ title: Kyunghwan Choi, Ph.D. #This is the title of your page. It will be display
 name: Kyunghwan Choi
 kr_name: 최경환
 timeline_name: Kyunghwan
-startdate: [2022-08-31]
-enddate: # []
+sortdate: [2022-08-31] # for sorting
+positions:
+  - name: "Principal Investigator" #Enter your position in the lab
+    startdate: [2022-08-31]
+    enddate: # []
 image: /static/img/members/khChoi.jpg
 # 마우스 위로 올리면 나오는 이미지
 altimage: /static/img/members/khChoi-alt.jpg
 cv: /static/img/members/khChoi.pdf
-position: Principal Investigator
 #current:
 pronouns: he/him/his
 email: kh.choi@kaist.ac.kr

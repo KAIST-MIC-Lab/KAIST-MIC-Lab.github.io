@@ -6,8 +6,11 @@ title: Seongjae Shin #This is the title of your page. It will be displayed in th
 name: Seongjae Shin #Include "Ph.D."" if applicable
 kr_name: 신성재 #Your name in Korean, if applicable
 timeline_name: Seongjae #If you would like your name to appear differently on the Lab timeline, fill out this line.
-startdate: [2022-09-01] #Enter your start date
-enddate:  [2024-09-01] # Leave this blank until you leave the lab
+sortdate: [2022-09-01] # for sorting
+positions:
+    - name: "Master Student" #Enter your position in the lab
+      startdate: [2022-09-01] #Enter your start date
+      enddate:  [2024-09-01] # Leave this blank until you leave the lab
 image: /static/img/members/shShin.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/img/members/shShin.jpg #365 x 365 pixels, 72 dpi
 position: Master Student #What is your job title in the Fraser lab?

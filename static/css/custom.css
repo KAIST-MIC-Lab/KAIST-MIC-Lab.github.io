@@ -1,3 +1,6 @@
+html {
+  font-size: 80%; 
+}
 
 @media (min-width: 992px) {
   .navbar-collapse {
@@ -132,6 +135,6 @@ body {
 */
 
 .dropdown-item {
-    padding: 5px;
-    font-size: 15px;
+    padding: 3px;
+    /* font-size: 15px; */
 }

@@ -6,11 +6,13 @@ title: Hyochan Lee #This is the title of your page. It will be displayed in the 
 name: Hyochan Lee #Include "Ph.D."" if applicable
 kr_name: 이효찬 #Your name in Korean, if applicable
 timeline_name: Hyochan #If you would like your name to appear differently on the Lab timeline, fill out this line.
-startdate: [2024-01-01] #Enter your start date
-enddate: # [2025-02-02] # Leave this blank until you leave the lab
+sortdate: [2024-01-01] # for sorting
+positions:
+  - name: "Ph.D. Student" #Enter your position in the lab
+    startdate: [2024-03-01] #Enter your start date
+    enddate: # [2025-02-02] # Leave this blank until you leave the lab
 image: /static/img/members/hcLee.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/img/members/hcLee.jpg #365 x 365 pixels, 72 dpi
-position: Ph.D. Student #What is your job title in the Fraser lab?
 subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: hyochanlee@kaist.ac.kr #Enter your preferred public e-mail address

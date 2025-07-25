@@ -6,11 +6,13 @@ title: Jiyun Kim #This is the title of your page. It will be displayed in the na
 name: Jiyun Kim #Include "Ph.D."" if applicable
 kr_name: 김지윤 #Your name in Korean, if applicable
 timeline_name: Jiyun #If you would like your name to appear differently on the Lab timeline, fill out this line.
-startdate: [2024-03-01] #Enter your start date
-enddate: # [2025-02-02] # Leave this blank until you leave the lab
+sortdate: [2024-03-01] # for sorting
+positions:
+  - name: "Master Student" #Enter your position in the lab
+    startdate: [2024-03-01] #Enter your start date
+    enddate: [] #Enter your end date, or leave blank if you are still in the lab
 image: /static/img/members/jyKim.jpg 
 altimage: /static/img/members/jyKim-alt.jpg 
-position: Master Student #What is your job title in the Fraser lab?
 subsequent: #Leave this blank until you leave the lab
 pronouns: she/her/her
 email: jiyun6606@gm.gist.ac.kr #Enter your preferred public e-mail address

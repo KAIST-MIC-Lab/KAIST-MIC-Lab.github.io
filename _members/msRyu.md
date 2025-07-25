@@ -6,11 +6,16 @@ title: Myeongseok Ryu #This is the title of your page. It will be displayed in t
 name: Myeongseok Ryu #Include "Ph.D."" if applicable
 kr_name: 유명석
 timeline_name: Myeongseok #If you would like your name to appear differently on the Lab timeline, fill out this line.
-startdate: [2023-03-01] #Enter your start date
-enddate: # [2025-02-02] # Leave this blank until you leave the lab
-image: /static/img/members/msRyu.jpg 
+sortdate: [2023-03-01] # for sorting
+positions:
+  - name: "Master Student" #Enter your position in the lab
+    startdate: [2023-03-01] #Enter your start date
+    enddate: [2025-03-01] #Enter your end date, or leave blank if you are still in the lab
+  - name: "Ph.D. Student" #Enter your position in the lab
+    startdate: [2025-03-01] #Enter your start date
+    enddate: [] #Leave blank if you are still in the lab
+image: /static/img/members/msRyu.jpg
 altimage: /static/img/members/msRyu-alt.jpg 
-position: "Ph.D. Student" #What is your job title in the Fraser lab?
 subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: dding_98@kaist.ac.kr #Enter your preferred public e-mail address
