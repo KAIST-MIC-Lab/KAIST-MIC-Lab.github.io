@@ -57,9 +57,9 @@ Related publications include: **[[1]](/publications/2025-imposing/)**, **[[2]](/
     <li>May 2025 - August 2025, Part time Contract Research Scientist, <b>KAIST</b>, South Korea</li>
 </ul>
 
-<h3>Grant and Awards</h3>
+<h3>Grants and Awards</h3>
 <ul>
-    <li>2025, <b>Best Presentation Award</b>, IEEE International Workshop on Intelligent Systems (IWIS)</li>
+    <li>2025, <b>Best Presentation Paper Award</b>, IEEE International Workshop on Intelligent Systems (IWIS)</li>
     <li>2025, <b>European Control Association (EUCA) Student Support</b>; 400 EUR</li>
     <li>2024, <b>Graduate International Research Experience Fellowship Certificate (IREF), GIST</b>; 16,000,000 KRW</li>
     <li>2023, <b>Best Paper Award</b>, Institute of Control, Robotics and Systems (ICROS)</li>
