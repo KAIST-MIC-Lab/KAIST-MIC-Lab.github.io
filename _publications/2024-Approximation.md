@@ -13,7 +13,7 @@ pub:
   - name: 제어로봇시스템학회 (ICROS)
     doi: 
     year: "2024"
-    pp: "884 - 885"
+    pp: "884-885"
     url: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11909146
     pdf: "/static/pub/2024-Approximation.pdf"
     state: "published"

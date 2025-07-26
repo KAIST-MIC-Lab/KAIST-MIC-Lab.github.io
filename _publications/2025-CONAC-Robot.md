@@ -9,7 +9,7 @@ authors: # List of authors
   - name: "Donghwa Hong"
   - name: "Kyunghwan Choi"
     corresponding: true # true if this author is the corresponding author
-preprint: 
+# preprint: 
   # - name: Techrxiv
   #   doi: "10.36227/techrxiv.172954216.68720680/v1"
   #   pdf: "/static/pub/2025-CONAC-Robot-Techrxiv.pdf"

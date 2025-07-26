@@ -15,7 +15,7 @@ pub:
     year: "2023"
     pdf: "/static/pub/2023-Data-driven.pdf"
     state: "published"
-    url: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11480596
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11480596"
     pp: 837-838
 pub_date: "2023-06-21" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2023-Data-driven.png"

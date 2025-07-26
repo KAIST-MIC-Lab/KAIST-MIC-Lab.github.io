@@ -10,7 +10,7 @@ authors:
   - name: "Kyunghwan Choi"
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "Domestic"
-preprint:
+# preprint:
   # - pdf: "/static/pub/2023-reinforcement-learning.pdf"
 pub: 
   - name: International Workshop on Intelligent Systems (IWIS)

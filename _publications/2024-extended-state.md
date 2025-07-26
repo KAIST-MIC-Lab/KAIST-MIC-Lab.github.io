@@ -10,8 +10,8 @@ authors:
   - name: "Kyunghwan Choi"
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
-preprint:
-  - name: 
+# preprint:
+#   - name: 
 pub: 
   - name: IEEE International Symposium on Industrial Electronics (ISIE)
     doi: "10.1109/ISIE54533.2024.10595772"
