@@ -61,7 +61,7 @@ Related publications include: **[[1]](/publications/2025-imposing/)**, **[[2]](/
 <ul>
     <li>2025, <b>Best Presentation Paper Award</b>, IEEE International Workshop on Intelligent Systems (IWIS)</li>
     <li>2025, <b>European Control Association (EUCA) Student Support</b>; 400 EUR</li>
-    <li>2024, <b>Graduate International Research Experience Fellowship Certificate (IREF), GIST</b>; 16,000,000 KRW</li>
+    <li>2024, <b>Graduate International Research Experience Fellowship (IREF), GIST</b>; 16,000,000 KRW</li>
     <li>2023, <b>Best Paper Award</b>, Institute of Control, Robotics and Systems (ICROS)</li>
 </ul>
 
