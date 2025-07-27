@@ -61,7 +61,7 @@
             {% assign duration = end | minus: start %}
             
             {% if duration < 0.083 %} # For plotting purposes, minimum duration is a month
-                {% assign duration = 10 %}
+                {% assign duration = .5 %}
             {% endif %}
 
             <!-- Color Assign -->

@@ -16,6 +16,7 @@ WHO_ARE_YOU = "Myeongseok Ryu"
 
 def find_files_with_author(folder_path, target_author=WHO_ARE_YOU):
 
+    under_review = []
     dom_conf = []
     dom_jour = []
     int_conf = []
@@ -51,6 +52,9 @@ def find_files_with_author(folder_path, target_author=WHO_ARE_YOU):
 
                             if not "pub" in data:
                                 preprint.append(file_path)
+                            elif data["pub"][-1]["state"] == "submitted":
+                                under_review.append(file_path)
+                                break
                             elif data["type"] == "Conference Paper":
                                 if data["domestic_or_international"] == "International":
                                     int_conf.append(file_path)
@@ -66,13 +70,13 @@ def find_files_with_author(folder_path, target_author=WHO_ARE_YOU):
             except Exception as e:
                 print(f"[ERROR] {file_path}: {e}")
 
-    return int_jour, int_conf, dom_conf, dom_jour, preprint
+    return under_review, int_jour, int_conf, dom_conf, dom_jour, preprint
 
 def make_TeX(category, files):
     TEX_RESULT = f"""
 \\textbf{{{category} Papers}}
 
-\\small{{\\begin{{etaremune}}
+\\footnotesize{{\\begin{{etaremune}}
 """
     
     # sort files by publication date
@@ -101,7 +105,7 @@ def make_TeX(category, files):
                 authors.append(author["name"])
 
             if "corresponding" in author:
-                authors[-1] += "*"
+                authors[-1] += "\\textsuperscript{{*}}"
 
         title = data.get("title", "No Title")
 
@@ -113,8 +117,6 @@ def make_TeX(category, files):
             # not preprint
             pub_info = data["pub"][-1]
             publisher = pub_info["name"]
-
-            print(title)
                 
             pub_details = []
             if "vol" in pub_info:
@@ -135,7 +137,6 @@ def make_TeX(category, files):
                 if pub_info["doi"] is not None:
                     url = f"\\href{{https://doi.org/{pub_info['doi']}}}{{{title}}}"
             if url == "none" and "preprint" in data:
-                print("preprint found")
                 preprint_info = data["preprint"][-1]
                 
                 if "doi" in preprint_info:
@@ -175,14 +176,14 @@ def make_TeX(category, files):
 def main():
     # 사용 예시
     folder = "_publications"  # 여기에 폴더 경로 입력
-    int_jour, int_conf, dom_conf, dom_jour, preprint = find_files_with_author(folder)
+    under_review, int_jour, int_conf, dom_conf, dom_jour, preprint = find_files_with_author(folder)
     print("Found files:")
     for category, files in zip(
         [
-            "International Journal", "International Conference", 
+            "Under Review", "International Journal", "International Conference", 
             "Domestic Conference", "Domestic Journal", "Preprint"
         ],
-        [int_jour, int_conf, dom_conf, dom_jour, preprint]
+        [under_review, int_jour, int_conf, dom_conf, dom_jour, preprint]
     ):
         print(f"  {category}: {len(files)} files")
         for f in files:
@@ -194,10 +195,10 @@ def main():
     TEX_FILES = ""
     for category, files in zip(
         [
-            "International Journal", "International Conference", 
+            "Under Review", "International Journal", "International Conference", 
             "Domestic Conference", "Domestic Journal", "Preprint"
         ],
-        [int_jour, int_conf, dom_conf, dom_jour, preprint]
+        [under_review, int_jour, int_conf, dom_conf, dom_jour, preprint]
     ):
         if len(files) > 0:
             TEX_RESULT = make_TeX(category, files)
@@ -209,6 +210,8 @@ def main():
     save_path = "publications.tex"
     with open(save_path, "w", encoding="utf-8") as f:
         f.write(TEX_FILES)
+
+    print(f"TeX files saved to {save_path}")
 
 if __name__ == "__main__":
     main()

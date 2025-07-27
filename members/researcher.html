@@ -96,6 +96,10 @@ group: members
                     <a style="overflow-wrap: break-word;" href= "{{member.website}}">{{member.website}}</a> <br>
                   {% endif %}
 
+                  {% if member.cv %}
+                    <a href="{{ member.cv }}" title = "{{member.name}}'s CV" target="_blank">📄 Curriculum Vitae (CV)</a> <br>
+                  {% endif %}
+
                   {% if member.orcid %}
                     <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/orcid_logo.svg"></a>
                     <a href="http://orcid.org/{{member.orcid}}"> {{member.orcid}}</a> <br>
@@ -130,9 +134,6 @@ group: members
               <div class="col-sm-8">
                   {{member.description | markdownify}}
                 
-                  {% if member.cv %}
-                    Curriculum Vitae (CV) can be found <a href="{{ member.cv }}" title = "{{member.name}}'s CV" target="_blank">here</a>. <br>
-                  {% endif %}
                   Further details are available <a href="{{ member.url }}" title = "More about {{member.name}} (opens in new tab)" target="_blank">here</a>.
             </div>
           </div>

@@ -26,13 +26,15 @@ layout: members # Do not change this
 group: members # Do not change this
 title: Myeongseok Ryu #This is the title of your page. It will be displayed in the navigation bar and on the page itself.
 name: Myeongseok Ryu # Include "Ph.D."" if applicable
-kr_name: 박창은 #Your name in Korean, if applicable
+kr_name: 유명석 #Your name in Korean, if applicable
 timeline_name: Myeongseok #If you would like your name to appear differently on the Lab timeline, fill out this line.
-startdate: [2023-03-01] #Enter your start date
-enddate: # [2025-02-02] # Leave this blank until you leave the lab
+sortdate: [2023-03-01] # for sorting
+positions:
+  - name: "Ph.D. Student" # Ph.D. Student, M.S. Student, Visiting Researcher, Intern
+    startdate: [2025-07-28] #Enter your start date
+    enddate: # [2025-04-01] #Enter your end date, or leave blank if you are still in the lab
 image: /static/img/members/msRyu.jpg # Profile picture
 altimage: /static/img/members/msRyu-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
-position: Ph.D. Student # Ph.D. Student, M.S. Student, Visiting Researcher, Intern
 subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his # he/him/his, she/her/hers, they/them/theirs
 email: dding_98@gm.gist.ac.kr # Enter your preferred public e-mail address

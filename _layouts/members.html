@@ -22,6 +22,11 @@
         {% if page.website %}
           <a style="overflow-wrap: break-word;" href= "{{page.website}}">{{page.website}}</a> <br>
         {% endif %}
+
+        {% if page.cv %}
+          <a href="{{ page.cv }}" title = "{{page.name}}'s CV" target="_blank">📄 Curriculum Vitae (CV)</a> <br>
+        {% endif %}
+
         {% if page.orcid %}
           <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/orcid_logo.svg"></a>
           <a href="http://orcid.org/{{page.orcid}}"> {{page.orcid}}</a> <br>
