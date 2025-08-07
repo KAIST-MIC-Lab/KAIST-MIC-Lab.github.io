@@ -16,7 +16,7 @@ authors: # List of authors
   #   state: "published"
   #   year: "2024"
 pub: 
-  - name: IEEE Transactions on Cybernetics
+  - name: IEEE Transactions on Systems, Man, and Cybernetics
     doi: 
     year: "2025"
     pdf: "/static/pub/2025-CONAC-Robot.pdf"
