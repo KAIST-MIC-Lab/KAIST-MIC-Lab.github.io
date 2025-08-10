@@ -13,7 +13,7 @@ pub:
     doi:
     year: "2025"
     pdf: "/static/pub/2025-integral-error.pdf"
-    state: "submitted"
+    state: "accepted"
 pub_date: "2025-11-04" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-integral-error.png" 
 abstract: "

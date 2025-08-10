@@ -17,10 +17,10 @@ preprint:
     year: "2024"
     state: "published"
 pub:
-  - name: "International Conference on Control, Automation and Systems (ICCAS) "
+  - name: "International Conference on Control, Automation and Systems (ICCAS)"
     doi: 
     year: "2025"
-    state: "submitted"
+    state: "accepted"
 pub_date: "2025-11-04"
 image: "/static/pub/2025-using-deep-reinforcement.png"
 abstract: "
