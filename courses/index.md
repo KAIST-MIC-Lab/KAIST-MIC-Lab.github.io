@@ -4,10 +4,15 @@ layout: default
 group: courses
 ---
 
-##### MOXXX: Special Topics on Unmanned Autonomous Systems &lt;Learning-Based Control for Mobility Systems&gt;
-- Abstract to apprear
+##### MO89905: Special Topics on Unmanned Autonomous Systems &lt;Learning-Based Control for Mobility Systems&gt;
 
+- 
+  This course introduces reinforcement learning (RL) from a control-theoretic and optimization perspective, with emphasis on online decision-making and theoretical guarantees. Core topics include approximate dynamic programming (ADP) for both finite and infinite-horizon settings, including value function approximation, rollout methods, value and policy iteration, and policy space approximation. The course covers both model-based and selected model-free approaches under a unifying approximation framework. Additional topics include state aggregation and model learning, with an emphasis on their roles in improving prediction, control, and decision-making. Applications focus on real-time decision-making and control in mobility systems. A final project requires students to design and implement learning-based controllers in online or sequential decision environments.
 
+- Objectives:
+  - To explore the state of the art of ADP/RL at a graduate level
+  - To explore the common boundary between AI and optimal control
+  - To provide a bridge that workers with background in either field find it accessible
 <!-- 과목 GitHub Repo 추가 예정 -->
 
 <!--
