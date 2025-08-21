@@ -8,17 +8,11 @@ authors:
   - name: "Kyunghwan Choi"
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
-preprint: 
-  - name: 
-    doi: 
-    pdf: "/static/pub/2025-LMI-based-neural.pdf"
-    state:
-    year: 
 pub:
   - name: IEEE IECON
     doi: 
     year: "2025"
-    # pdf: "/static/pub/2025-LMI-based-neural.pdf"
+    pdf: "/static/pub/2025-LMI-based-neural.pdf"
     state: "accepted"
 pub_date: "2025-10-14" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-LMI-based-neural.png"
