@@ -27,8 +27,8 @@ type: "Conference Paper" # Conference Paper, Journal Paper, Ph.D. Thesis, Master
 layout: publication # Do not change this
 group: publications # Do not change this
 title: "paper title" # Title of the paper
-krtitle: # only for domestic papers
-author: 
+# krtitle: # only for domestic papers
+authors: 
   - name: "Myeongseok Ryu"
   - name: "Jiyun Kim"
   - name: "Kyunghwan Choi"
