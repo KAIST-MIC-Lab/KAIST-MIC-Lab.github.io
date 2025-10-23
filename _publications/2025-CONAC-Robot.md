@@ -21,7 +21,7 @@ pub:
     year: "2025"
     pdf: "/static/pub/2025-CONAC-Robot.pdf"
     state: "submitted"  
-pub_date: "2025-12-31" #Date of publication. Change from Biorxiv date to Journal date once accepted
+pub_date: "2025-08-31" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-CONAC-Robot.png"
 github: 
   - name: "CONAC"

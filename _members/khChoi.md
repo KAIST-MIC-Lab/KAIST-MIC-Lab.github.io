@@ -19,6 +19,7 @@ pronouns: he/him/his
 email: kh.choi@kaist.ac.kr
 scholar: bvOhAiMAAAAJ
 researchgate:  Kyunghwan-Choi
+linkedin: kyunghwan-choi-5b1791135
 website:
 iris: 11305927
 github: Kyunghwan-Choi

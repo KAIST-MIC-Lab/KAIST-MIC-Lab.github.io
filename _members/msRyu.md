@@ -21,6 +21,7 @@ pronouns: he/him/his
 email: dding_98@kaist.ac.kr #Enter your preferred public e-mail address
 scholar: gUHuDJ4AAAAJ #Google Scholar User ID, create if you don't have one
 github: DDingR
+linkedin: myeongseok-ryu-21b5b02b1
 cv: /static/img/members/msRyu.pdf
 orcid: 0009-0004-3279-5765 #ORCID, create if you don't have one
 iris: 12654854 #IRIS, create if you don't have one
