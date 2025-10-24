@@ -10,7 +10,7 @@ authors:
     corresponding: true # true if this author is the corresponding author
 preprint: # Preprint information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: Techrxiv 
-    doi: "10.36227/techrxiv.175877819.93334616/v1"
+    doi: "10.36227/techrxiv.175877819.93334616/v2"
     year: 2025
     pdf: "/static/pub/2025-mitigating.pdf"
     state: "published" # published, accepted, submitted
