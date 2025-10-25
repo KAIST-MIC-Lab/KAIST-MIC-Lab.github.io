@@ -18,7 +18,7 @@ authors: # List of authors
 pub: 
   - name: IEEE Transactions on Systems, Man, and Cybernetics
     doi: 
-    year: "2025"
+    year: 
     pdf: "/static/pub/2025-CONAC-Robot.pdf"
     state: "submitted"  
 pub_date: "2025-08-31" #Date of publication. Change from Biorxiv date to Journal date once accepted

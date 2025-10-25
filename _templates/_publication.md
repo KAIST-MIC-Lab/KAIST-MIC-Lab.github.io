@@ -21,12 +21,11 @@ Required: type, title, authors, domestic_or_international, pub, pub_date, image,
 - This template is made by Myeongseok Ryu on 2025-05-09.
 
 *** here, after you read every directions. ***
-
 ---
 type: "Conference Paper" # Conference Paper, Journal Paper, Ph.D. Thesis, Master's Thesis
 layout: publication # Do not change this
 group: publications # Do not change this
-title: "paper title" # Title of the paper
+title: "Imposing a Weight Norm Constraint for Neuro-Adaptive Control" # Title of the paper
 # krtitle: # only for domestic papers
 authors: 
   - name: "Myeongseok Ryu"
@@ -48,12 +47,13 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     pp: # "380-385" # Leave it blank if not applicable
     year: # "2025" # Leave it blank if not applicable
     state: "published" # published, accepted, submitted
+    bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
 pub_date: "2025-06-30" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2025-imposing.png" # Representative image of the paper
-github: # Leave this blank if not applicable
-  - name: # "CONAC/ECC25-weight-constraint" # GitHub repository name
-    url: # "KAIST-MIC-Lab/CoNAC/tree/ECC25-weight-constraint" # GitHub repository URL
-    description: # "Code for the paper" # Description of the repository
+# github: # Leave this blank if not applicable
+#  - name: # "CONAC/ECC25-weight-constraint" # GitHub repository name
+#    url: # "KAIST-MIC-Lab/CoNAC/tree/ECC25-weight-constraint" # GitHub repository URL
+#    description: # "Code for the paper" # Description of the repository
 # abstract; emphasize the important part using **bold** or *italic* of markdown syntax
 abstract: "
   In this paper, a **neuro–adaptive controller** with weight norm constraints is proposed for uncertain Euler‒Lagrange systems. 
@@ -64,10 +64,8 @@ abstract: "
   For the comparative study, two benchmark controllers and the proposed controller were evaluated through a numerical simulation of a two-link manipulator system and compared in terms of tracking performance and parameter dependency. 
   The comparative study verified that the proposed controller has better tracking performance and lower parameter dependency.
 "
-
-additional: # additional information such as awards, etc.
+# additional: # additional information such as awards, etc.
 #  - "📄 Awarded **Best Paper Award** at the _2025 European Control Conference (ECC)_."
-
 # links: # additional links;
 #   - name: 
 #     url: 

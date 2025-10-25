@@ -17,12 +17,13 @@ preprint:
     state: "published"
 pub:
   - name: "European Control Conference (ECC)"
-    doi: 
+    doi: 10.23919/ECC65951.2025.11186942
     year: "2025"
     pp: "380-385"
     pdf: "/static/pub/2025-imposing-ECC.pdf"
-    state: "accepted"
+    state: "published"
     pres: "/static/pub/2025-imposing-pres.pdf"
+    bib: "/static/pub/2025-imposing.bib"
 pub_date: "2025-06-30" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-imposing.png"
 github: 

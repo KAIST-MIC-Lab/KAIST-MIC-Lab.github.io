@@ -21,7 +21,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     vol: # Leave it blank if not applicable
     num: # Leave it blank if not applicable
     pp: # "380-385" # Leave it blank if not applicable
-    year: "2025" # Leave it blank if not applicable
+    year: "2026" # Leave it blank if not applicable
     state: "submitted" # published, accepted, submitted
 pub_date: "2025-12-21" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2025-car-planner.png" # Representative image of the paper
