@@ -18,7 +18,7 @@ preprint:
     state: "published"
     year: "2025"
 pub: 
-  - name: IEEE IECON
+  - name: Annual Conference of the IEEE Industrial Electronics Society (IECON)
     doi: "10.1109/IECON58223.2025.11221692"
     year: "2025"
     pdf: "/static/pub/2025-CONAC-SM-IECON.pdf"
