@@ -19,10 +19,11 @@ preprint:
     year: "2025"
 pub: 
   - name: IEEE IECON
-    doi: 
+    doi: "10.1109/IECON58223.2025.11221692"
     year: "2025"
     pdf: "/static/pub/2025-CONAC-SM-IECON.pdf"
-    state: "accepted"
+    bib: "/static/pub/2025-CONAC-SM.bib"
+    state: "published"
 pub_date: "2025-10-14" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-CONAC-SM.png"
 github: 
