@@ -25,17 +25,17 @@ From left to right:
 <img class="img-fluid" src="/static/posts/2025-11-12-KSAE-autumn1.jpg" style="width: 60%; height: auto;">
 </div>
 
-**Jiyun Kim** presented a paper titled <a href="{{site.url}}/publications/2025-car-planner-constrained/">**SCAR Planner: Constrained-Attention-Based Robust Imitation Learning for Autonomous Driving**</a> at the conference. 
+**Jiyun Kim** presented a paper titled <a href="{{site.url}}/publications/2025-car-planner-constrained/">**CAR Planner: Constrained-Attention-Based Robust Imitation Learning for Autonomous Driving**</a> at the conference. 
 
 <div style="text-align: center;">
 <img class="img-fluid" src="/static/posts/2025-11-12-KSAE-autumn2.jpg" style="width: 60%; height: auto;">
 </div>
 
-<!-- Prof. **Kyunghwan Choi** presented a paper titled Analytic Approach to **Predictive Energy Management of Connected EREVs**.
+Prof. **Kyunghwan Choi** presented a paper titled **Generalized Model Predictive Torque Control (GMPTC)**.
 
 <div style="text-align: center;">
 <img class="img-fluid" src="/static/posts/2025-11-12-KSAE-autumn3.jpg" style="width: 60%; height: auto;">
-</div> -->
+</div>
 
 We enjoyed the conference and the beautiful ocean view of Busan and meeting colleague, Semin Jeong, who was an undergraduate intern in our lab last year.
 
