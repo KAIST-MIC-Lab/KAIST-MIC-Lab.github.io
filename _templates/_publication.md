@@ -41,6 +41,7 @@ preprint: # Preprint information - REMOVE THIS FIELD IF NOT APPLICABLE!
     state: "published" # published, accepted, submitted
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "European Control Conference (ECC) 2025"
+    pdf: "/static/pub/2025-imposing.pdf"
     doi: # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
     num: # Leave it blank if not applicable

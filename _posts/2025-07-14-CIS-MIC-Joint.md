@@ -2,6 +2,7 @@
 published: True
 title: CIS-MIC Joint Symposium
 author: Myeongseok Ryu
+author_link: msRyu
 layout: post
 group: news
 tags: talk

@@ -25,6 +25,7 @@ However, for advanced features like figure, HTML syntax is recommended.
 published: True # True or False
 title: Example Post # Title of the post
 author: Myeongseok Ryu # Author of the post
+author_link: msRyu # Author link ID (refer to /members/)
 layout: post # Do not change this
 group: news # Do not change this
 tags: general # Tags for the post

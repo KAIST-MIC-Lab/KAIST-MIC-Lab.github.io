@@ -2,6 +2,7 @@
 published: True
 title: Korean Society of Automotive Engineers (KSAE) 2023 Autumn Conference
 author: Myeongseok Ryu
+author_link: msRyu
 layout: post
 group: news
 tags: conference

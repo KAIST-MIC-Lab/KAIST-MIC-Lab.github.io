@@ -2,6 +2,7 @@
 published: True
 title: Prof. Choi serves as a Technical Editor for IEEE/ASME Transactions on Mechatronics
 author: Myeongseok Ryu
+author_link: msRyu
 layout: post
 group: news
 tags: service

@@ -2,6 +2,7 @@
 published: True
 title: JMST Outstanding Contribution Award
 author: Myeongseok Ryu
+author_link: msRyu
 layout: post
 group: news
 tags: award

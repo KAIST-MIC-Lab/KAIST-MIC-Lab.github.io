@@ -2,6 +2,7 @@
 published: True
 title: GIST Lab Crew
 author: Myeongseok Ryu
+author_link: msRyu
 layout: post
 group: news
 tags: life

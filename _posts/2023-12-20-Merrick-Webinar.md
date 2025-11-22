@@ -2,6 +2,7 @@
 published: True
 title: Merrick Webinar
 author: Myeongseok Ryu
+author_link: msRyu
 layout: post
 group: news
 tags: talk

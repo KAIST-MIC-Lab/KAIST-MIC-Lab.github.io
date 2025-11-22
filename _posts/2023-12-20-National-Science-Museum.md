@@ -2,6 +2,7 @@
 published: True
 title: National Science Museum Science School 2023
 author: Myeongseok Ryu
+author_link: msRyu
 layout: post
 group: news
 tags: talk

@@ -2,6 +2,7 @@
 published: True
 title: GIST Magazine Insight Column
 author: Myeongseok Ryu
+author_link: msRyu
 layout: post
 group: news
 tags: media
