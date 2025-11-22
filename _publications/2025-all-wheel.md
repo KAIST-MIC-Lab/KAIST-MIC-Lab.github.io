@@ -9,7 +9,7 @@ authors:
   - name: "Kyunghwan Choi"
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
-preprint: # Preprint information - REMOVE THIS FIELD IF NOT APPLICABLE!
+# preprint: # Preprint information - REMOVE THIS FIELD IF NOT APPLICABLE!
 #   - name: Techrxiv 
 #     doi: "10.36227/techrxiv.173014412.26480551/v1"
 #     year: 2024

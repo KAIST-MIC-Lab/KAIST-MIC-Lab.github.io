@@ -3,6 +3,7 @@ pub2tex.py
 
 VERSION HISTORY:
 - Version 1.0 (Date: 2025.07.26)
+- Version 1.1 (Date: 2025.08.15) - Bug fix in publication year extraction.
 
 - Myeongseok Ryu
 - dding_98@kaist.ac.kr
@@ -12,8 +13,8 @@ VERSION HISTORY:
 import os
 import yaml
 
-WHO_ARE_YOU = "Kyunghwan Choi" 
-# WHO_ARE_YOU = "Myeongseok Ryu" 
+# WHO_ARE_YOU = "Kyunghwan Choi" 
+WHO_ARE_YOU = "Myeongseok Ryu" 
 
 def find_files_with_author(folder_path, target_author=WHO_ARE_YOU):
 
@@ -75,9 +76,9 @@ def find_files_with_author(folder_path, target_author=WHO_ARE_YOU):
 
 def make_TeX(category, files):
     TEX_RESULT = f"""
-\\textbf{{{category} Papers}}
+\\footnotesize{{\\textbf{{{category}}}
 
-\\footnotesize{{\\begin{{etaremune}}
+\\begin{{etaremune}}
 """
     
     # sort files by publication date
@@ -101,7 +102,7 @@ def make_TeX(category, files):
         authors = []
         for author in data["authors"]:
             if isinstance(author, dict) and author.get("name") == WHO_ARE_YOU:
-                authors.append(f"\\textbf{{{author['name']}}}")
+                authors.append(f"\\textbf{{\\underline{{{author['name']}}}}}")
             else:
                 authors.append(author["name"])
 
@@ -110,6 +111,7 @@ def make_TeX(category, files):
 
         title = data.get("title", "No Title")
 
+        # year in pub_date field // replaced by year in pub field if exists
         pub_date = data.get("pub_date", "No Date")
         pub_year = pub_date.split("-")[0] if pub_date else "No Year"
 
@@ -121,11 +123,17 @@ def make_TeX(category, files):
                 
             pub_details = []
             if "vol" in pub_info:
-                pub_details.append(f"vol. {pub_info['vol']}")
+                if pub_info["vol"] is not None:
+                    pub_details.append(f"vol. {pub_info['vol']}")
             if "num" in pub_info:
-                pub_details.append(f"no. {pub_info['num']}")
+                if pub_info["num"] is not None:
+                    pub_details.append(f"no. {pub_info['num']}")
             if "pp" in pub_info:
-                pub_details.append(f"pp. {pub_info['pp']}")
+                if pub_info["pp"] is not None:
+                    pub_details.append(f"pp. {pub_info['pp']}")
+            if "year" in pub_info:
+                if pub_info["year"] is not None:
+                    pub_year = pub_info["year"]
             pub_details.append(f"{pub_year}")
 
             state = pub_info["state"]
@@ -146,6 +154,9 @@ def make_TeX(category, files):
                 
         else:
             # preprint
+            if "year" in data["preprint"][-1]:
+                if data["preprint"][-1]["year"] is not None:
+                    pub_year = data["preprint"][-1]["year"]
             pub_info = data["preprint"][-1]
             publisher = pub_info["name"]
             pub_details = [f"{pub_year}"]
@@ -163,7 +174,7 @@ def make_TeX(category, files):
         {", ".join(authors)}
         \\\\
         \\textit{{
-            {publisher}{', (accepted, in press), ' if state == 'accepted' else ', '}{", ".join(pub_details)}
+            \\textbf{{{publisher}}}{', (accepted, in press), ' if state == 'accepted' else ', '}{", ".join(pub_details)}
         }}
     }}
 """
@@ -181,8 +192,8 @@ def main():
     print("Found files:")
     for category, files in zip(
         [
-            "Under Review", "International Journal", "International Conference", 
-            "Domestic Conference", "Domestic Journal", "Preprint"
+            "Papers Under Review", "International Journal Papers", "International Conference Papers", 
+            "Domestic Conference Papers", "Domestic Journal Papers", "Preprint Papers"
         ],
         [under_review, int_jour, int_conf, dom_conf, dom_jour, preprint]
     ):
@@ -196,8 +207,8 @@ def main():
     TEX_FILES = ""
     for category, files in zip(
         [
-            "Under Review", "International Journal", "International Conference", 
-            "Domestic Conference", "Domestic Journal", "Preprint"
+            "Papers Under Review", "International Journal Papers", "International Conference Papers", 
+            "Domestic Conference Papers", "Domestic Journal Papers", "Preprint Papers"
         ],
         [under_review, int_jour, int_conf, dom_conf, dom_jour, preprint]
     ):
