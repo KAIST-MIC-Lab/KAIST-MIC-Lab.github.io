@@ -122,19 +122,12 @@
       <br>
       <h5><li>Additional Link{% if page.links.size > 1 %}s{% endif %}</h5></li>
       {% for link in page.links %}
-        <li><a href="{{link.url}}" alt="{{link.name}} (opens in new tab)" target="_blank">{{link.name}}</a></li>
+        &emsp; <a href="{{link.url}}" alt="{{link.name}} (opens in new tab)" target="_blank">{{link.name}}</a>
+        {% if link.where contains "YouTube" %}
+          <a href="https://www.youtube.com/watch?v=rplQZs3YBc8"><img class="inline-bloc mem-icon" src="/static/img/logo/YouTube_logo.svg"></a>  
+        {% endif %}
+        {% unless forloop.last %}, {% endunless %}
       {% endfor %}
-      {% endif %}
-
-
-
-      {% if page.additional %}
-        <br>
-
-          <h5><li>Additional Information</li></h5>
-          
-
-          {{ page.additional | markdownify | remove: '<p>' | remove: '</p>' }}
       {% endif %}
     </div>
     
