@@ -109,6 +109,19 @@
                         </a>
                 {% endif %}
 
+                {% if publication.Youtube %}
+                    {% for video in publication.Youtube %}
+                        {% if video.representative %}
+                            <a href="https://www.youtube.com/{{video.url}}"
+                            class="custom-color-link"
+                            title="Youtube Video for {{publication.title}} (opens in new tab)"
+                            target="_blank">
+                            [<img class="inline-bloc mem-icon" src="/static/img/logo/YouTube_logo.svg" alt="YouTube logo"> Video]
+                        </a>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+
             {% else %}
                 <!-- Preprints -->
                 {% assign pre_info = publication.preprint | last %}

@@ -117,15 +117,22 @@
         {% endfor %}
       {% endif %}
     
+      {% if page.Youtube %}
+      <br>
+        <h5><li>Youtube Videos</h5></li>
+        {% for video in page.Youtube %}
+          &emsp; <a href="https://www.youtube.com/{{video.url}}" alt="Youtube Video: {{video.name}} (opens in new tab)" target="_blank">{{video.name}}</a>
+            <a href="https://www.youtube.com/{{video.url}}"><img class="inline-bloc mem-icon" src="/static/img/logo/YouTube_logo.svg"></a>  
+          {% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      {% endif %}
+
       <!--additional links - optional-->
       {% if page.links %}
       <br>
       <h5><li>Additional Link{% if page.links.size > 1 %}s{% endif %}</h5></li>
       {% for link in page.links %}
         &emsp; <a href="{{link.url}}" alt="{{link.name}} (opens in new tab)" target="_blank">{{link.name}}</a>
-        {% if link.where contains "YouTube" %}
-          <a href="https://www.youtube.com/watch?v=rplQZs3YBc8"><img class="inline-bloc mem-icon" src="/static/img/logo/YouTube_logo.svg"></a>  
-        {% endif %}
         {% unless forloop.last %}, {% endunless %}
       {% endfor %}
       {% endif %}
