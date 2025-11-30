@@ -33,7 +33,7 @@ abstract: "
 Youtube:
   - name: Demonstration Video
     representative: true
-    url: watch?v=rplQZs3YBc8 
+    url: rplQZs3YBc8
 # links:
 #   - name: 
 #     url: 

@@ -33,4 +33,8 @@ image: "/static/pub/2025-car-planner.png" # Representative image of the paper
 abstract: "
   Imitation Learning (IL) has been widely applied to autonomous driving, but still suffers from shortcut learning, where policies rely on spurious correlations rather than causal driving behavior. This limits generalization and reduces robustness, defined here as the ability to sustain safe and reliable performance under distribution shifts and out-of-distribution (OOD) scenarios. We propose **CAR Planner**, which mitigates shortcut learning by enhancing the attention mechanism, widely adopted in recent planners, with a constrained optimization formulation. Specifically, we impose an **inequality constraint on the mean deviation of ego-state cross-attention weights** from a uniform distribution, and solve it using the Augmented Lagrangian Method (ALM). This regularizer discourages over-reliance on a few channels and promotes balanced state representations, with negligible training overhead and no inference-time cost. On the nuPlan benchmark, **CAR Planner** exhibits substantially less degradation when ego-state channels are reduced, providing strong evidence of robustness against shortcut reliance. Furthermore, it consistently outperforms both the baseline (without constraints) and state-of-the-art dropoutbased methods in challenging scenarios, while also producing smoother and more stable driving. These results highlight the effectiveness of CAR Planner in enabling **robust imitation learning** for autonomous driving.
 "
+Youtube:
+  - name: Presentation Video
+    representative: true
+    url: 9s8VQOyphyA
 ---
