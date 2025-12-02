@@ -117,12 +117,12 @@ group: members
 
                   {% if member.researchgate %}
                     <a href="http://orcid.org"><img class="inline-block mem-icon" src="/static/img/logo/researchGate_logo.svg"></a>
-                    <a href="https://www.researchgate.net/profile/{{member.researchgate}}">ResearchGate</a> <br>
+                    <a href="https://www.researchgate.net/profile/{{member.researchgate}}">{{member.researchgate}}</a> <br>
                   {% endif %}
 
                   {% if member.github %}
                     <a href="http://github.com"><img class="inline-bloc mem-icon" src="/static/img/logo/github_logo.svg"></a>
-                    <a href= "http://github.com/{{member.github}}">GitHub</a> <br>
+                    <a href= "http://github.com/{{member.github}}">{{member.github}}</a> <br>
                   {% endif %}
 
                   {% if member.iris %}

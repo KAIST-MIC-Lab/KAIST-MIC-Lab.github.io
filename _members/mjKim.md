@@ -11,8 +11,8 @@ positions:
   - name: "Master Student" #Enter your position in the lab
     startdate: [2023-03-01] #Enter your start date
     enddate:  [2025-03-01] # Leave this blank until you leave the lab
-image: /static/img/members/mjKim.jpg #365 x 365 pixels, 72 dpi
-altimage: /static/img/members/mjKim.jpg #365 x 365 pixels, 72 dpi
+image: /static/members/mjKim.jpg #365 x 365 pixels, 72 dpi
+altimage: /static/members/mjKim.jpg #365 x 365 pixels, 72 dpi
 subsequent: Ph.D. Student at AWEAR Lab, GIST #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: kalswl326@gm.gist.ac.kr #Enter your preferred public e-mail address

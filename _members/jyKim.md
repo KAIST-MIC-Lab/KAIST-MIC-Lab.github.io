@@ -11,8 +11,8 @@ positions:
   - name: "Master Student" #Enter your position in the lab
     startdate: [2024-03-01] #Enter your start date
     enddate: [] #Enter your end date, or leave blank if you are still in the lab
-image: /static/img/members/jyKim.jpg 
-altimage: /static/img/members/jyKim-alt.jpg 
+image: /static/members/jyKim.jpg 
+altimage: /static/members/jyKim-alt.jpg 
 subsequent: #Leave this blank until you leave the lab
 pronouns: she/her/her
 email: jiyun6606@gm.gist.ac.kr #Enter your preferred public e-mail address

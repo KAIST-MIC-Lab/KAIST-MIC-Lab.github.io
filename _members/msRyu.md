@@ -14,15 +14,15 @@ positions:
   - name: "Ph.D. Student" #Enter your position in the lab
     startdate: [2025-03-01] #Enter your start date
     enddate: [] #Leave blank if you are still in the lab
-image: /static/img/members/msRyu.jpg
-altimage: /static/img/members/msRyu-alt.jpg 
+image: /static/members/msRyu.jpg
+altimage: /static/members/msRyu-alt.jpg 
 subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: dding_98@kaist.ac.kr #Enter your preferred public e-mail address
 scholar: gUHuDJ4AAAAJ #Google Scholar User ID, create if you don't have one
 github: DDingR
-linkedin: myeongseok-ryu-21b5b02b1
-cv: /static/img/members/msRyu.pdf
+linkedin: dding98
+cv: /static/members/msRyu.pdf
 orcid: 0009-0004-3279-5765 #ORCID, create if you don't have one
 iris: 12654854 #IRIS, create if you don't have one
 researchgate: Myeongseok-Ryu 
@@ -34,9 +34,7 @@ He is currently pursuing a Ph.D. degree at the Cho Chun Shik Graduate School of 
 His research interests include **neuro-adaptive control**, **contraction theory**, and **online optimization**.
 
 
-Selected research is **Constrained Optimization-Based Neuro-Adaptive Control (CONAC)**.
-
-Related publications include: **[[1]](/publications/2025-imposing/)**, **[[2]](/publications/2025-CONAC-SM/)**, **[[3]](/publications/2025-CONAC-Robot/)**.
+Selected research is **Constrained Optimization-Based Neuro-Adaptive Control (CONAC)**, see **[[1]](/publications/2025-imposing/)**, **[[2]](/publications/2025-CONAC-SM/)**, **[[3]](/publications/2025-CONAC-Robot/)**.
 
 "
 ---

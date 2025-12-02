@@ -14,8 +14,8 @@ positions:
   - name: "Ph.D. Student" #Enter your position in the lab
     startdate: [2024-09-01] #Enter your start dates
     enddate: [] #Leave blank if you are still in the lab
-image: /static/img/members/shJang.jpg #365 x 365 pixels, 72 dpi
-altimage: /static/img/members/shJang.jpg #365 x 365 pixels, 72 dpi
+image: /static/members/shJang.jpg #365 x 365 pixels, 72 dpi
+altimage: /static/members/shJang.jpg #365 x 365 pixels, 72 dpi
 subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: shjang7071@kaist.ac.kr #Enter your preferred public e-mail address

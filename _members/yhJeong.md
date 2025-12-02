@@ -11,7 +11,7 @@ positions:
     - name: "Master Student" #Enter your position in the lab
       startdate: [2023-09-01] #Enter your start date
       enddate:  [2025-06-31] # Leave this blank until you leave the lab
-image: /static/img/members/yhJeong.jpg 
+image: /static/members/yhJeong.jpg 
 altimage: #/static/img/members/msSeo.jpg 
 position: Master Student #What is your job title in the Fraser lab?
 subsequent: TBD #Leave this blank until you leave the lab

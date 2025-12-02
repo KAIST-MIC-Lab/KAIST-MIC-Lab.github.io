@@ -11,8 +11,8 @@ positions:
   - name: "Intern" #Enter your position in the lab
     startdate: [2024-12-26] #Enter your start date
     enddate: [2025-04-01] #Enter your end date, or leave blank if you are still in the lab
-image: /static/img/members/cePark.jpg #365 x 365 pixels 72 dpi 
-altimage: /static/img/members/cePark-alt.jpg #365 x 365 pixels, 72 dpi 
+image: /static/members/cePark.jpg #365 x 365 pixels 72 dpi 
+altimage: /static/members/cePark-alt.jpg #365 x 365 pixels, 72 dpi 
 subsequent: TBU #Leave this blank until you leave the lab 
 pronouns: he/him/his 
 email: qpalskzm1030@gm.gist.ac.kr #Enter your preferred public e-mail address 

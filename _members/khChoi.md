@@ -10,10 +10,10 @@ positions:
   - name: "Principal Investigator" #Enter your position in the lab
     startdate: [2022-08-31]
     enddate: # []
-image: /static/img/members/khChoi.jpg
+image: /static/members/khChoi.jpg
 # 마우스 위로 올리면 나오는 이미지
-altimage: /static/img/members/khChoi-alt.jpg
-cv: /static/img/members/khChoi.pdf
+altimage: /static/members/khChoi-alt.jpg
+cv: /static/members/khChoi.pdf
 #current:
 pronouns: he/him/his
 email: kh.choi@kaist.ac.kr

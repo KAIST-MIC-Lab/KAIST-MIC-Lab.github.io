@@ -11,8 +11,8 @@ positions:
     - name: "Master Student" #Enter your position in the lab
       startdate: [2022-09-01] #Enter your start date
       enddate:  [2024-09-01] # Leave this blank until you leave the lab
-image: /static/img/members/shShin.jpg #365 x 365 pixels, 72 dpi
-altimage: /static/img/members/shShin.jpg #365 x 365 pixels, 72 dpi
+image: /static/members/shShin.jpg #365 x 365 pixels, 72 dpi
+altimage: /static/members/shShin.jpg #365 x 365 pixels, 72 dpi
 position: Master Student #What is your job title in the Fraser lab?
 subsequent: Ph.D. Student at MPIL, GIST #Leave this blank until you leave the lab
 pronouns: he/him/his

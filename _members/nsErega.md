@@ -10,8 +10,8 @@ positions:
   - name: "Intern" #Enter your position in the lab
     startdate: [2025-07-28] #Enter your start date
     enddate: # [2025-04-01] #Enter your end date, or leave blank if you are still in the lab
-image: /static/img/members/nsErega.jpg # Profile picture
-altimage: /static/img/members/nsErega.jpg # Alternative image; set this same as the "image" name, if not applicable
+image: /static/members/nsErega.jpg # Profile picture
+altimage: /static/members/nsErega.jpg # Alternative image; set this same as the "image" name, if not applicable
 subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his # he/him/his, she/her/hers, they/them/theirs
 email: samuelnaol7@kaist.ac.kr # Enter your preferred public e-mail address

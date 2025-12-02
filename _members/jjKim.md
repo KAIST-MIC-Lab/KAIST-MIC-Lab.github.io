@@ -11,8 +11,8 @@ positions:
   - name: "Master Student" #Enter your position in the lab
     startdate: [2024-09-02] #Enter your start date
     enddate:  [2025-01-01] # Leave this blank until you leave the lab
-image: /static/img/members/jjKim.jpg #365 x 365 pixels, 72 dpi
-altimage: /static/img/members/jjKim.jpg #365 x 365 pixels, 72 dpi
+image: /static/members/jjKim.jpg #365 x 365 pixels, 72 dpi
+altimage: /static/members/jjKim.jpg #365 x 365 pixels, 72 dpi
 subsequent: Master Student at DCASL, GIST #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: kjoon0807@gm.gist.ac.kr #Enter your preferred public e-mail address
