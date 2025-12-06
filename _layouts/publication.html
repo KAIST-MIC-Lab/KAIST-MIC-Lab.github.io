@@ -148,6 +148,12 @@
         No abstract available
       {% endif %}
     
+        <h5><li>Additional Comments</li></h5>
+
+      {% if page.comments %}
+        {{ page.comments | markdownify }}
+      {% endif %}
+
     </ul>
 </div>
 </div>

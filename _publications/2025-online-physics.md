@@ -2,10 +2,10 @@
 type: "Conference Paper" # Conference Paper, Journal Paper, Ph.D. Thesis, Master's Thesis
 layout: publication # Do not change this
 group: publications # Do not change this
-title: "All-Wheel Steering Vehicle Control Based on Contraction Theory with Neural Network" # Title of the paper
+title: "Online Physics-Informed Learning-Based Identification: Application to Adaptive MTPA Control of Synchronous Machines" # Title of the paper
 # krtitle: # only for domestic papers
 authors: 
-  - name: "Myeongseok Ryu"
+  - name: "Seunghun Jang"
   - name: "Kyunghwan Choi"
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
@@ -16,8 +16,8 @@ domestic_or_international: "International" # "International" or "Domestic"
     # pdf: "/static/pub/2025-all-wheel.pdf"
     # state: "published" # published, accepted, submitted
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
-  - name: "IEEE International Conference on Advanced Motion Control (AMC)"
-    pdf: "/static/pub/2025-all-wheel.pdf"
+  - name: "International Federation of Automatic Control (IFAC)"
+    pdf: "/static/pub/2025-online-physics.pdf"
     doi: # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
     num: # Leave it blank if not applicable
@@ -25,22 +25,22 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     year: "2026" # Leave it blank if not applicable
     state: "submitted" # published, accepted, submitted
     bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
-pub_date: "2025-11-30" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
-image: "/static/pub/2025-all-wheel.png" # Representative image of the paper
+pub_date: "2025-12-06" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
+image: "/static/pub/2025-online-physics.png" # Representative image of the paper
 # github: # Leave this blank if not applicable
 #  - name: # "CONAC/ECC25-weight-constraint" # GitHub repository name
 #    url: # "KAIST-MIC-Lab/CoNAC/tree/ECC25-weight-constraint" # GitHub repository URL
 #    description: # "Code for the paper" # Description of the repository
 # abstract; emphasize the important part using **bold** or *italic* of markdown syntax
 abstract: "
-  All-wheel steering (AWS) vehicles have been widely studied in the literature to enhance stability and maneuverability.
-  In this study, we propose a contraction theory-based AWS vehicle control strategy integrated with neural networks (NNs).
-  Contraction theory is a powerful tool for designing controllers for nonlinear systems, ensuring the incremental exponential convergence of all system trajectories to a unique trajectory, regardless of initial conditions.
-  However, control performance may degrade due to system uncertainties.
-  To address this issue, NNs are employed to approximate and compensate for these system uncertainties.
-  The contraction property is guaranteed by formulating Linear Matrix Inequalities (LMIs) to obtain the contraction metric.
-  Furthermore, the adaptation law for the NN weights is designed using Lyapunov theory to ensure the stability of the closed-loop system.
-  Finally, numerical simulation results are provided to validate the proposed control strategy.
+  Machine parameters such as flux linkages and inductances play a key role in achieving optimal torque control of synchronous machines (SMs).
+  However, it is challenging to identify these parameters online based on the SM model, which has complex and nonlinear characteristics.
+  A fully connected feedforward neural network (NN) is a promising candidate owing to its capability to approximate complex nonlinear functions.
+  Therefore, this study proposes an online physics-informed learning framework for identifying the parameters of SMs using an NN.
+  The proposed method enables the NN-modeled flux linkages and inductances to be learned online in compliance with the governing physical laws of SMs.
+  Consequently, the NN can more effectively capture the nonlinear characteristics of SMs within the constraints imposed by these governing physical laws.
+  The learned parameters can be employed as online estimators and applied to online MTPA control.
+  As a result, the effectiveness of the proposed method is validated through simulations conducted on a 35-kW interior permanent magnet synchronous motor (IPMSM) drive.
 "
 # additional: # additional information such as awards, etc.
 #  - "📄 Awarded **Best Paper Award** at the _2025 European Control Conference (ECC)_."

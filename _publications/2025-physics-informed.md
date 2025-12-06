@@ -21,6 +21,7 @@ pub:
     year: "2025"
     pdf: "/static/pub/2025-physics-informed-IECON.pdf"
     bib: "/static/pub/2025-physics-informed.bib"
+    pp: "1-7"
     state: "published"
 pub_date: "2025-10-14" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-physics-informed.png"

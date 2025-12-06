@@ -70,4 +70,8 @@ abstract: "
 # links: # additional links;
 #   - name: 
 #     url: 
+# comments: "
+#   **Christoph M. Hackl** is Professor at Hochschule München (HM), Munich, Germany.
+#   His biographical information can be found at [his Google Scholar profile](https://scholar.google.com/citations?user=LYhXm88AAAAJ&hl=ko).
+# "
 ---

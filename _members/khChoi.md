@@ -75,7 +75,7 @@ He held positions at **KAIST** and **GIST** before rejoining **KAIST** in 2025 a
 
 
 <div style="text-align: center;">
-<img class = "img-fluid" src = "/static/img/members/khchoi/img1.jpg" alt =  "Key Figure" width="700" margin="auto">
+<img class = "img-fluid" src = "/static/members/khchoi/img1.jpg" alt =  "Key Figure" width="700" margin="auto">
 </div>
 
 <ul>
@@ -92,8 +92,8 @@ He held positions at **KAIST** and **GIST** before rejoining **KAIST** in 2025 a
 </h5></li>
 
 <div style="text-align: center;">
-<img class = "img-fluid" src = "/static/img/members/khchoi/img2.jpg" alt =  "Key Figure" width="700" margin="auto">
-<img class = "img-fluid" src = "/static/img/members/khchoi/img3.jpg" alt =  "Key Figure" width="700" margin="auto">
+<img class = "img-fluid" src = "/static/members/khchoi/img2.jpg" alt =  "Key Figure" width="700" margin="auto">
+<img class = "img-fluid" src = "/static/members/khchoi/img3.jpg" alt =  "Key Figure" width="700" margin="auto">
 </div>  
 
 <br>

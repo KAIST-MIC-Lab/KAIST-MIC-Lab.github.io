@@ -13,6 +13,7 @@ pub:
     doi: "10.1109/IECON58223.2025.11221827"
     year: "2025"
     pdf: "/static/pub/2025-LMI-based-neural.pdf"
+    pp: "1-7"
     state: "published"
 pub_date: "2025-10-14" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-LMI-based-neural.png"

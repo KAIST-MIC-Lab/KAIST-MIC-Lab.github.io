@@ -41,4 +41,8 @@ abstract: "
 # links:
 #   - name: 
 #     url: 
+comments: "
+  **Prof. Christoph M. Hackl** is Professor at Hochschule München (HM), München, Germany.
+  His biographical information can be found at [his Google Scholar profile](https://scholar.google.com/citations?user=LYhXm88AAAAJ&hl=ko).
+"
 ---
