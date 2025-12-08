@@ -11,7 +11,7 @@ authors: # List of authors
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
-  - name: "IEEE/ASME TRANSACTIONS ON MECHATRONICS"
+  - name: "IEEE/ASME Transactions on Mechatronics"
     doi: "10.1109/TMECH.2024.3461209" # Leave it blank if not applicable
     vol:  # Leave it blank if not applicable
     num:  # Leave it blank if not applicable

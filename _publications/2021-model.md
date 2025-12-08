@@ -11,7 +11,7 @@ authors:
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
-  - name: "applied science"
+  - name: "Applied Science"
     doi: "10.3390/app11167513" # Leave it blank if not applicable
     vol: "11" # Leave it blank if not applicable
     no: "16" # Leave it blank if not applicable

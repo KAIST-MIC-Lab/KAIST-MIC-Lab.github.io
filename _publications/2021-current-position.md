@@ -17,7 +17,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     doi: "10.1109/TIE.2020.2992977" # Leave it blank if not applicable
     vol: "68" # Leave it blank if not applicable
     num:  "6" # Leave it blank if not applicable
-    pp: "5227 - 5236"# Leave it blank if not applicable
+    pp: "5227-5236"# Leave it blank if not applicable
     year: "2021"# Leave it blank if not applicable
     state: "published" # published, accepted, submitted
 pub_date: "2021-05-14" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.

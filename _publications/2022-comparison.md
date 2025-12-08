@@ -13,7 +13,7 @@ authors: # List of authors
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
-  - name: "2022 IEEE 20th International Power Electronics and Motion Control Conference (PEMC)"
+  - name: "IEEE International Power Electronics and Motion Control Conference (PEMC)"
     doi: "10.1109/PEMC51159.2022.9962845" # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
     no: # Leave it blank if not applicable
