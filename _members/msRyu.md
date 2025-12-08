@@ -34,7 +34,11 @@ He is currently pursuing a Ph.D. degree at the Cho Chun Shik Graduate School of 
 His research interests include **neuro-adaptive control**, **contraction theory**, and **online optimization**.
 
 
-Selected research is **Constrained Optimization-Based Neuro-Adaptive Control (CONAC)**, see **[[1]](/publications/2025-imposing/)**, **[[2]](/publications/2025-CONAC-SM/)**, **[[3]](/publications/2025-CONAC-Robot/)**.
+Selected researches are as follows:
+
+- **Constrained Optimization-Based Neuro-Adaptive Control (CONAC)**, see **[[1]](/publications/2025-imposing/)**, **[[2]](/publications/2025-CONAC-SM/)**, **[[3]](/publications/2025-CONAC-Robot/)**.
+
+- **Contraction Theory-Based Control**, see **[[4]](/publications/2025-all-wheel/)**, **[[5]](/publications/2025-vector-space/)**.
 
 "
 ---
