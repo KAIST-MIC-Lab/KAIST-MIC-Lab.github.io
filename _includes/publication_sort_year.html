@@ -32,8 +32,10 @@
                 {% include memberLink.html %}
                 
                 {%- if memberUrl != "not Included" -%}
+                    <!-- Member profile -->
                     {%- if memberName contains page.name -%}
-                        <a href="{{ site.url }}/members/{{ memberUrl }}" title = "{{memberName}}'s profile (opens in new tab)" target="_blank" style="color: rgb(0, 0, 0)"><b>{{ memberName }}</b></a>
+                        <a href="{{ site.url }}/members/{{ memberUrl }}" title = "{{memberName}}'s profile (opens in new tab)" target="_blank" style="color: rgb(0, 0, 0)"><u><b>{{ memberName }}</b></u></a>
+                    <!-- Publication Tap -->
                     {%- else -%}
                         <a href="{{ site.url }}/members/{{ memberUrl }}" title = "{{memberName}}'s profile (opens in new tab)" target="_blank" style="color: rgb(0, 0, 0)">{{ memberName }}</a>
                     {%- endif -%}
