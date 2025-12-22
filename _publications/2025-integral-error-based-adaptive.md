@@ -23,9 +23,9 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     num: # Leave it blank if not applicable
     pp: # "380-385" # Leave it blank if not applicable
     year: "2026" # Leave it blank if not applicable
-    state: "submitted" # published, accepted, submitted
+    state: "accepted" # published, accepted, submitted
     bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
-pub_date: "2025-11-30" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
+pub_date: "2026-03-09" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2025-integral-error-based-adaptive.png" # Representative image of the paper
 # github: # Leave this blank if not applicable
 #  - name: # "CONAC/ECC25-weight-constraint" # GitHub repository name
