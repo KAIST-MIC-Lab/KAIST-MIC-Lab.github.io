@@ -15,9 +15,9 @@ image: /static/members/cePark.jpg #365 x 365 pixels 72 dpi
 altimage: /static/members/cePark-alt.jpg #365 x 365 pixels, 72 dpi 
 subsequent: #Leave this blank until you leave the lab 
 pronouns: he/him/his 
-email: qpalskzm1030@gm.gist.ac.kr #Enter your preferred public e-mail address 
+email: aegis2997@gmail.com #Enter your preferred public e-mail address 
 scholar: tUIhPcIAAAAJ #Google Scholar User ID, create if you don't have one 
-github: qpal1030 
+github: aegis2997 
 linkedin:
 cv:
 orcid: 0009-0001-9350-5686 #ORCID, create if you don't have one 
