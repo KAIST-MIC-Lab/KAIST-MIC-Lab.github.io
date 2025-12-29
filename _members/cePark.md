@@ -17,9 +17,9 @@ subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his 
 email: aegis2997@gmail.com #Enter your preferred public e-mail address 
 scholar: tUIhPcIAAAAJ #Google Scholar User ID, create if you don't have one 
-github: aegis2997 
+github: aegis2997458 
 linkedin:
-cv:
+cv: /static/members/cePark.pdf
 orcid: 0009-0001-9350-5686 #ORCID, create if you don't have one 
 iris:
 researchgate:
