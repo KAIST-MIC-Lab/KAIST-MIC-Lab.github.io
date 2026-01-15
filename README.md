@@ -51,6 +51,9 @@ Before pushing changes, please check that they will work on your system first wi
     bundle install
     bundle exec jekyll serve
     
+> [!Note]
+> You may need to install old version of ruby (e.g. 3.1.4) for compatibility with Jekyll.
+
 To create a conda environment to locally test and host, the following should suffice:
 
     conda create -n jekyll -c conda-forge rb-jekyll
