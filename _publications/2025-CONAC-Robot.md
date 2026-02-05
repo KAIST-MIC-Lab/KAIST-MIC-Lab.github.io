@@ -9,18 +9,18 @@ authors: # List of authors
   - name: "Donghwa Hong"
   - name: "Kyunghwan Choi"
     corresponding: true # true if this author is the corresponding author
-# preprint: 
-  # - name: Techrxiv
-  #   doi: "10.36227/techrxiv.172954216.68720680/v1"
-  #   pdf: "/static/pub/2025-CONAC-Robot-Techrxiv.pdf"
-  #   state: "published"
-  #   year: "2024"
-pub: 
-  - name: IEEE Transactions on Systems, Man, and Cybernetics
-    doi: 
-    year: 
-    pdf: "/static/pub/2025-CONAC-Robot.pdf"
-    state: "submitted"  
+preprint: 
+  - name: Techrxiv
+    doi: "10.36227/techrxiv.172954216.68720680/v1"
+    pdf: "/static/pub/2025-CONAC-Robot-Techrxiv.pdf"
+    state: "published"
+    year: "2024"
+# pub: 
+#   - name: IEEE Transactions on Systems, Man, and Cybernetics
+#     doi: 
+#     year: 
+#     pdf: "/static/pub/2025-CONAC-Robot.pdf"
+#     state: "submitted"  
 pub_date: "2025-08-31" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-CONAC-Robot.png"
 github: 

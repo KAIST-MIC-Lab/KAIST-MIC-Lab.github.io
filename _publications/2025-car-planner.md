@@ -15,14 +15,14 @@ preprint: # Preprint information - REMOVE THIS FIELD IF NOT APPLICABLE!
     year: 2025
     pdf: "/static/pub/2025-car-planner.pdf"
     state: "published" # published, accepted, submitted
-pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
-  - name: IEEE International Conference on Robotics and Automation (ICRA)
-    doi: # Leave it blank if not applicable
-    vol: # Leave it blank if not applicable
-    num: # Leave it blank if not applicable
-    pp: # "380-385" # Leave it blank if not applicable
-    year: "2026" # Leave it blank if not applicable
-    state: "submitted" # published, accepted, submitted
+# pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
+#   - name: IEEE International Conference on Robotics and Automation (ICRA)
+#     doi: # Leave it blank if not applicable
+#     vol: # Leave it blank if not applicable
+#     num: # Leave it blank if not applicable
+#     pp: # "380-385" # Leave it blank if not applicable
+#     year: "2026" # Leave it blank if not applicable
+#     state: "submitted" # published, accepted, submitted
 pub_date: "2025-11-20" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2025-car-planner.png" # Representative image of the paper
 # github: # Leave this blank if not applicable
