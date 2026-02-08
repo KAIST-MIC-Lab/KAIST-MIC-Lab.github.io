@@ -4,6 +4,7 @@ layout: publication # Do not change this
 group: publications # Do not change this
 title: "Output-Feedback Multi-Loop Positioning Technique via Dual Motor Synchronization Approach for Elevator System Applications" # Title of the paper
 krtitle: # only for domestic papers
+omit_in_choi_list: true # true or false - whether to omit this publication in Dr. Choi's publication list
 authors: 
   - name: "Hyochan Lee"
   - name: "Hyeoncheol Lee"

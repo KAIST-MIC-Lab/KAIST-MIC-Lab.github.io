@@ -57,7 +57,7 @@ As a target application, he focuses on the control of **Vehicle Motion Systems**
 
 <h3>Professional Experience</h3>
 <ul>
-    <li>May 2025 - August 2025, Part time Contract Research Scientist, <b>KAIST</b>, South Korea</li>
+    <li>May 2025 - August 2025, Researcher, <b>KAIST</b>, South Korea</li>
 </ul>
 
 <h3>Grants and Awards</h3>

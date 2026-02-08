@@ -8,7 +8,7 @@ import time
 FOLDER_PATH = "../_publications"
 TARGET_AUTHOR = "Kyunghwan Choi"
 METRICS_XLSX = "publications_metrics.xlsx"
-PLOT_PAPER_LIST = 0  
+PLOT_PAPER_LIST = 1 
 
 def is_empty(value):
     """
