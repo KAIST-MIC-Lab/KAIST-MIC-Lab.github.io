@@ -37,10 +37,3 @@ Prof. **Kyunghwan Choi** presented a paper titled **Generalized Model Predictive
 <div style="text-align: center;">
 <img class="img-fluid" src="/static/posts/2025-11-12-KSAE-autumn3.jpg" style="width: 60%; height: auto;">
 </div>
-
-We enjoyed the conference and the beautiful ocean view of Busan and meeting colleague, Semin Jeong, who was an undergraduate intern in our lab last year.
-
-<div style="text-align: center;">
-<img class="img-fluid" src="/static/posts/2025-11-12-KSAE-autumn4.jpg" style="width: 60%; height: auto;">
-
-</div>
