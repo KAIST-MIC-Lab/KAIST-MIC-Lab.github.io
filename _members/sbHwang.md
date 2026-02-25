@@ -11,7 +11,7 @@ positions:
     startdate: [2026-02-02] #Enter your start date
     enddate: # [2025-04-01] #Enter your end date, or leave blank if you are still in the lab
 image: /static/members/sbHwang.jpg # Profile picture
-altimage: /static/members/sbHwang.jpg # Alternative image; set this same as the "image" name, if not applicable
+altimage: /static/members/sbHwang-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
 subsequent: #Leave this blank until you leave the lab
 pronouns: she/her/hers # he/him/his, she/her/hers, they/them/theirs
 email: tnqls2361@sookmyung.ac.kr # Enter your preferred public e-mail address

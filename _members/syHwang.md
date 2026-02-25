@@ -9,10 +9,10 @@ sortdate: [2025-12-29] # for sorting
 positions:
   - name: "Intern" # Postdoctoral Researcher, Ph.D. Student, M.S. Student, Visiting Researcher, Intern
     startdate: [2025-12-29] #Enter your start date
-    enddate: # [2025-04-01] #Enter your end date, or leave blank if you are still in the lab
+    enddate: [2026-02-19] #Enter your end date, or leave blank if you are still in the lab
 image: /static/members/syHwang.jpg # Profile picture
 altimage: /static/members/syHwang.jpg # Alternative image; set this same as the "image" name, if not applicable
-subsequent: #Leave this blank until you leave the lab
+subsequent: TBD #Leave this blank until you leave the lab
 pronouns: he/him/his # he/him/his, she/her/hers, they/them/theirs
 email: jheer3437@hanyang.ac.kr # Enter your preferred public e-mail address
 # For scholar, go to your Google Scholar profile and copy the last part of the URL.
