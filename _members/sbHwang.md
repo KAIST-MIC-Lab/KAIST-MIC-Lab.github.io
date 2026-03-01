@@ -9,7 +9,7 @@ sortdate: [2026-02-02] # for sorting
 positions:
   - name: "Intern" # Postdoctoral Researcher, Ph.D. Student, M.S. Student, Visiting Researcher, Intern
     startdate: [2026-02-02] #Enter your start date
-    enddate: # [2025-04-01] #Enter your end date, or leave blank if you are still in the lab
+    enddate: [2026-02-27] #Enter your end date, or leave blank if you are still in the lab
 image: /static/members/sbHwang.jpg # Profile picture
 altimage: /static/members/sbHwang-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
 subsequent: #Leave this blank until you leave the lab
