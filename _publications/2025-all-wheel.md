@@ -25,6 +25,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     year: "2026" # Leave it blank if not applicable
     state: "accepted" # published, accepted, submitted
     bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
+    pres: "/static/pub/2025-all-wheel-pres.pdf"
 pub_date: "2026-03-09" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2025-all-wheel.png" # Representative image of the paper
 # github: # Leave this blank if not applicable
