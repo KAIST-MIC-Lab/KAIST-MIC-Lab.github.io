@@ -6,8 +6,8 @@ title: "An Analytical Approach to the Predictive Energy Management of Connected 
 krtitle: # only for domestic papers
 authors: # List of authors
   - name: "Kyunghwan Choi"
-  - name: "Jongseok Kim"
-  - name: "Ki-Bum Park"
+  - name: "Geunyoung Park"
+  - name: "Dongsuk Kum"
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
