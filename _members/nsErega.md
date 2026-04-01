@@ -28,9 +28,9 @@ researchgate: Naol-Samuel-Erega # ResearchGate
 # Write your description in markdown format.
 # I leave this as example for you.
 description: "
-**Naol Samuel Erega** is currently pursuing a bachelor degree in _Department of Aerospace Engineering_ at **KAIST**.   
-
-
-His research interests include **neural-networks based control**
+**Naol Samuel Erega** received the B.S. degree in Aerospace Engineering and Electrical Engineering from the **Korea Advanced Institute of Science & Technology(KAIST),** Daejeon, South Korea, in 2026. He is currently pursuing the M.S. degree at the **Cho Chun Shik Graduate School of Mobility, KAIST.**
+   
+   
+His research interests include **neural network-based control, system estimations, and unmanned ground vehicle(UGV) dynamics.**
 "
 ---
