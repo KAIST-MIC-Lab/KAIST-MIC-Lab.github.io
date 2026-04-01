@@ -17,6 +17,18 @@
     
     <li>
         <h8>
+            
+            <!-- if recent work (within the last 1 month) -->
+            {% assign current_date = 'now' | date: "%s" %}
+            {% assign pub_date = publication.pub_date | date: "%s" %}
+            {% assign date_diff = current_date | minus: pub_date %}
+            {% assign one_month_seconds = 30 | times: 24 | times: 60 | times: 60 %}
+
+            {% if date_diff < one_month_seconds %}
+                <span style="color: rgb(255, 0, 0); font-weight: bold;">[New]</span>
+            {% endif %}
+
+            <!-- title -->
             <a href="{{ publication.url }}">{{ publication.title }}</a>
             {% if publication.domestic_or_international contains "Domestic" %}
                     <br>

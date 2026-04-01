@@ -10,10 +10,13 @@ sortdate: [2023-03-01] # for sorting
 positions:
   - name: "Master Student" #Enter your position in the lab
     startdate: [2023-03-01] #Enter your start date
-    enddate: [2025-06-31] # Leave this blank until you leave the lab
+    enddate: [2025-09-31] # Leave this blank until you leave the lab
+  - name: "Researcher" #Enter your position in the lab
+    startdate: [2025-09-01] #Enter your start date
+    enddate: []
 image: /static/members/msSeo.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/members/msSeo.jpg #365 x 365 pixels, 72 dpi
-subsequent: Researcher at MIC Lab, KAIST #Leave this blank until you leave the lab
+subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: seominseok@gm.gist.ac.kr #Enter your preferred public e-mail address
 scholar: #Google Scholar User ID, create if you don't have one

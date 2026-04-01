@@ -12,7 +12,7 @@ positions:
     enddate: [2026-03-1] #Enter your end date, or leave blank if you are still in the lab
 image: /static/members/sbHwang.jpg # Profile picture
 altimage: /static/members/sbHwang-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
-subsequent: TBD #Leave this blank until you leave the lab
+subsequent: TBA #Leave this blank until you leave the lab
 pronouns: she/her/hers # he/him/his, she/her/hers, they/them/theirs
 email: tnqls2361@sookmyung.ac.kr # Enter your preferred public e-mail address
 # For scholar, go to your Google Scholar profile and copy the last part of the URL.

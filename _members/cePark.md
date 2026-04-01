@@ -10,26 +10,30 @@ sortdate: [2024-12-26] # for sorting
 positions:
   - name: "Intern" #Enter your position in the lab
     startdate: [2024-12-26] #Enter your start date
-    enddate: [] # [2026-02-29] #Enter your end date, or leave blank if you are still in the lab
+    enddate: [2026-03-01] # [2026-02-29] #Enter your end date, or leave blank if you are still in the lab
+  - name: "Researcher" #Enter your position in the lab
+    startdate: [2026-03-01] #Enter your start date
+    enddate: [] #Leave this blank until you leave the lab
 image: /static/members/cePark.jpg #365 x 365 pixels 72 dpi 
 altimage: /static/members/cePark-alt.jpg #365 x 365 pixels, 72 dpi 
 subsequent: #Leave this blank until you leave the lab 
 pronouns: he/him/his 
-email: aegis2997@gmail.com #Enter your preferred public e-mail address 
+email: aegis3141@kaist.ac.k #Enter your preferred public e-mail address 
 scholar: tUIhPcIAAAAJ #Google Scholar User ID, create if you don't have one 
 github: aegis2997458 
 linkedin:
 cv: /static/members/cePark.pdf
 orcid: 0009-0001-9350-5686 #ORCID, create if you don't have one 
-iris:
+iris: 13495406
+iris_id: AEGIS2997
 researchgate:
 description: " 
  
-**Changeun Park** is currently an undergraduate student in the Department of Mechanical and Robotics Engineering at **Gwangju Institute of Science and Technology (GIST)**.
-He worked as a research intern at the **Mobility Intelligence and Control Laboratory (MIC Lab)** at **GIST** from December 2024 to February 2026.
+**Changeun Park** received his **B.S. degree** in the **Department of Mechanical and Robotics Engineering** from **Gwangju Institute of Science and Technology (GIST)** in 2026. He served as a **research intern** at the **Mobility Intelligence and Control Laboratory (MIC Lab)** at **GIST** from December 2024 to February 2026. 
+He is currently a **Researcher** at the **Cho Chun Shik Graduate School of Mobility** at **KAIST**, where he continues his research in the **Mobility Intelligence and Control Laboratory (MIC Lab)**.
 
 
-His research interests include **MPC**, **DOB**, and **constrained optimization**.
+His current research interests include **optimal control**, specifically **MPC**.
 
 "
 ---

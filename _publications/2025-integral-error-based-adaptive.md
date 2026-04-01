@@ -18,12 +18,12 @@ domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE International Conference on Advanced Motion Control (AMC)"
     pdf: "/static/pub/2025-integral-error-based-adaptive.pdf"
-    doi: # Leave it blank if not applicable
+    doi: 10.1109/AMC67705.2026.11435827 # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
     num: # Leave it blank if not applicable
-    pp: # "380-385" # Leave it blank if not applicable
+    pp: 1-6 # "380-385" # Leave it blank if not applicable
     year: "2026" # Leave it blank if not applicable
-    state: "accepted" # published, accepted, submitted
+    state: "published" # published, accepted, submitted
     bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
 pub_date: "2026-03-09" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2025-integral-error-based-adaptive.png" # Representative image of the paper

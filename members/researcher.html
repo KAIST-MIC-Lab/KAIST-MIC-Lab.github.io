@@ -8,7 +8,7 @@ group: members
   
   <h1>Current Members</h1>
 
-  {% assign Positions = "Principal Investigator|Postdoctoral Researcher|Ph.D. Student|Master Student|Intern" | split: "|" %}
+  {% assign Positions = "Principal Investigator|Postdoctoral Researcher|Ph.D. Student|Master Student|Intern|Researcher" | split: "|" %}
 
   <hr>
 
@@ -134,6 +134,9 @@ group: members
               <div class="col-sm-8">
                   {{member.description | markdownify}}
                 
+                  {% if member.cv %}
+                    Curriculum Vitae (CV) can be found <a href="{{ member.cv }}" title = "{{member.name}}'s CV" target="_blank">here</a>. <br>
+                  {% endif %}
                   Further details are available <a href="{{ member.url }}" title = "More about {{member.name}} (opens in new tab)" target="_blank">here</a>.
             </div>
           </div>

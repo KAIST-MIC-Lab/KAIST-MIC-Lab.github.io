@@ -14,7 +14,7 @@ positions:
 image: /static/members/yhJeong.jpg 
 altimage: #/static/img/members/msSeo.jpg 
 position: Master Student #What is your job title in the Fraser lab?
-subsequent: TBD #Leave this blank until you leave the lab
+subsequent: TBA #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: bbang988@gm.gist.ac.kr  #Enter your preferred public e-mail address
 scholar: btNp4v4AAAAJ&hl #Google Scholar User ID, create if you don't have one

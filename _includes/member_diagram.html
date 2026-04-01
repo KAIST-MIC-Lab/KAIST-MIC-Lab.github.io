@@ -77,7 +77,7 @@
                 {% assign color = "#2ca58d" %}
             {% elsif pos == "Intern" %}
                 {% assign color = "#f4a261" %}
-            {% elsif pos == "Visiting Researcher" %}
+            {% elsif pos == "Researcher" %}
                 {% assign color = "#b47eb3" %}
             {% else %}
                 {% assign color = "purple" %}
@@ -135,7 +135,7 @@
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Undergraduate Intern</text>
 {% assign yposition = yposition | plus: legendboxspacing %}
 <rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#b47eb3" />
-<text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Visiting Researcher</text>
+<text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Researcher</text>
 {% assign yposition = yposition | plus: legendboxspacing %}
 <!-- <rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="purple" />
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Visitor</text> -->
