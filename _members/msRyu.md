@@ -25,6 +25,7 @@ linkedin: dding98
 cv: /static/members/msRyu.pdf
 orcid: 0009-0004-3279-5765 #ORCID, create if you don't have one
 iris: 12654854 #IRIS, create if you don't have one
+iris_id: msryu00 #IRIS ID, create if you don't have one
 researchgate: Myeongseok-Ryu 
 description: "
 **Myeongseok Ryu** received a B.S. degree in Department of Mechanical Engineering from **Incheon National University**, South Korea, in 2023, and a M.S. degree in Department of Mechanical Engineering from **Gwangju Institute of Science and Technology (GIST)**, South Korea, in 2025. 

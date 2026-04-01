@@ -23,6 +23,7 @@ scholar: 8uTeGWIAAAAJ
 github: SHJang7071
 orcid:  0009-0006-1091-3200 #create if you don't have one
 iris: 12893948
+iris_id: QWERTY71
 description: "
 **Seunghun Jang** received his B.S. degree in the Department of Bio-Industrial Machinery Engineering from **Pusan National University** in 2021. He joined the MIC Lab in 2022 and went on to obtain the M.S. degree in the Department of Mechanical Engineering from **Gwangju Institute of Science and Technology (GIST)** in 2024. 
 He is currently pursuing a Ph.D at the Cho Chun Shik Graduate School of Mobility at the **KAIST**, where he continues his research in the MIC Lab.

@@ -20,6 +20,7 @@ scholar: U6q0vDEAAAAJ  #Google Scholar User ID, create if you don't have one
 github: HyochanLee1007
 orcid: 0000-0002-7445-7412  #ORCID, create if you don't have one
 iris: 12678429
+iris_id: FHJ01000
 description: "
 **Hyochan Lee** received the B.S. and M.S. degrees in the Department of Creative Convergence Engineering from **Hanbat National University**, Daejeon, South Korea, in 2023 and 2024, respectively. He is currently pursuing the Ph.D. degree in the Graduate School of Mobility at the **KAIST**, Daejeon, South Korea.
 

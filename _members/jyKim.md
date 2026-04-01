@@ -19,6 +19,8 @@ email: jiyun6606@gm.gist.ac.kr #Enter your preferred public e-mail address
 scholar:  #Google Scholar User ID, create if you don't have one
 github: jixyuxn
 orcid:  0009-0003-0026-4495 #ORCID, create if you don't have one
+iris: 12889385
+iris_id: wldbs7638
 description: "
 
 **Jiyun Kim** received the B.S. degree in Department of Robot Engineering from **Keimyung Universitiy**, South Korea, in 2024, and is currently  pursuing an M.S. degree in Artificial Intelligence Graduate School from **Gwangju Institute of Science and Technology (GIST)**, South Korea. 
