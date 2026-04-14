@@ -17,16 +17,16 @@ domestic_or_international: "International" # "International" or "Domestic"
     # state: "published" # published, accepted, submitted
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "International Federation of Automatic Control (IFAC)"
-    pdf: "/static/pub/2025-CARE-Planner.pdf"
+    pdf: "/static/pub/2026-CARE-Planner.pdf"
     doi: # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
     num: # Leave it blank if not applicable
     pp: # "380-385" # Leave it blank if not applicable
     year: "2026" # Leave it blank if not applicable
-    state: "submitted" # published, accepted, submitted
+    state: "accepted" # published, accepted, submitted
     bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
-pub_date: "2025-12-31" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
-image: "/static/pub/2025-CARE-Planner.png" # Representative image of the paper
+pub_date: "2026-08-28" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
+image: "/static/pub/2026-CARE-Planner.png" # Representative image of the paper
 # github: # Leave this blank if not applicable
 #  - name: # "CONAC/ECC25-weight-constraint" # GitHub repository name
 #    url: # "KAIST-MIC-Lab/CoNAC/tree/ECC25-weight-constraint" # GitHub repository URL
