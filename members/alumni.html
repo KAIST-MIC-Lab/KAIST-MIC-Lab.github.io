@@ -36,7 +36,7 @@ group: members
 {% for position in Positions %}
 
   {% assign sorted = "" | split: "" %}
-  {% assign members = site.members | sort: "sortdate" | reverse %}
+  {% assign members = site.members | sort: "sortdate"%}
   {% for member in members %}
     {% if member.subsequent %}
       {% assign last_position = member.positions | last %}
