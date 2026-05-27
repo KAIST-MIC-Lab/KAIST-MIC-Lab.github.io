@@ -22,9 +22,9 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     num: # Leave it blank if not applicable
     pp: # "380-385" # Leave it blank if not applicable
     year: "2026" # Leave it blank if not applicable
-    state: "submitted" # published, accepted, submitted
+    state: "accepted" # published, accepted, submitted
     bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
-pub_date: "2026-02-16" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
+pub_date: "2026-06-21" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2026-traffic-network.png" # Representative image of the paper
 abstract: "
   Energy management for fuel cell electric vehicles (FCEVs) is a challenging trajectory optimization problem. Conventional studies primarily focus on trip-specific optimal control, where the power distribution is optimized based on a predicted finite-horizon driving profile. However, these methods often suffer from a limited look-ahead horizon and fail to guarantee long-run optimality within the stochastic traffic network where the vehicle operates. This study proposes a novel framework that integrates finite-horizon optimal control with traffic network-aware long-run average costs. We formulate the problem by embedding the long-run optimality, derived from network-level transition probabilities, into the terminal cost of the trip-specific optimization. This approach enables an adaptive target State of Charge (SOC) that aligns with global network efficiency while satisfying immediate driving constraints. Simulation results in a virtual traffic network demonstrate that the proposed integrated strategy consistently outperforms traditional trip-specific methods, achieving a maximum performance improvement of 11%. These findings highlight the necessity of network-level statistical awareness for maximizing the long-term energy efficiency of electrified mobility.
