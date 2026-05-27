@@ -10,17 +10,18 @@ authors:
   - name: "Wooyong Kim"
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # or "domestic"
-preprint: 
-  - name: "TechRxiv"
-    doi: "10.36227/techrxiv.171174527.70147690/v1"
-    pdf: "/static/pub/2025-using-deep-reinforcement.pdf"
-    year: "2024"
-    state: "published"
+# preprint: 
+#   - name: "TechRxiv"
+#     doi: "10.36227/techrxiv.171174527.70147690/v1"
+#     pdf: "/static/pub/2025-using-deep-reinforcement.pdf"
+#     year: "2024"
+#     state: "published"
 pub:
   - name: "International Conference on Control, Automation and Systems (ICCAS)"
-    doi: 
+    doi: 10.23919/ICCAS66577.2025.11301220
     year: "2025"
-    state: "accepted"
+    pp: "1273-1278"
+    state: "published"
 pub_date: "2025-11-04"
 image: "/static/pub/2025-using-deep-reinforcement.png"
 abstract: "

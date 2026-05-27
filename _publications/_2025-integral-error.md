@@ -1,3 +1,6 @@
+Upload pending publication file: 2025-integral-error.md
+- IEEE 출판 옵션을 선택하지 않아 등재가 되지 못함
+
 ---
 type: "Conference Paper"
 layout: publication
