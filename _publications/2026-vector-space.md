@@ -2,7 +2,7 @@
 type: "Conference Paper" # Conference Paper, Journal Paper, Ph.D. Thesis, Master's Thesis
 layout: publication # Do not change this
 group: publications # Do not change this
-title: "Vector-Space Optimization for Contraction Theory-Based Control Design: An Energy-Based Effective Space Approach" # Title of the paper
+title: "Vector-Space Optimization Framework Based on Projected Contraction Condition for Control Design with Input Saturation" # Title of the paper
 # krtitle: # only for domestic papers
 authors: 
   - name: "Myeongseok Ryu"
@@ -34,13 +34,11 @@ image: "/static/pub/2026-vector-space.png" # Representative image of the paper
 #    description: # "Code for the paper" # Description of the repository
 # abstract; emphasize the important part using **bold** or *italic* of markdown syntax
 abstract: "
-  In this paper, we propose a novel vector-space optimization framework for contraction theory-based control design with input saturation.
-   Conventional Linear Matrix Inequality (LMI) optimization frameworks suffer from computational complexity issues for high-dimensional systems and limited flexibility in handling various constraints, including input saturation.
-   Moreover, there exists ill-posed problem in the objective function minimizing the condition number of the contraction metric.
-   To address these issues, we project the contraction metrics onto the trajectory error vector space, leading to a simplified vector-space optimization framework within a lower-dimensional effective space.
-   Furthermore, energy-based constraints are incorporated to obtain a finite number of locally optimal solutions and to maintain sufficient control effort.
-   In addition, convex input saturation constraints are integrated to handle the practical limitations of actuators.
-   The effectiveness and feasibility of the proposed method are validated through numerical simulations using the Lorenz system.
+  Conventional feedback control design based on contraction theory typically requires matrix-valued contraction metrics, which can limit real-time applicability as the system dimension increases and make direct handling of input saturation nontrivial.
+  To address these issues, we project the contraction condition onto the instantaneous trajectory-error direction and introduce the metric-weighted error vector as the optimization variable.
+  This yields a lower-dimensional formulation that avoids direct optimization over the full matrix-valued metric and enables input saturation constraints to be incorporated directly.
+  Additionally, an energy-based constraint is introduced to resolve the scale ambiguity of condition-number minimization and maintain sufficient control effort.
+  The effectiveness of the proposed method is validated through numerical simulations using the Lorenz system.
 "
 # additional: # additional information such as awards, etc.
 #  - "📄 Awarded **Best Paper Award** at the _2025 European Control Conference (ECC)_."
@@ -48,7 +46,7 @@ abstract: "
 #   - name: 
 #     url: 
 comments: "
-  **Prof. Sesun You** is Assistant Professor at Keimyung University, Daegu, South Korea.
+  **Prof. Sesun You** is Assistant Professor at Incheon National University, Incheon, South Korea.
   His biographical information can be found at [his Google Scholar profile](https://scholar.google.com/citations?user=QCJGLIwAAAAJ&hl=ko).
 "
 ---
