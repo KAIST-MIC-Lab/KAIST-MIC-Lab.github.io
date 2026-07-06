@@ -13,10 +13,10 @@ positions:
     enddate: [2025-09-31] # Leave this blank until you leave the lab
   - name: "Researcher" #Enter your position in the lab
     startdate: [2025-09-01] #Enter your start date
-    enddate: []
+    enddate: [2026-06-29]
 image: /static/members/msSeo.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/members/msSeo.jpg #365 x 365 pixels, 72 dpi
-subsequent: #Leave this blank until you leave the lab
+subsequent: TBD #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: seominseok@kaist.ac.kr #Enter your preferred public e-mail address
 scholar: #Google Scholar User ID, create if you don't have one

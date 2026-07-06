@@ -32,8 +32,8 @@ positions:
   - name: "Ph.D. Student" # Postdoctoral Researcher, Ph.D. Student, M.S. Student, Visiting Researcher, Intern
     startdate: [2025-07-28] #Enter your start date
     enddate: # [2025-04-01] #Enter your end date, or leave blank if you are still in the lab
-image: /static/img/members/msRyu.jpg # Profile picture
-altimage: /static/img/members/msRyu-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
+image: /static/members/msRyu.jpg # Profile picture
+altimage: /static/members/msRyu-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
 subsequent: #Leave this blank until you leave the lab
 pronouns: he/him/his # he/him/his, she/her/hers, they/them/theirs
 email: dding_98@gm.gist.ac.kr # Enter your preferred public e-mail address
@@ -42,7 +42,7 @@ email: dding_98@gm.gist.ac.kr # Enter your preferred public e-mail address
 scholar: gUHuDJ4AAAAJ # Google Scholar User ID, create if you don't have one
 github: DDingR # GitHub ID, create if you don't have one
 linkedin: myeongseok-ryu-21b5b02b1 # LinkedIn ID
-cv: /static/img/members/msRyu.pdf # send me if you want to add your CV
+cv: /static/members/msRyu.pdf # send me if you want to add your CV
 orcid: 0009-0004-3279-5765 #ORCID, create if you don't have one
 # For researchgate, go to `Settings/Privacy/Your\ public\ profile` and copy the last part of the URL.
 researchgate: Myeongseok-Ryu # ResearchGate

@@ -20,6 +20,14 @@ group: members
     {% if member.subsequent %}
 
       {% assign last_position = member.positions | last %}
+
+      <!-- If last position was researcher -->
+      <!-- use position just before researcher -->
+      {% if last_position.name == "Researcher" %}
+        {% assign prev_index = member.positions.size | minus: 2 %}
+        {% assign last_position = member.positions[prev_index] %}
+      {% endif %}
+
       {% if last_position.name == position %}
         {% assign filtered = filtered | push: member %}
       {% endif %}    
@@ -37,9 +45,21 @@ group: members
 
   {% assign sorted = "" | split: "" %}
   {% assign members = site.members | sort: "sortdate"%}
+
+  <!-- reverse the order of members -->
+  {% assign members = members | reverse %}
+
   {% for member in members %}
     {% if member.subsequent %}
       {% assign last_position = member.positions | last %}
+
+      <!-- If last position was researcher -->
+      <!-- use position just before researcher -->
+      {% if last_position.name == "Researcher" %}
+        {% assign prev_index = member.positions.size | minus: 2 %}
+        {% assign last_position = member.positions[prev_index] %}
+      {% endif %}
+
       {% if last_position.name == position %}
         {% assign sorted = sorted | push: member %}
       {% endif %}
