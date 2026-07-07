@@ -3,7 +3,7 @@ layout: members # Do not change this
 group: members # Do not change this
 title: Naol Samuel Erega #This is the title of your page. It will be displayed in the navigation bar and on the page itself.
 name: Naol Samuel Erega # Include "Ph.D."" if applicable
-kr_name: 에레가 나올 사무엘  #Your name in Korean, if applicable
+kr_name: 나올 사무엘 에레가  #Your name in Korean, if applicable
 timeline_name: Naol #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2025-07-28] # for sorting
 positions:
