@@ -11,7 +11,8 @@ authors:
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International"
 pub: 
-  - name: Conference on Robot Learning (CoRL)
+  # - name: Conference on Robot Learning (CoRL)
+  - name: ____________________________
     doi: 
     year: "2026"
     pdf: "/static/pub/2026-TRIAD.pdf"
