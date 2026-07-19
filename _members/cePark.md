@@ -13,6 +13,9 @@ positions:
     enddate: [2026-03-01] # [2026-02-29] #Enter your end date, or leave blank if you are still in the lab
   - name: "Researcher" #Enter your position in the lab
     startdate: [2026-03-01] #Enter your start date
+    enddate: [2026-09-01] #Leave this blank until you leave the lab
+  - name: "Integrated M.S./Ph.D. Student" #Enter your position in the lab
+    startdate: [2026-09-01] #Enter your start date
     enddate: [] #Leave this blank until you leave the lab
 image: /static/members/cePark.jpg #365 x 365 pixels 72 dpi 
 altimage: /static/members/cePark-alt.jpg #365 x 365 pixels, 72 dpi 
