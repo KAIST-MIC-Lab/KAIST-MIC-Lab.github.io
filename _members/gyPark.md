@@ -25,7 +25,7 @@ description: "
 **Geunyoung Park** is a Post-doctoral Researcher at the Cho Chun Shik Graduate School of Mobility at the **KAIST**. He received his Ph.D. degree from the Cho Chun Shik Graduate School of Mobility at **KAIST** in 2026. He is currently working on optimal energy and thermal management of electrified vehicles.
 
 
-His research interests include optimal control, predictive energy management, vehicle thermal management systems, and data-driven modeling and control.
+His research interests include **optimal control**, **predictive energy management**, **vehicle thermal management systems**, and **data-driven modeling and control**.
 "
 ---
 <div class="row">
