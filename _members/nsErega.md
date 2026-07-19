@@ -10,7 +10,7 @@ positions:
   - name: "Intern" #Enter your position in the lab
     startdate: [2025-07-28] #Enter your start date
     enddate: [2026-03-01] #Enter your end date, or leave blank if you are still in the lab
-  - name: "Master Student" #Enter your position in the lab
+  - name: "Master's Student" #Enter your position in the lab
     startdate: [2026-03-01] #Enter your start date
     enddate: [] # [2025-03-01] #Enter your end date, or leave blank if you are still in the lab
 image: /static/members/nsErega.jpg # Profile picture

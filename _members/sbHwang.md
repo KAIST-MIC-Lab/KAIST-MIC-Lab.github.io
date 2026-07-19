@@ -10,6 +10,9 @@ positions:
   - name: "Intern" # Postdoctoral Researcher, Ph.D. Student, M.S. Student, Visiting Researcher, Intern
     startdate: [2026-02-02] #Enter your start date
     enddate: [2026-03-1] #Enter your end date, or leave blank if you are still in the lab
+  - name: "Integrated M.S./Ph.D. Student"
+    startdate: [2026-09-1] #Enter your start date
+    enddate: [] #Leave blank if you are still in the lab
 image: /static/members/sbHwang.jpg # Profile picture
 altimage: /static/members/sbHwang-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
 subsequent: TBA #Leave this blank until you leave the lab

@@ -8,7 +8,7 @@ kr_name: 홍동화 #Your name in Korean, if applicable
 timeline_name: Donghwa #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2024-03-01] # for sorting
 positions:
-  - name: "Master Student" #Enter your position in the lab
+  - name: "Master's Student" #Enter your position in the lab
     startdate: [2024-03-01] #Enter your start date
     enddate: [2026-03-01] #Enter your end date, or leave blank if you are still in the lab
   - name: "Researcher" #Enter your position in the lab

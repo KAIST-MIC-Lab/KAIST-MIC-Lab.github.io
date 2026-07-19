@@ -28,10 +28,13 @@ name: Myeongseok Ryu
 kr_name: 유명석 #Your name in Korean, if applicable
 timeline_name: Myeongseok #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2023-03-01] # for sorting
-positions:
-  - name: "Ph.D. Student" # Postdoctoral Researcher, Ph.D. Student, M.S. Student, Visiting Researcher, Intern
-    startdate: [2025-07-28] #Enter your start date
-    enddate: # [2025-04-01] #Enter your end date, or leave blank if you are still in the lab
+positions: # Postdoctoral Researcher, Ph.D. Student, Integrated M.S./Ph.D. Student, Master's Student, Researcher, Visiting Researcher, Intern 
+  - name: "Master's Student" #Enter your position in the lab
+    startdate: [2023-03-01] #Enter your start date
+    enddate: [2025-03-01] #Enter your end date, or leave blank if you are still in the lab
+  - name: "Ph.D. Student" #Enter your position in the lab
+    startdate: [2025-03-01] #Enter your start date
+    enddate: [] #Enter your end date, or leave blank if you are still in the lab
 image: /static/members/msRyu.jpg # Profile picture
 altimage: /static/members/msRyu-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
 subsequent: #Leave this blank until you leave the lab

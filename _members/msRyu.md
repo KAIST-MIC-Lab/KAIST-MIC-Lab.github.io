@@ -8,7 +8,7 @@ kr_name: 유명석
 timeline_name: Myeongseok #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2023-03-01] # for sorting
 positions:
-  - name: "Master Student" #Enter your position in the lab
+  - name: "Master's Student" #Enter your position in the lab
     startdate: [2023-03-01] #Enter your start date
     enddate: [2025-03-01] #Enter your end date, or leave blank if you are still in the lab
   - name: "Ph.D. Student" #Enter your position in the lab

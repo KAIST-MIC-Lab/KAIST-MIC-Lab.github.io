@@ -8,7 +8,7 @@ kr_name: 김민지 #Your name in Korean, if applicable
 timeline_name: Minji #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2023-03-01] # for sorting
 positions:
-  - name: "Master Student" #Enter your position in the lab
+  - name: "Master's Student" #Enter your position in the lab
     startdate: [2023-03-01] #Enter your start date
     enddate:  [2025-03-01] # Leave this blank until you leave the lab
 image: /static/members/mjKim.jpg #365 x 365 pixels, 72 dpi
@@ -21,7 +21,7 @@ github:
 orcid:  #ORCID, create if you don't have one
 description: "
 
-**Minji Kim** received the B.S. degree and Master degree in Department of Mechanical Engineering from **Dong A University** and **Gwangju Institute of Science and Technology (GIST)**,in 2023 and 2025, respectively
+**Minji Kim** received the B.S. degree and Master's degree in Department of Mechanical Engineering from **Dong A University** and **Gwangju Institute of Science and Technology (GIST)**,in 2023 and 2025, respectively
 
 She is currently proceeding the Ph.D. degree in Department of Mechanical Engineering from **GIST**, South Korea, in 2025. 
 

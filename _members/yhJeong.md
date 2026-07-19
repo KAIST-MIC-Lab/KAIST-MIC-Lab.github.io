@@ -8,12 +8,12 @@ kr_name: 정영호
 timeline_name: Yeongho #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2023-09-01] # for sorting
 positions:
-    - name: "Master Student" #Enter your position in the lab
+    - name: "Master's Student" #Enter your position in the lab
       startdate: [2023-09-01] #Enter your start date
       enddate:  [2025-06-31] # Leave this blank until you leave the lab
 image: /static/members/yhJeong.jpg 
 altimage: #/static/img/members/msSeo.jpg 
-position: Master Student #What is your job title in the Fraser lab?
+position: Master's Student #What is your job title in the Fraser lab?
 subsequent: TBA #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: bbang988@gm.gist.ac.kr  #Enter your preferred public e-mail address

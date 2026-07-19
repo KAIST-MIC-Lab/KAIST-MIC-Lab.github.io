@@ -8,12 +8,12 @@ kr_name: 김재준 #Your name in Korean, if applicable
 timeline_name: Jaejoon #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2024-09-02] # for sorting
 positions:
-  - name: "Master Student" #Enter your position in the lab
+  - name: "Master's Student" #Enter your position in the lab
     startdate: [2024-09-02] #Enter your start date
     enddate:  [2025-01-01] # Leave this blank until you leave the lab
 image: /static/members/jjKim.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/members/jjKim.jpg #365 x 365 pixels, 72 dpi
-subsequent: Master Student at DCASL, GIST #Leave this blank until you leave the lab
+subsequent: Master's Student at DCASL, GIST #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: kjoon0807@gm.gist.ac.kr #Enter your preferred public e-mail address
 scholar:  #Google Scholar User ID, create if you don't have one
@@ -24,7 +24,7 @@ description: "
 **Jaejoon Kim** received the B.S. degree in Department of Mechanical Engineering from **Incheon National University**, South Korea, in 2023. He is currently proceeding the M.S. degree in Department of Mechanical Engineering from **Gwangju Institute of Science and Technology (GIST)**, South Korea, in 2025. 
 
 
-He was Master Student at MIC Lab at GIST and he moved to the [**DCASL**](https://me.gist.ac.kr/dcas/index.do) at GIST in January 2025.
+He was Master's Student at MIC Lab at GIST and he moved to the [**DCASL**](https://me.gist.ac.kr/dcas/index.do) at GIST in January 2025.
 
 "
 ---
