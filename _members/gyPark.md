@@ -2,9 +2,9 @@
 layout: members # Do not change this
 group: members # Do not change this
 title: Geunyoung Park #This is the title of your page. It will be displayed in the navigation bar and on the page itself.
-name: Geunyoung Park, Ph.D. # Include "Ph.D."" if applicable
+name: Geunyoung Park
 kr_name: 박근영 #Your name in Korean, if applicable
-timeline_name: Geunyoung Park #If you would like your name to appear differently on the Lab timeline, fill out this line.
+timeline_name: Geunyoung #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2026-07-13] # for sorting
 positions:
   - name: "Postdoctoral Researcher" # Postdoctoral Researcher, Ph.D. Student, M.S. Student, Visiting Researcher, Intern

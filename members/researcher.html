@@ -77,9 +77,9 @@ group: members
 
                   {% assign last_position = member.positions | last %}
 
-                  {% if last_position.name == "Principal Investigator" %}
-                    <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}, Ph.D.</a> <br>
-                    {{ member.kr_name }} <br>
+                  {% if last_position.name == "Principal Investigator" or last_position.name == "Postdoctoral Researcher" %}
+                    <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}, Ph.D.</a>
+                    / {{ member.kr_name }} <br>
                   {% else %}
                     <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}</a>
                     / {{ member.kr_name }} <br>

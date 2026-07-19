@@ -5,7 +5,8 @@
 
         {% assign last_position = page.positions | last %}
 
-        {% if last_position.name == "Principal Investigator" %}
+        <!-- if position is principal investigator or postdoctoral researcher -->
+        {% if last_position.name == "Principal Investigator" or last_position.name == "Postdoctoral Researcher" %}
           {{page.name}}, Ph.D. <br>
           {{ page.kr_name }} <br>
         {% else %}
