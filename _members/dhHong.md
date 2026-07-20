@@ -26,13 +26,13 @@ iris: 12765248
 iris_id: PUREGOD15
 description: "
 
-**Donghwa Hong** is currently pursuing an M.S. degree in Mechanical Engineering at the **Gwangju Institute of Science and Technology (GIST)**, South Korea.
+**Donghwa Hong** is a **Researcher** at the Cho Chun Shik Graduate School of Mobility, **KAIST**, and a member of the **Mobility Intelligence and Control Laboratory (MIC Lab)**.
 
 
-His research interests include **robot control**, **neural networks**, and **model identification**.
+His research focuses on **learning-based identification of uncertain dynamics** and **state and parameter estimation**, with applications to  **vehicle and robotic systems**.
 
 
-He received his B.S. degree in Physics from **Yonsei University** (Wonju) in 2023. 
+He received his B.S. degree in *Physics* from **Yonsei University (Wonju)** in 2023 and his M.S. degree in *Mechanical and Robotics Engineering* from the **Gwangju Institute of Science and Technology (GIST)** in 2026.
 
 "
 ---
