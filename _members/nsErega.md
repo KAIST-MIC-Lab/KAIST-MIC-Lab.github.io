@@ -7,7 +7,7 @@ kr_name: 나올 사무엘 에레가  #Your name in Korean, if applicable
 timeline_name: Naol #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2025-07-28] # for sorting
 positions:
-  - name: "Intern" #Enter your position in the lab
+  - name: "Undergraduate Intern" #Enter your position in the lab
     startdate: [2025-07-28] #Enter your start date
     enddate: [2026-03-01] #Enter your end date, or leave blank if you are still in the lab
   - name: "Master's Student" #Enter your position in the lab

@@ -7,7 +7,7 @@ kr_name: 하비불러  아델레케
 timeline_name: Habeebullah
 sortdate: [2026-07-01]         
 positions:
-  - name: "Intern"
+  - name: "Undergraduate Intern"
     startdate: [2026-07-01]
     enddate: []
 image: /static/members/hAdeleke.jpg

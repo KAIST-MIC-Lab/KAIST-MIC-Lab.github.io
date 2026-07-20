@@ -7,7 +7,7 @@ kr_name: 앵거스 시그로프 #Your name in Korean, if applicable
 timeline_name: Angus #If you would like your name to appear differently on the Lab timeline, fill out this line.
 sortdate: [2025-11-24] # for sorting
 positions:
-  - name: "Intern" # Postdoctoral Researcher, Ph.D. Student, M.S. Student, Visiting Researcher, Intern
+  - name: "Undergraduate Intern" # Postdoctoral Researcher, Ph.D. Student, M.S. Student, Visiting Researcher, Intern
     startdate: [2025-11-24] #Enter your start date
     enddate: [2026-05-04] #Enter your end date, or leave blank if you are still in the lab
 image: /static/members/aSiegloff.jpg # Profile picture

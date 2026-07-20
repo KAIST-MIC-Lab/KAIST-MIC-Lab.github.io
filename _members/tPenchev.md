@@ -7,7 +7,7 @@ kr_name: 테오도르 펜체프
 timeline_name: Teodor
 sortdate: [2026-06-24]
 positions:
-  - name: "Intern"
+  - name: "Undergraduate Intern"
     startdate: [2026-06-24]
     enddate: []
 image: /static/members/tPenchev.jpg
