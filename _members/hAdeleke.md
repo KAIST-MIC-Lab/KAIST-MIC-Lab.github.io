@@ -24,7 +24,9 @@ researchgate: Habeebullah-Adeleke
 description: "
 **Habeebullah Adeleke** is an undergraduate student in the Department of Mechanical Engineering at **KAIST**, Daejeon, South Korea, and has been a member of the MIC Lab since 2026.
 
+
 His current research focuses on **reinforcement learning-based control for humanoid robots**, with broader interests in **robotics**, **robot learning**, **control systems**, **embedded systems**, and **mechatronics**.
+
 
 He is passionate about developing intelligent robotic systems capable of solving real-world challenges through the integration of mechanical design, artificial intelligence, and autonomous control.
 "

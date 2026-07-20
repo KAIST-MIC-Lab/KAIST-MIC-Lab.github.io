@@ -79,10 +79,19 @@ group: members
 
                   {% if last_position.name == "Principal Investigator" or last_position.name == "Postdoctoral Researcher" %}
                     <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}, Ph.D.</a>
-                    / {{ member.kr_name }} <br>
+                    <!-- <br> -->
+                      <!-- <i>( -->
+                        {{ member.kr_name }}
+                        <!-- , 박사) -->
+                      <!-- </i> -->
+                    <br>
                   {% else %}
                     <a href="{{ member.url }}" title = "More about {{member.name}} " >{{member.name}}</a>
-                    / {{ member.kr_name }} <br>
+                    <!-- <br> -->
+                      <!-- <i>( -->
+                        {{ member.kr_name }}
+                      <!-- )</i>  -->
+                    <br>
                   {% endif %}
                   
                   <!-- {% if member.pronouns %} -->

@@ -18,18 +18,19 @@ image: /static/members/jyKim.jpg
 altimage: /static/members/jyKim-alt.jpg 
 subsequent: #Leave this blank until you leave the lab
 pronouns: she/her/her
-email: jiyun6606@gm.gist.ac.kr #Enter your preferred public e-mail address
+email: JiyunKim@kaist.ac.kr #Enter your preferred public e-mail address
 scholar:  #Google Scholar User ID, create if you don't have one
 github: jixyuxn
+linkedin: jixyuxn
 orcid:  0009-0003-0026-4495 #ORCID, create if you don't have one
 iris: 12889385
 iris_id: wldbs7638
 description: "
 
-**Jiyun Kim** received the B.S. degree in Department of Robot Engineering from **Keimyung Universitiy**, South Korea, in 2024, and is currently  pursuing an M.S. degree in Artificial Intelligence Graduate School from **Gwangju Institute of Science and Technology (GIST)**, South Korea. 
+**Jiyun Kim** received her B.S. degree in Robot Engineering from **Keimyung University**, South Korea, in 2024, and her M.S. degree in Artificial Intelligence from the **Gwangju Institute of Science and Technology (GIST)**, South Korea. She is currently conducting research at the **Korea Advanced Institute of Science and Technology (KAIST)**.
 
 
-Her research interest is **solving various mobility optimization problems by neural networks**
+Her research interests include **learning-based motion planning, autonomous driving, and intelligent robotic systems**. She focuses on developing **reliable and robust decision-making methods** based on imitation learning, **vision-language models and vision-language-action models (VLMs/VLAs)**, and robot foundation models. Her long-term goal is to build **safer and more human-centered autonomous systems** that can operate effectively in complex real-world environments.
 
 "
 ---

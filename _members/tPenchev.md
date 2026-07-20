@@ -21,7 +21,8 @@ cv:
 orcid:
 researchgate:
 description: "
-  **Teodor Penchev** is currently pursuing a B.S. degree in **Mechanical Engineering**, with a double major in **Business and Technology Management**, at the **Korea Advanced Institute of Science and Technology (KAIST)**, Daejeon, South Korea. He is an undergraduate research intern at the **MIC Lab** in the Cho Chun Shik Graduate School of Mobility, KAIST.
+  **Teodor Penchev** is currently pursuing a B.S. degree in Mechanical Engineering, with a double major in Business and Technology Management, at the **Korea Advanced Institute of Science and Technology (KAIST)**, Daejeon, South Korea. He is an undergraduate research intern at the **MIC Lab** in the Cho Chun Shik Graduate School of Mobility, KAIST.
+
 
   His research interests include **reinforcement learning**, **model-based reinforcement learning**, and **hierarchical control frameworks for robotic systems**.
   "

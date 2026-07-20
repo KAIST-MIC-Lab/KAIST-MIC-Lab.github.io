@@ -31,12 +31,14 @@ iris: 13495406
 iris_id: AEGIS2997
 researchgate:
 description: " 
- 
-**Changeun Park** received his **B.S. degree** in the **Department of Mechanical and Robotics Engineering** from **Gwangju Institute of Science and Technology (GIST)** in 2026. He served as a **research intern** at the **Mobility Intelligence and Control Laboratory (MIC Lab)** at **GIST** from December 2024 to February 2026. 
-He is currently a **Researcher** at the **Cho Chun Shik Graduate School of Mobility** at **KAIST**, where he continues his research in the **Mobility Intelligence and Control Laboratory (MIC Lab)**.
+
+**Changeun Park** received his B.S. degree in the Department of Mechanical and Robotics Engineering from the **Gwangju Institute of Science and Technology (GIST)** in 2026. He served as a researcher at the **Mobility Intelligence and Control Laboratory (MIC Lab)** at **KAIST** from December 2024 to August 2026.
 
 
-His current research interests include **optimal control**, specifically **MPC**.
+He is currently pursuing an **integrated M.S./Ph.D. degree** at the Cho Chun Shik Graduate School of Mobility at **KAIST**, where he continues his research in the **Mobility Intelligence and Control Laboratory (MIC Lab)**.
+
+
+His current research interests include **optimal control**, particularly **model predictive control (MPC)**.
 
 "
 ---
