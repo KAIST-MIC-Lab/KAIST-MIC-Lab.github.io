@@ -10,7 +10,7 @@ sortdate: [2023-09-01] # for sorting
 positions:
     - name: "Master's Student" #Enter your position in the lab
       startdate: [2023-09-01] #Enter your start date
-      enddate:  [2025-06-31] # Leave this blank until you leave the lab
+      enddate:  [2025-09-01] # Leave this blank until you leave the lab
 image: /static/members/yhJeong.jpg 
 altimage: #/static/img/members/msSeo.jpg 
 position: Master's Student #What is your job title in the Fraser lab?

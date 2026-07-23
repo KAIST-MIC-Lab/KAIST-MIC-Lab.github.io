@@ -10,7 +10,7 @@ sortdate: [2023-03-01] # for sorting
 positions:
   - name: "Master's Student" #Enter your position in the lab
     startdate: [2023-03-01] #Enter your start date
-    enddate: [2025-09-31] # Leave this blank until you leave the lab
+    enddate: [2025-09-01] # Leave this blank until you leave the lab
   - name: "Researcher" #Enter your position in the lab
     startdate: [2025-09-01] #Enter your start date
     enddate: [2026-06-29]
