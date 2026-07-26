@@ -15,7 +15,7 @@ pub:
     year: "2026"
     pdf: "/static/pub/2026-CARE-Planner-constrained.pdf"
     state: "accepted"
-pub_date: "2026-6-25" #Date of publication. Change from Biorxiv date to Journal date once accepted
+pub_date: "2026-07-01" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2026-CARE-Planner-constrained.png"
 abstract: "
   Imitation-learning planners for autonomous driving commonly optimize displacement-based objectives, which improve average trajectory accuracy but may overlook rare unsafe modes. This paper presents CARE Planner, a risk-aware extension of CAR Planner that combines constrained ego-state attention with a Conditional Value at Risk (CVaR)-based tail-risk module. The proposed module estimates clearance-based risk along the prediction horizon, adjusts supervised mode selection toward safer candidates, and constructs risk-aware soft targets for multimodal trajectory learning. The attention constraint prevents excessive dependence on a small subset of ego-state channels, while the CVaR-based module reshapes the output distribution away from high-risk modes. Experiments on the nuPlan test14-random and test14-hard splits show improved open-loop and closedloop performance, and a pedestrian-waiting scenario analysis shows a reduced high-risk trajectory distribution.
