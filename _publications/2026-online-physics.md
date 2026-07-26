@@ -16,7 +16,7 @@ domestic_or_international: "International" # "International" or "Domestic"
     # pdf: "/static/pub/2025-all-wheel.pdf"
     # state: "published" # published, accepted, submitted
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
-  - name: "International Federation of Automatic Control (IFAC)"
+  - name: "International Federation of Automatic Control (IFAC) World Congress"
     pdf: "/static/pub/2026-online-physics.pdf"
     doi: # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
