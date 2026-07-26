@@ -1,5 +1,6 @@
 html {
   font-size: 80%; 
+  zoom: 90%;
 }
 
 @media (min-width: 992px) {
