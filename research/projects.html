@@ -16,7 +16,7 @@ group: research
 
 <h2 style="text-align: center;">{{ state | capitalize }}</h2>
 
-{% assign sorted = site.research | where: "state", state | sort: "enddate" | reverse %}
+{% assign sorted = site.projects | where: "state", state | sort: "enddate" | reverse %}
 {% for project in sorted %}
 
 <hr>
@@ -24,7 +24,7 @@ group: research
 	<div>
 		{% if project.krtitle %}
 			<h4>{{ project.krtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
-		{% else if %}
+		{% else %}
 			<h4>{{ project.engtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
 		{% endif %}
 	</div>
@@ -82,6 +82,10 @@ group: research
 </div>
 <br>
 {% endfor %}
+
+<br>
+<br>
+
 {% endfor %}
 
 </div>

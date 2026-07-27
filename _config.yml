@@ -30,7 +30,7 @@ collections:
                 output: true
         members:
                 output: true
-        research:
+        projects:
                 output: true                
         publications:
                 output: true
@@ -45,4 +45,6 @@ collections:
         undergrads:
                 output: true
         tags:
+                output: true
+        facilities:
                 output: true

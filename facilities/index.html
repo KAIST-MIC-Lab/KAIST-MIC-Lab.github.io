@@ -1,0 +1,51 @@
+---
+title: MIC Lab Facilities
+layout: default
+group: facilities
+---
+
+
+<!-- ********************************** -->
+<h1>Facilities</h1>
+
+To be updated.
+
+<div class="container-fluid">
+
+<!-- <h2 style="text-align: center;">{{ state | capitalize }}</h2> -->
+
+{% assign sorted = site.facilities | sort: "activeDate" | reverse %}
+
+{% for facility in sorted %}
+<hr>
+<div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{facility.pmid}}">
+	<div>
+		{% if facility.krtitle %}
+			<h4>{{ facility.krtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
+		{% else %}
+			<h4>{{ facility.engtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
+		{% endif %}
+	</div>
+</div>
+
+<div class="row" style="padding-top: 20px; margin-top: -20px">
+	<div class="col-sm-6">
+		<img class = "img-fluid" src = "{{facility.image}}" alt =  "Key Figure" style="max-width: 400px;">
+		<!-- <img class = "img-fluid" src = "{{facility.image}}" alt =  "Key Figure" style="max-height: 200px;"> -->
+	</div>
+	<ul class="col-sm-6">
+		
+		{% if facility.link %}
+			<li><h6>Additional Link</h6></li>
+			{% for link in facility.link %}
+				 <a href="{{ link.url }}">{{ link.name }}</a>
+				<br/>
+			<br>
+			{% endfor %}
+		{% endif %}
+	</ul>
+</div>
+<br>
+{% endfor %}
+
+</div>
