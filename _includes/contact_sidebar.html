@@ -1,7 +1,7 @@
 
 
 <h4>Contact Us</h4>
-<p>
+<div>
   <a href={{ site.url }}/members/khChoi>Kyunghwan Choi, Ph.D.</a>
   <br>
   Assistant Professor <br>
@@ -15,13 +15,16 @@
   Korea Postcode 34051 <br>
   193, Munji-ro, Yuseong-gu <br>
   Daejeon, Republic of Korea <br>
-</p>
+</div>
 
-<p>
+<br>
+
+<div>
   <h4> Join Us </h4>
   We are actively seeking highly motivated students and researchers who are eager to contribute to our mission. 
   Open positions are listed on our <a href="{{ site.url }}/join">Join</a> page.
   <br>
+</div>
 
 <!-- <p>
   <h4> 
@@ -37,11 +40,15 @@
   Research videos are available on our <a href="https://www.youtube.com/channel/UCwMUKImiGPZNtKvb2F5kNQQ" target="_blank">YouTube</a>.
 </p> -->
 
-<p>
-  <h4> Recent Posts </h4>
-  <ul>
-    {% for post in site.posts limit: 5 %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+<br>
+
+<div>
+  <h4 style="margin-bottom: 4px;">Recent Posts</h4>
+  <ul style="margin: 0; padding-left: 18px;">
+    {% for post in site.posts limit: 3 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
     {% endfor %}
   </ul>
-</p>
+</div>
