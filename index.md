@@ -1,5 +1,5 @@
 ---
-title: MIC Lab
+title: KAIST MIC Lab
 layout: home
 group: home
 ---
@@ -7,13 +7,14 @@ group: home
 <div class="container-fluid">
 
 <div style="text-align: center; margin-bottom: 5px;">
-  
+
 ## <b>Mobility Intelligence and Control Laboratory</b>
 <!-- {: .welcomefont} -->
 #### KAIST CCS Graduate School of Mobility
 <!-- {: .welcomefont} -->
 </div>
 
+<br>
 <br>
 
 <!-- <p style="text-align: center; margin: 0 0 18px 0;">
@@ -25,9 +26,12 @@ group: home
   </a>
 </p> -->
 
-The Mobility Intelligence and Control Laboratory (MIC Lab) focuses on enabling mobility intelligence through optimal and learning-based control of Connected, Automated, and Electrified Vehicles (CAEVs) across multiple levels of control.
+<i>
+Advancing mobility intelligence through optimal and learning-based control from components to vehicles and mobility systems.
+</i>
 <!-- {: .welcomefont} -->
 
+<br>
 <p align="center">
   <img src="static/img/home.png" alt="MIC Lab Logo" style="max-width: 90%; height: auto;">
 </p>

@@ -36,7 +36,7 @@
       {% if page.image %}
         <div style ="text-align: center; padding-bottom: 10px">
           <!-- <img class = "img-fluid" src = "{{page.image}}" alt =  "Key Figure" style="max-height: 200px">   -->
-          <img class = "img-fluid" src = "{{page.image}}" alt =  "Key Figure" style="max-width: 400px">  
+          <img class="img-fluid" src="{{ page.image }}" alt="Key Figure" style="width: 100%; max-width: 400px; height: auto;">
         </div>
       {% endif %}
 
@@ -117,16 +117,6 @@
           &emsp; <a href="https://www.github.com/{{record.url}}/" alt="GitHub Repository: {{record.url}} (opens in new tab)" target="_blank">{{record.name}}</a>{% if record.description %} ({{record.description}}){% endif %}{% unless forloop.last %}, {% endunless %}
         {% endfor %}
       {% endif %}
-    
-      {% if page.Youtube %}
-      <br>
-        <h5><li>Youtube Videos</h5></li>
-        {% for video in page.Youtube %}
-          &emsp; <a href="https://youtu.be/{{video.url}}" alt="Youtube Video: {{video.name}} (opens in new tab)" target="_blank">{{video.name}}</a>
-            <a href="https://youtu.be/{{video.url}}"><img class="inline-bloc mem-icon" src="/static/img/logo/YouTube_logo.svg"></a>  
-          {% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      {% endif %}
 
       <!--additional links - optional-->
       {% if page.links %}
@@ -149,6 +139,44 @@
         No abstract available
       {% endif %}
     
+
+      {% if page.Youtube %}
+      <br>
+        <h5><li>YouTube Videos</li></h5>
+        {% for video in page.Youtube %}
+          {% if video.url %}
+            {% assign youtube_url = video.url | strip %}
+            {% assign youtube_id = youtube_url %}
+
+            {% if youtube_url contains 'youtu.be/' %}
+              {% assign youtube_id = youtube_url | split: 'youtu.be/' | last | split: '?' | first %}
+            {% elsif youtube_url contains 'watch?v=' %}
+              {% assign youtube_id = youtube_url | split: 'watch?v=' | last | split: '&' | first %}
+            {% elsif youtube_url contains '/shorts/' %}
+              {% assign youtube_id = youtube_url | split: '/shorts/' | last | split: '?' | first %}
+            {% elsif youtube_url contains '/embed/' %}
+              {% assign youtube_id = youtube_url | split: '/embed/' | last | split: '?' | first %}
+            {% elsif youtube_url contains '/live/' %}
+              {% assign youtube_id = youtube_url | split: '/live/' | last | split: '?' | first %}
+            {% endif %}
+
+            <div class="mb-3">
+              <h6>{{ video.name }}</h6>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube-nocookie.com/embed/{{ youtube_id | escape }}"
+                  title="{{ video.name | default: page.title | escape }}"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
       
       {% if page.comments %}
         <h5><li>Additional Comments</li></h5>
