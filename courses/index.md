@@ -1,5 +1,5 @@
 ---
-title: Teaching Lab
+title: MIC Lab Courses
 layout: default
 group: courses
 ---
