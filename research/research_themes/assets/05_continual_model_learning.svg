@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="720" viewBox="0 0 1500 720" role="img" aria-labelledby="title desc">
+  <title id="title">Continual model learning concept</title>
+  <desc id="desc">Selected new transitions and retained prior function behavior enter a continual model update, producing an updated dynamics model for estimation, prediction, and control.</desc>
+  <defs>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0F9B8E"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7657C8"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6FED"/>
+    </marker>
+  </defs>
+
+  <rect width="1500" height="720" rx="32" fill="#F7F9FC"/>
+  <text x="70" y="70" fill="#17243C" font-family="Arial, 'Noto Sans', sans-serif" font-size="46" font-weight="700">CONTINUAL MODEL LEARNING</text>
+  <text x="72" y="115" fill="#607089" font-family="Arial, 'Noto Sans', sans-serif" font-size="23" font-weight="600">LEARN NEW  →  RETAIN PRIOR  →  SUPPORT CONTROL</text>
+
+  <rect x="70" y="160" width="320" height="155" rx="22" fill="#FDECEF" stroke="#D9485F" stroke-width="3"/>
+  <text x="230" y="215" text-anchor="middle" fill="#D9485F" font-family="Arial, 'Noto Sans', sans-serif" font-size="29" font-weight="700">NEW TRANSITIONS</text>
+  <text x="230" y="260" text-anchor="middle" fill="#17243C" font-family="Arial, 'Noto Sans', sans-serif" font-size="24" font-weight="600">𝒮ₜ</text>
+  <text x="230" y="292" text-anchor="middle" fill="#607089" font-family="Arial, 'Noto Sans', sans-serif" font-size="18">current operating information</text>
+
+  <rect x="70" y="430" width="320" height="190" rx="22" fill="#F2EEFC" stroke="#7657C8" stroke-width="3"/>
+  <text x="230" y="485" text-anchor="middle" fill="#7657C8" font-family="Arial, 'Noto Sans', sans-serif" font-size="28" font-weight="700">PRIOR BEHAVIOR</text>
+  <text x="230" y="530" text-anchor="middle" fill="#17243C" font-family="'Cambria Math', Cambria, serif" font-size="22" font-weight="600">f̂<tspan baseline-shift="sub" font-size="16">ψ̂ₜ</tspan><tspan baseline-shift="baseline">(x,u)</tspan></text>
+  <text x="230" y="566" text-anchor="middle" fill="#17243C" font-family="Arial, 'Noto Sans', sans-serif" font-size="22" font-weight="600">memory / anchors  𝓜ₜ</text>
+  <text x="230" y="598" text-anchor="middle" fill="#607089" font-family="Arial, 'Noto Sans', sans-serif" font-size="18">bounded representation of the past</text>
+
+  <rect x="500" y="230" width="470" height="280" rx="26" fill="#E8F7F5" stroke="#0F9B8E" stroke-width="4"/>
+  <text x="735" y="292" text-anchor="middle" fill="#0F9B8E" font-family="Arial, 'Noto Sans', sans-serif" font-size="30" font-weight="700">CONTINUAL MODEL UPDATE</text>
+  <rect x="555" y="325" width="360" height="72" rx="18" fill="#FFFFFF" stroke="#B7DFDA" stroke-width="2"/>
+  <text x="735" y="370" text-anchor="middle" fill="#17243C" font-family="Arial, 'Noto Sans', sans-serif" font-size="24" font-weight="700">L_new  +  λ_retain L_retain</text>
+  <rect x="525" y="430" width="135" height="42" rx="18" fill="#DDF2EF"/>
+  <text x="592" y="457" text-anchor="middle" fill="#0F9B8E" font-family="Arial, 'Noto Sans', sans-serif" font-size="16" font-weight="700">LEARN NEW</text>
+  <rect x="668" y="430" width="135" height="42" rx="18" fill="#F2EEFC"/>
+  <text x="735" y="457" text-anchor="middle" fill="#7657C8" font-family="Arial, 'Noto Sans', sans-serif" font-size="16" font-weight="700">RETAIN PRIOR</text>
+  <rect x="811" y="430" width="135" height="42" rx="18" fill="#ECF2FE"/>
+  <text x="878" y="457" text-anchor="middle" fill="#2F6FED" font-family="Arial, 'Noto Sans', sans-serif" font-size="16" font-weight="700">CONTROL USE</text>
+
+  <rect x="1080" y="175" width="350" height="155" rx="22" fill="#E8F7F5" stroke="#0F9B8E" stroke-width="3"/>
+  <text x="1255" y="230" text-anchor="middle" fill="#0F9B8E" font-family="Arial, 'Noto Sans', sans-serif" font-size="29" font-weight="700">UPDATED MODEL</text>
+  <text x="1255" y="278" text-anchor="middle" fill="#17243C" font-family="'Cambria Math', Cambria, serif" font-size="25" font-weight="600">f̂<tspan baseline-shift="sub" font-size="18">ψ̂ₜ₊₁</tspan><tspan baseline-shift="baseline">(x,u)</tspan></text>
+
+  <rect x="1080" y="430" width="350" height="175" rx="22" fill="#ECF2FE" stroke="#2F6FED" stroke-width="3"/>
+  <text x="1255" y="485" text-anchor="middle" fill="#2F6FED" font-family="Arial, 'Noto Sans', sans-serif" font-size="28" font-weight="700">CONTROL USES</text>
+  <text x="1255" y="530" text-anchor="middle" fill="#17243C" font-family="Arial, 'Noto Sans', sans-serif" font-size="21" font-weight="600">estimation · MPC / lookahead</text>
+  <text x="1255" y="566" text-anchor="middle" fill="#607089" font-family="Arial, 'Noto Sans', sans-serif" font-size="19">prediction · critic targets</text>
+
+  <path d="M 390 238 L 500 300" fill="none" stroke="#0F9B8E" stroke-width="5" marker-end="url(#arrow-green)"/>
+  <text x="440" y="245" text-anchor="middle" fill="#0F9B8E" font-family="Arial, 'Noto Sans', sans-serif" font-size="18" font-weight="700">fit</text>
+
+  <path d="M 390 525 L 500 445" fill="none" stroke="#7657C8" stroke-width="5" marker-end="url(#arrow-purple)"/>
+  <text x="445" y="510" text-anchor="middle" fill="#7657C8" font-family="Arial, 'Noto Sans', sans-serif" font-size="18" font-weight="700">retain</text>
+
+  <path d="M 970 300 L 1080 252" fill="none" stroke="#0F9B8E" stroke-width="5" marker-end="url(#arrow-green)"/>
+  <text x="1025" y="248" text-anchor="middle" fill="#0F9B8E" font-family="Arial, 'Noto Sans', sans-serif" font-size="18" font-weight="700">update</text>
+
+  <path d="M 1255 330 L 1255 430" fill="none" stroke="#2F6FED" stroke-width="5" marker-end="url(#arrow-blue)"/>
+  <text x="1280" y="390" fill="#2F6FED" font-family="Arial, 'Noto Sans', sans-serif" font-size="18" font-weight="700">use online</text>
+</svg>

@@ -19,6 +19,22 @@
     <!-- <link href="/static/css/bootstrap-responsive.css" rel="stylesheet"> -->
     <link href="/static/css/syntax.css" rel="stylesheet">
     <link href="/static/css/custom.css" rel="stylesheet">
+
+    {% if page.math %}
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        }
+      };
+    </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    {% endif %}
   </head>
 
   <body>
@@ -51,7 +67,20 @@
 
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown{{forloop.index}}">
                   {% for sublink in link.dropdown %}
-                    <a class="dropdown-item" href="{{ sublink.link }}">{{ sublink.name }}</a>
+                    {% if sublink.dropdown %}
+                      <div class="dropdown-submenu">
+                        <button class="dropdown-item dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                          {{ sublink.name }}
+                        </button>
+                        <div class="dropdown-menu">
+                          {% for nestedlink in sublink.dropdown %}
+                            <a class="dropdown-item" href="{{ nestedlink.link }}">{{ nestedlink.name }}</a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    {% else %}
+                      <a class="dropdown-item" href="{{ sublink.link }}">{{ sublink.name }}</a>
+                    {% endif %}
                   {% endfor %}
                 </div>
 
