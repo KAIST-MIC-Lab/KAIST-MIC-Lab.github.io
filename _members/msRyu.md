@@ -52,8 +52,8 @@ As a target application, he focuses on the control of **Vehicle Motion Systems**
         <ul> 
             <li>Withdrew for further studies</li>
         </ul>
-    <li>May 2023 - February 2025, M.S. in Mechanical Engineering, <b>GIST</b>, South Korea</li>
-    <li>May 2017 - February 2023, B.S. in Mechanical Engineering, <b>Incheon National University</b>, South Korea</li>
+    <li>March 2023 - February 2025, M.S. in Mechanical Engineering, <b>GIST</b>, South Korea</li>
+    <li>March 2017 - February 2023, B.S. in Mechanical Engineering, <b>Incheon National University</b>, South Korea</li>
 </ul>
 
 <h3>Professional Experience</h3>
