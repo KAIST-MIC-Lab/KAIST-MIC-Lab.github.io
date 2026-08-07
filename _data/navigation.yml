@@ -11,7 +11,13 @@
   dropdown:
     - name: Overview
       group: research
-      link: "/research"
+      dropdown:
+        - name: Control Problems
+          group: research
+          link: "/research/control_problems/00_future_mobility_control_landscape"
+        - name: Research Themes
+          group: research
+          link: "/research/research_themes/00_online_learning_based_optimal_control"
     # - name: Learning + Control Theory
     #   group: research
     #   link: "/research/control_learning"
@@ -55,4 +61,3 @@
 - name: Contact
   link: "/contact"
   group: contact
-
