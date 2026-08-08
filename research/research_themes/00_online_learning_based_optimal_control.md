@@ -11,17 +11,8 @@ math: true
 
 # Online Learning-Based Optimal Control
 
-> **Core idea.** MIC Lab starts from one optimal-control problem. Bellman
-> optimality gives the exact decision principle. Learning makes that principle
-> implementable when exact computation, the dynamics, or the physical state is
-> unavailable.
-
 <figure style="margin: 0; text-align: center;">
   <img class="img-fluid" src="/research/research_themes/assets/00_online_learning_based_optimal_control.png" alt="MIC Lab learning-based control research themes: a common online learning-based optimal-control framework surrounded by eight research themes." style="width: 95%; height: auto;">
-  <figcaption>
-    MIC Lab learning-based control research themes: 
-    a common online learning-based optimal-control framework surrounded by eight research themes
-  </figcaption>
 </figure>
 
 *MIC Lab Learning-Based Control Research Themes. The center presents the
@@ -370,7 +361,7 @@ sequence.
 The two paths can also be coupled so that learning about uncertainty directly
 changes the control object.
 
-- **[Neuro-Adaptive Control](/research/research_themes/07_neuro_adaptive_control):** instead of first
+- **[Neuro-Adaptive Control](../../../static/research/07_neuro_adaptive_control.pdf):** instead of first
   producing a reusable model, a neural policy approximates the uncertain
   ideal feedback law:
 
@@ -430,7 +421,7 @@ changes the control object.
 | **[Nonstationary Infinite-Horizon OCP](/research/research_themes/04_nonstationary_infinite_horizon_ocp)** | context-augmented reference problem | recover a time-homogeneous Bellman formulation when sufficient context exists |
 | **[Continual Model Learning](/research/research_themes/05_continual_model_learning)** | dynamics model and, when needed, state trajectory | fit new operating information while retaining prior control-relevant model behavior |
 | **[Constrained PINN](/research/research_themes/06_constrained_pinn)** | physics field or model and dual variables | represent selected physical requirements as explicit learning constraints |
-| **[Neuro-Adaptive Control](/research/research_themes/07_neuro_adaptive_control)** | policy parameter | adapt an uncertain ideal feedback-law approximation directly from closed-loop signals |
+| **[Neuro-Adaptive Control](../../../static/research/07_neuro_adaptive_control.pdf)** | policy parameter | adapt an uncertain ideal feedback-law approximation directly from closed-loop signals |
 | **[Structured Critic Adaptation](/research/research_themes/08_structured_critic_adaptation)** | environment estimate and critic configuration | reuse a critic family by identifying a compact condition rather than relearning the full critic |
 
 These Themes are not pairwise opposites. They identify dominant mechanisms

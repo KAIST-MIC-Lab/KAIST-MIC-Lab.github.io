@@ -82,7 +82,14 @@
                 <!-- Publications -->
                 {% assign pub = publication.pub | last %}
 
-                <i><b>{{ pub.name }}</b></i>
+                <i><b>
+                {% if pub.pub_url %}
+                    <a href="{{ pub.pub_url }}" title = "URL for {{publication.title}} (opens in new tab)" style="color: rgb(0, 0, 0)" target="_blank">{{ pub.name }}</a>
+                {% else %}
+                    {{ pub.name }}
+                {% endif %}
+                </b></i>
+
                 {%- if pub.state contains "accepted" -%}(<b>accepted</b>, in press){%- endif -%}{% if pub.vol %}, vol. {{ pub.vol }}{% endif %}{% if pub.num %}, no. {{ pub.num }}{% endif %}{% if pub.pp %}, pp. {{ pub.pp }}{% endif %}{% if pub.year %}, {{ pub.year }}{% endif %}
                 
                 {% if publication.preprint %}
