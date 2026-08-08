@@ -10,20 +10,8 @@ group: research
 
 # Future Mobility Control Landscape
 
-> **Core idea.** Connected, automated, and electrified vehicles expand the
-> information and decision scope of mobility control while adding coupled
-> control and actuation degrees of freedom (DOFs) at mobility-system, vehicle,
-> and component levels. Realizing this performance potential is naturally
-> formulated as an optimal-control problem, but computational and information
-> limitations often prevent its direct implementation. These shared barriers
-> motivate learning-based optimal control.
-
 <figure style="margin: 0; text-align: center;">
   <img class="img-fluid" src="/research/control_problems/assets/future_mobility_control_landscape.png" alt="qFit" style="width: 95%; height: auto;">
-  <figcaption>
-    Future-mobility Control Problems at three levels lead through two representative barriers 
-    and online learning-based optimal control to the MIC Lab Research Themes.
-  </figcaption>
 </figure>
 
 *The two main axes organize where and what is controlled (Control Problems)

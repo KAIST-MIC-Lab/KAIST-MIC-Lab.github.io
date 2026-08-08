@@ -11,18 +11,8 @@ math: true
 
 # Mobility-System-Level Optimal Control
 
-> **Core idea.** Mobility-system-level optimal control uses information and
-> decision couplings beyond the local vehicle boundary. It includes both a
-> single vehicle using traffic-network context for long-horizon operation and
-> multiple vehicles coordinating through shared information.
-
-
 <figure style="margin: 0; text-align: center;">
   <img class="img-fluid" src="/research/control_problems/assets/network_aware_mobility_control.png" alt="qFit" style="width: 95%; height: auto;">
-  <figcaption>
-    Route, traffic, infrastructure, ambient, and vehicle-to-everything (V2X) information 
-    form a mobility-system decision state for energy, thermal, and coordination control.
-  </figcaption>
 </figure>
 
 *The number of controlled vehicles does not define the level by itself. The

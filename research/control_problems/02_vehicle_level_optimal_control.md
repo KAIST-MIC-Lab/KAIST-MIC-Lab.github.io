@@ -12,19 +12,8 @@ math: true
 
 # Vehicle-Level Optimal Control
 
-> **Core idea.** Vehicle-level optimal control maps driver or automated-driving
-> commands into coordinated propulsion, braking, steering, and suspension
-> actions. Automatic calibration is a coupled deployment workflow that adjusts
-> gains, maps, cost weights, and learned parameters to reproduce the intended
-> agility–stability balance across real operating conditions under declared
-> safety checks.
-
 <figure style="margin: 0; text-align: center;">
   <img class="img-fluid" src="/research/control_problems/assets/vehicle_motion_control.png" alt="qFit" style="width: 95%; height: auto;">
-  <figcaption>
-    A motion command is realized through coordinated drive, brake, steering, and suspension actuation,
-    while measured vehicle response supports automatic calibration.
-  </figcaption>
 </figure>
 
 

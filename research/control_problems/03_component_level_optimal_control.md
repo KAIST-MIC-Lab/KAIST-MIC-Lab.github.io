@@ -11,19 +11,8 @@ math: true
 
 # Component-Level Optimal Control
 
-> **Core idea.** Component-level optimal control converts a torque command
-> into fast voltage or inverter-switching decisions while minimizing drive
-> loss or another performance index and satisfying current and voltage limits.
-> Automatic calibration is a coupled deployment workflow that seeks to
-> reproduce this behavior across the real electric drive's operating domain
-> under declared verification checks.
-
 <figure style="margin: 0; text-align: center;">
   <img class="img-fluid" src="/research/control_problems/assets/electric_drive_torque_control.png" alt="qFit" style="width: 95%; height: auto;">
-  <figcaption>
-    A torque command is converted into constrained voltage or inverter-switching actions 
-    that shape current and flux to produce torque.
-  </figcaption>
 </figure>
 
 *The component-level controller realizes the requested torque through fast
