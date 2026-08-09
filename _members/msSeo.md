@@ -16,7 +16,7 @@ positions:
     enddate: [2026-06-29]
 image: /static/members/msSeo.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/members/msSeo.jpg #365 x 365 pixels, 72 dpi
-subsequent: TBD #Leave this blank until you leave the lab
+subsequent: TBA #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: seominseok@kaist.ac.kr #Enter your preferred public e-mail address
 scholar: #Google Scholar User ID, create if you don't have one

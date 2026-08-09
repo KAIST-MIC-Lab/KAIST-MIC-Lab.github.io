@@ -13,7 +13,7 @@ positions:
     enddate:  [2025-01-01] # Leave this blank until you leave the lab
 image: /static/members/jjKim.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/members/jjKim.jpg #365 x 365 pixels, 72 dpi
-subsequent: Master's Student at DCASL, GIST #Leave this blank until you leave the lab
+subsequent: TBA #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: kjoon0807@gm.gist.ac.kr #Enter your preferred public e-mail address
 scholar:  #Google Scholar User ID, create if you don't have one
@@ -21,10 +21,8 @@ github:
 orcid:  #ORCID, create if you don't have one
 description: "
 
-**Jaejoon Kim** received the B.S. degree in Department of Mechanical Engineering from **Incheon National University**, South Korea, in 2023. He is currently proceeding the M.S. degree in Department of Mechanical Engineering from **Gwangju Institute of Science and Technology (GIST)**, South Korea, in 2025. 
-
-
-He was Master's Student at MIC Lab at GIST and he moved to the [**DCASL**](https://me.gist.ac.kr/dcas/index.do) at GIST in January 2025.
+**Jaejoon Kim** received the B.S. degree in Department of Mechanical Engineering from **Incheon National University**, South Korea, in 2023. 
+After that, he received the M.S. degree in Department of Mechanical Engineering from **Gwangju Institute of Science and Technology (GIST)**, South Korea, in 2025, as a member of [**DCASL**](https://me.gist.ac.kr/dcas/index.do) at GIST.
 
 "
 ---
