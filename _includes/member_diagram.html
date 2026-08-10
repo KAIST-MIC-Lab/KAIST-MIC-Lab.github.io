@@ -70,22 +70,22 @@
                 {% assign color = "#203A5B" %}
 
             {% elsif pos == "Postdoctoral Researcher" %}
-                {% assign color = "#B54C5A" %}
+                {% assign color = "#4E9F6D" %}
 
             {% elsif pos == "Ph.D. Student" %}
-                {% assign color = "#1F5FBF" %}
+                {% assign color = "#C0392B" %}
 
             {% elsif pos == "Integrated M.S./Ph.D. Student" %}
-                {% assign color = "#3E95D6" %}
+                {% assign color = "#E57373" %}
 
             {% elsif pos == "Master's Student" %}
-                {% assign color = "#82C8E5" %}
+                {% assign color = "#4F86C6" %}
 
             {% elsif pos == "Undergraduate Intern" %}
                 {% assign color = "#E8C16E" %}
 
             {% elsif pos == "Researcher" %}
-                {% assign color = "#C28E4E" %}
+                {% assign color = "#8A8A8A" %}
 
             {% else %}
                 {% assign color = "#999999" %}
@@ -122,6 +122,17 @@
 
 {% endfor %}
 
+{% assign relocationyear = 2025 | minus: yearoffset %}
+{% assign relocationmonth = 5 | minus: 1 | divided_by: 12.0 %}
+{% assign relocationdate = relocationyear | plus: relocationmonth %}
+{% assign relocationx = relocationdate | times: stretch %}
+
+<!-- MIC Lab moved from GIST to KAIST in May 2025. -->
+<line x1="{{ relocationx }}" y1="0" x2="{{ relocationx }}" y2="{{ i | times: yspacing | minus: 2 }}"
+      stroke="#000000" stroke-width="2.5" stroke-dasharray="7 5" />
+<text x="{{ relocationx | minus: 8 }}" y="{{ i | times: yspacing | minus: 8 }}" text-anchor="end"
+      font-family="sans-serif" font-size="14" font-weight="600" fill="#00000">Moved from GIST to KAIST</text>
+
 {% assign legendn = 7 %}
 {% assign fontsize = 14 %}
 {% assign xposition = 10 %}
@@ -132,19 +143,19 @@
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Principal investigator</text>
 {% assign yposition = yposition | plus: legendboxspacing %}
 
-<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#B54C5A" />
+<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#4E9F6D" />
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Postdoctoral Researcher</text>
 {% assign yposition = yposition | plus: legendboxspacing %}
 
-<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#1F5FBF" />
+<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#C0392B" />
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Ph.D. Student</text>
 {% assign yposition = yposition | plus: legendboxspacing %}
 
-<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#3E95D6" />
+<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#E57373" />
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Integrated M.S./Ph.D. Student</text>
 {% assign yposition = yposition | plus: legendboxspacing %}
 
-<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#82C8E5" />
+<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#4F86C6" />
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Master's Student</text>
 {% assign yposition = yposition | plus: legendboxspacing %}
 
@@ -152,7 +163,7 @@
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Undergraduate Intern</text>
 {% assign yposition = yposition | plus: legendboxspacing %}
 
-<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#C28E4E" />
+<rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="#8A8A8A" />
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Researcher</text>
 {% assign yposition = yposition | plus: legendboxspacing %}
 

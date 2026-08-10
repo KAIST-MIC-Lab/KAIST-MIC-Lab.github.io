@@ -14,7 +14,7 @@ positions:
 image: /static/members/shShin.jpg #365 x 365 pixels, 72 dpi
 altimage: /static/members/shShin.jpg #365 x 365 pixels, 72 dpi
 position: Master's Student #What is your job title in the Fraser lab?
-subsequent: Ph.D. Student at MPIL, GIST #Leave this blank until you leave the lab
+subsequent: TBA #Leave this blank until you leave the lab
 pronouns: he/him/his
 email: ssjdooly@gm.gist.ac.kr #Enter your preferred public e-mail address
 scholar:  #Google Scholar User ID, create if you don't have one
@@ -23,9 +23,6 @@ orcid:  #ORCID, create if you don't have one
 description: "
 
 **Seongjae Shin** received the B.S. and Master's degrees in Department of Mechanical Engineering from **Gwangju Institute of Science and Technology (GIST)**, South Korea, in 2022 and 2024, respectively. He is currently proceeding the Ph.D. degree in Department of Mechanical Engineering from **GIST**, South Korea, in 2025. 
-
-
-He was Master's Student at MIC Lab at GIST and he moved to the [**MPIL**](https://mpil-gist.github.io) at GIST in January 2025, for his Ph.D. degree.
 
 "
 ---
