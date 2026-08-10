@@ -10,12 +10,12 @@ positions:
   - name: "Undergraduate Intern" # Postdoctoral Researcher, Ph.D. Student, M.S. Student, Visiting Researcher, Intern
     startdate: [2026-02-02] #Enter your start date
     enddate: [2026-03-1] #Enter your end date, or leave blank if you are still in the lab
-  # - name: "Integrated M.S./Ph.D. Student"
-  #   startdate: [2026-09-1] #Enter your start date
-  #   enddate: [] #Leave blank if you are still in the lab
+  - name: "Integrated M.S./Ph.D. Student"
+    startdate: [2026-09-1] #Enter your start date
+    enddate: [] #Leave blank if you are still in the lab
 image: /static/members/sbHwang.jpg # Profile picture
 altimage: /static/members/sbHwang-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
-subsequent: TBA #Leave this blank until you leave the lab
+subsequent: #Leave this blank until you leave the lab
 pronouns: she/her/hers # he/him/his, she/her/hers, they/them/theirs
 email: tnqls2361@sookmyung.ac.kr # Enter your preferred public e-mail address
 # For scholar, go to your Google Scholar profile and copy the last part of the URL.
@@ -30,7 +30,8 @@ email: tnqls2361@sookmyung.ac.kr # Enter your preferred public e-mail address
 # Write your description in markdown format.
 # I leave this as example for you.
 description: "
-**Soobin Hwang** is currently pursuing a B.S. degree at the Department of Mechanical Systems Engineering, **Sookmyung Women's University**, South Korea.
+**Soobin Hwang** received her B.S. degree in Mechanical Systems Engineering from **Sookmyung Women's University**, South Korea, in 2026.
+She is currently pursuing an Integrated M.S./Ph.D. degree at the Cho Chun Shik Graduate School of Mobility, **KAIST**, Daejeon, South Korea, and is a member of the MIC Lab.
 
 
 Her research interests include **Vehicle dynamics control**.

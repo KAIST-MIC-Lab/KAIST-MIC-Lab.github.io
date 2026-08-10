@@ -24,7 +24,7 @@ iris: 13396486
 iris_id: JIEWKIM
 researchgate:
 description: "
-**Minsoh Kim** received a B.S. degree in Electrical Engineering from **Hanyang University**, South Korea.
+**Minsoh Kim** received a B.S. degree in Electrical Engineering from **Hanyang University**, South Korea, in 2026.
 She is currently pursuing an Integrated M.S./Ph.D. degree at the Cho Chun Shik Graduate School of Mobility, **KAIST**, Daejeon, South Korea, and is a member of the MIC Lab.
 
 
