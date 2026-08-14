@@ -9,19 +9,26 @@
 - name: Research
   group: research
   dropdown:
-    - name: Overview
-      group: research
-      dropdown:
-        - name: Control Problems
-          group: research
-          link: "/research/control_problems/00_future_mobility_control_landscape"
-        - name: Research Themes
-          group: research
-          link: "/research/research_themes/00_online_learning_based_optimal_control"
-    # - name: Learning + Control Theory
+    # - name: Overview
     #   group: research
-    #   link: "/research/control_learning"
-    - name: Research Projects
+    #   link: "/research/overview"
+    #   dropdown:
+    #     - name: Control Problems
+    #       group: research
+    #       link: "/research/control_problems/control_problems"
+    #     - name: Research Themes
+    #       group: research
+    #       link: "/research/research_themes/research_themes"
+    - name: Research Overview
+      group: research
+      link: "/research/overview"
+    - name: "- Control Problems"
+      group: research
+      link: "/research/control_problems/CP_control_problems"
+    - name: "- Research Themes"
+      group: research
+      link: "/research/research_themes/RT_research_themes"
+    - name: Industry Research Projects
       group: research
       link: "/research/projects"
 

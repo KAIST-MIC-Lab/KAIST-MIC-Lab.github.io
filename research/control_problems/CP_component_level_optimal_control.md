@@ -21,7 +21,7 @@ drive-level loop.*
 
 ## 1. Scope: optimal control at the electric-drive component
 
-[Future Mobility Control Landscape](/research/control_problems/00_future_mobility_control_landscape)
+[Future Mobility Control Landscape]({{ site.data.links.control_problems }})
 defines component-level control first by a device-level performance objective
 and coupled decision boundary. The physical-device timescale is a secondary
 descriptor. For an electric drive, the
@@ -395,7 +395,7 @@ meaningful self-differential inductances. PIOL estimates the current derivative
 by finite differences and treats stator resistance as known.
 This is a concrete component-level instance of a [**Constrained
 physics-informed neural network
-(PINN)**](/research/research_themes/06_constrained_pinn): physics residuals define
+(PINN)**]({{ site.data.links.RT_constrained_pinn }}): physics residuals define
 the objective, physical inequalities remain explicit constraints, and
 primal–dual updates learn the model parameters and constraint multipliers.
 The learned model can also act as an online flux-linkage estimator.
@@ -410,7 +410,7 @@ learning optimality, and the study does not provide hardware evidence or
 prior-function retention.
 
 [**Continual Model
-Learning**](/research/research_themes/05_continual_model_learning) is one possible
+Learning**]({{ site.data.links.RT_continual_model_learning }}) is one possible
 extension from online trajectory adaptation toward a globally reusable
 magnetic model. New temperature, saturation, aging, and machine behavior
 should be added without overwriting useful flux behavior learned in earlier
@@ -420,7 +420,7 @@ return-to-prior-region model error and downstream torque-control performance.
 
 ### 6.2 Cascaded interaction and automatic calibration: Real-World RL
 
-[**Real-World RL**](/research/research_themes/01_real_world_rl) provides a
+[**Real-World RL**]({{ site.data.links.RT_real_world_rl }}) provides a
 candidate method for the automatic-calibration problem. Instead of calibrating
 each loop only against an isolated local response, the real transition stream
 can evaluate the full task: torque production, speed or position response,
@@ -449,11 +449,11 @@ closed-loop stability evidence. It should therefore be read as a practical
 short-horizon baseline.
 
 For continuous operation, [Online Learning-Based Optimal
-Control](/research/research_themes/00_online_learning_based_optimal_control)
+Control]({{ site.data.links.research_themes }})
 suggests an ADP extension in which an approximate critic represents
 consequences beyond the immediate switching or electrical horizon.
 [**Online Multistep
-Lookahead**](/research/research_themes/02_online_multistep_lookahead) can hold this
+Lookahead**]({{ site.data.links.RT_online_multistep_lookahead }}) can hold this
 critic fixed as the terminal value of the $H$-step constrained problem in
 Section 3.1:
 
@@ -482,7 +482,7 @@ If the online solve is still too expensive, its solution map can be learned as
 a policy for fast execution.
 
 [**Structured Critic
-Adaptation**](/research/research_themes/08_structured_critic_adaptation) is a
+Adaptation**]({{ site.data.links.RT_structured_critic_adaptation }}) is a
 candidate reusable mechanism. A compact identified condition—such
 as temperature, DC-link voltage, resistance, magnetic state, or load—can
 reconfigure a stored critic before policy improvement, rather than requiring
@@ -492,9 +492,9 @@ full critic relearning whenever the operating condition changes.
 
 | Research theme | Possible role in this control domain |
 |---|---|
-| **[Neuro-Adaptive Control](/research/research_themes/07_neuro_adaptive_control)** | Approximate an uncertain ideal voltage, torque-control, or residual law directly and adapt it online under weight and input constraints. |
-| **[Nonstationary Infinite-Horizon OCP](/research/research_themes/04_nonstationary_infinite_horizon_ocp)** | Represent long-run drive operation when speed, torque demand, temperature, DC-link condition, or operating mode changes the relevant dynamics, cost, or constraints. One stationary critic need not represent the exact optimum unless sufficient context is included or the problem is reformulated; an approximate or robust stationary critic may still be useful under stated conditions. |
-| **[Semantic Critic Learning](/research/research_themes/03_semantic_critic_learning)** | Incorporate maintenance, fault, mission, or operating-mode semantics into a critic when they are not captured by the numerical electrical state. This is a secondary connection rather than a requirement for the fast torque loop. |
+| **[Neuro-Adaptive Control]({{ site.data.links.RT_neuro_adaptive_control }})** | Approximate an uncertain ideal voltage, torque-control, or residual law directly and adapt it online under weight and input constraints. |
+| **[Nonstationary Infinite-Horizon OCP]({{ site.data.links.RT_nonstationary_infinite_horizon_ocp }})** | Represent long-run drive operation when speed, torque demand, temperature, DC-link condition, or operating mode changes the relevant dynamics, cost, or constraints. One stationary critic need not represent the exact optimum unless sufficient context is included or the problem is reformulated; an approximate or robust stationary critic may still be useful under stated conditions. |
+| **[Semantic Critic Learning]({{ site.data.links.RT_semantic_critic_learning }})** | Incorporate maintenance, fault, mission, or operating-mode semantics into a critic when they are not captured by the numerical electrical state. This is a secondary connection rather than a requirement for the fast torque loop. |
 
 ## 7. References
 
