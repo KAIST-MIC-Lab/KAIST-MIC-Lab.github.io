@@ -9,12 +9,29 @@
 {% assign legendboxsize = 10 %}
 {% assign legendboxspacing = 14 %}
 
+{% assign currentyear = "now" | date: "%Y" | plus: 0 %}
+{% assign currentday = "now" | date: "%j" | minus: 1 %}
+{% assign daysincurrentyear = 365.0 %}
+{% assign divisibleby4 = currentyear | modulo: 4 %}
+{% assign divisibleby100 = currentyear | modulo: 100 %}
+{% assign divisibleby400 = currentyear | modulo: 400 %}
+{% if divisibleby400 == 0 %}
+    {% assign daysincurrentyear = 366.0 %}
+{% elsif divisibleby4 == 0 and divisibleby100 != 0 %}
+    {% assign daysincurrentyear = 366.0 %}
+{% endif %}
+{% assign currentyearprogress = currentday | divided_by: daysincurrentyear %}
+{% assign currentdate = currentyear | minus: yearoffset | plus: currentyearprogress %}
+{% assign axispadding = 0.0833333333 %}
+{% assign axisend = currentdate | plus: axispadding %}
+{% assign axiswidth = axisend | times: stretch %}
+
 <!-- {% assign people = site.members | concat: site.alumni | sort: "startdate" %} -->
 {% assign people = site.members | sort: "startdate" %}
-{% assign finalyear = "now" | date: "%Y" | plus: 1 %}
+{% assign finalyear = currentyear %}
 
 <?xml version="1.0" encoding="UTF-8" ?>
-<svg width="100%" height="auto" viewBox="0 0 {{ finalyear | minus: yearoffset | plus: majortick | times: stretch }} {{ people.size | plus: 1 | times: yspacing | plus: 5 }}" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="auto" viewBox="0 0 {{ axiswidth }} {{ people.size | plus: 1 | times: yspacing | plus: 5 }}" xmlns="http://www.w3.org/2000/svg">
 
 {% assign i = 0 %}
 
@@ -53,15 +70,14 @@
                 {% assign endmonth = position.enddate[tenure] | date: "%m" | minus: 1 | divided_by: 12.0 %}
                 {% assign end = endyear | plus: endmonth %}
             {% else %}
-                {% assign endyear = "now" | date: "%Y" | minus: yearoffset %}
-                {% assign endmonth = "now" | date: "%m" | minus: 1 | divided_by: 12.0 %}
-                {% assign end = endyear | plus: endmonth %}
+                {% assign end = currentdate %}
             {% endif %}
 
             {% assign duration = end | minus: start %}
             
-            {% if duration < 0.083 %} # For plotting purposes, minimum duration is a month
-                {% assign duration = .5 %}
+            {% comment %}For plotting purposes, the minimum duration is one month.{% endcomment %}
+            {% if duration < 0.083 %}
+                {% assign duration = 0.083 %}
             {% endif %}
 
             <!-- Color Assign -->
@@ -91,15 +107,14 @@
                 {% assign color = "#999999" %}
             {% endif %}
 
-            <defs>
-                <pattern id="grad-pattern" patternUnits="userSpaceOnUse" width="10" height="10">
-                    <path d="M0,0 L10,10 M10,0 L0,10" stroke={{ color }} stroke-width="1" />
-                </pattern>
-            </defs>
-
             {% if member.subsequent %}
-                <!-- <rect x="{{ start | times: stretch }}" y="{{ i | times: yspacing }}" width="{{ duration | times: stretch }}" height="{{ yheight }}" fill="url(#grad-pattern)" /> -->
-                <rect x="{{ start | times: stretch }}" y="{{ i | times: yspacing }}" width="{{ duration | times: stretch }}" height="{{ yheight }}" fill="{{ color }}" />
+                {% capture graduatepattern %}graduate-dots-{{ i }}-{{ position_count }}-{{ tenure }}{% endcapture %}
+                <defs>
+                    <pattern id="{{ graduatepattern }}" patternUnits="userSpaceOnUse" width="7" height="7">
+                        <circle cx="2" cy="2" r="2" fill="{{ color }}" />
+                    </pattern>
+                </defs>
+                <rect x="{{ start | times: stretch }}" y="{{ i | times: yspacing }}" width="{{ duration | times: stretch }}" height="{{ yheight }}" fill="url(#{{ graduatepattern }})" />
             {% else %}
                 <rect x="{{ start | times: stretch }}" y="{{ i | times: yspacing }}" width="{{ duration | times: stretch }}" height="{{ yheight }}" fill="{{ color }}" />
             {% endif %}
