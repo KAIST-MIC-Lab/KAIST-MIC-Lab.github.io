@@ -15,7 +15,7 @@ pub:
     doi: 
     # year: "2026"
     # pp: "1273-1278"
-    state: "submitted"
+    state: "accepted"
     pdf: "/static/pub/2026-constrained-optimization-based-yaw-rate-reference.pdf"
 pub_date: "2026-11-04"
 image: "/static/pub/2026-constrained-optimization-based-yaw-rate-reference.png"
