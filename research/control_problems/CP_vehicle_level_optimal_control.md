@@ -23,7 +23,7 @@ separate physical control level.*
 
 ## 1. Scope: coordinated control within the vehicle
 
-[Future Mobility Control Landscape](/research/control_problems/00_future_mobility_control_landscape)
+[Future Mobility Control Landscape]({{ site.data.links.control_problems }})
 defines vehicle-level control by where the primary performance objective and
 coupled decisions are formed. The boundary is the whole vehicle: driver or
 automated-driving commands and onboard measurements enter the controller, and
@@ -323,7 +323,7 @@ Fast observers and adaptive identifiers can estimate the current condition,
 but minimizing the latest residual does not ensure that the learned model
 remains accurate across the vehicle's operating domain.
 [**Continual Model
-Learning**](/research/research_themes/05_continual_model_learning) instead adds new
+Learning**]({{ site.data.links.RT_continual_model_learning }}) instead adds new
 tire and vehicle behavior while retaining control-relevant behavior learned
 in earlier conditions. When the required state is latent, state and model
 estimation can be coupled while a retention term preserves selected prior
@@ -334,21 +334,21 @@ one-step prediction error.
 ### 6.2 Computational difficulty: approximate DP and structured critic reuse
 
 [Online Learning-Based Optimal
-Control](/research/research_themes/00_online_learning_based_optimal_control)
+Control]({{ site.data.links.research_themes }})
 connects the vehicle problem to approximate dynamic programming (ADP): an
 expensive long-horizon solution can be represented by an approximate critic
 or policy and reused online.
 
 When a compact operating parameter $\eta$ captures changes such as road
 friction, load, or tire condition, [**Structured Critic
-Adaptation**](/research/research_themes/08_structured_critic_adaptation) provides a
+Adaptation**]({{ site.data.links.RT_structured_critic_adaptation }}) provides a
 candidate bridge between identification and policy improvement. The identified
 condition reconfigures a stored value structure before policy improvement,
 avoiding repeated full critic or policy learning across recurring conditions.
 This does not make every fixed MPC solve faster by itself.
 
 [**Online Multistep
-Lookahead**](/research/research_themes/02_online_multistep_lookahead) can then use
+Lookahead**]({{ site.data.links.RT_online_multistep_lookahead }}) can then use
 the fixed or reconfigured critic as a terminal value while a short online
 horizon resolves the current nonlinear dynamics, tire limits, and actuator
 constraints. If repeated optimization remains too expensive, its
@@ -356,7 +356,7 @@ state-to-solution map can be learned as a policy for faster ECU execution.
 
 ### 6.3 Automatic calibration: constrained Real-World RL
 
-[**Real-World RL**](/research/research_themes/01_real_world_rl) is a candidate
+[**Real-World RL**]({{ site.data.links.RT_real_world_rl }}) is a candidate
 method for the automatic-calibration problem in Section 3. It can use streaming
 real transitions to improve a critic and, when declared, policy or controller
 parameters, reducing dependence on a simulator that omits control-relevant
@@ -376,10 +376,10 @@ of automatic calibration, not a synonym for the calibration problem itself.
 
 | Research theme | Possible role in this control domain |
 |---|---|
-| **[Semantic Critic Learning](/research/research_themes/03_semantic_critic_learning)** | Convert scenario descriptions, driver comparisons, or other contextual feedback into an auxiliary critic-learning signal. This is a candidate extension, not a substitute for a declared control objective. |
-| **[Neuro-Adaptive Control](/research/research_themes/07_neuro_adaptive_control)** | Approximate an uncertain ideal motion-control law or residual directly and adapt it under closed-loop and input constraints. Its trajectory-local adaptation role should be distinguished from global model retention and task-domain calibration. |
-| **[Constrained PINN](/research/research_themes/06_constrained_pinn)** | Learn a physics-consistent tire or vehicle field/model while imposing selected boundary, initial, constitutive, or feasibility conditions explicitly. |
-| **[Nonstationary Infinite-Horizon OCP](/research/research_themes/04_nonstationary_infinite_horizon_ocp)** | Address cases in which changing operating context, constraints, or desired behavior can prevent one stationary critic from representing the exact long-run optimum. An approximate or robust stationary critic may remain useful under stated conditions, so this Theme is not required for every motion controller. |
+| **[Semantic Critic Learning]({{ site.data.links.RT_semantic_critic_learning }})** | Convert scenario descriptions, driver comparisons, or other contextual feedback into an auxiliary critic-learning signal. This is a candidate extension, not a substitute for a declared control objective. |
+| **[Neuro-Adaptive Control]({{ site.data.links.RT_neuro_adaptive_control }})** | Approximate an uncertain ideal motion-control law or residual directly and adapt it under closed-loop and input constraints. Its trajectory-local adaptation role should be distinguished from global model retention and task-domain calibration. |
+| **[Constrained PINN]({{ site.data.links.RT_constrained_pinn }})** | Learn a physics-consistent tire or vehicle field/model while imposing selected boundary, initial, constitutive, or feasibility conditions explicitly. |
+| **[Nonstationary Infinite-Horizon OCP]({{ site.data.links.RT_nonstationary_infinite_horizon_ocp }})** | Address cases in which changing operating context, constraints, or desired behavior can prevent one stationary critic from representing the exact long-run optimum. An approximate or robust stationary critic may remain useful under stated conditions, so this Theme is not required for every motion controller. |
 
 </div>
 </div>

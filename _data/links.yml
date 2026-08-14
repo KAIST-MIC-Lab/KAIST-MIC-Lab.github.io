@@ -1,0 +1,16 @@
+control_problems: /research/control_problems/CP_control_problems
+research_themes: /research/research_themes/RT_research_themes
+
+CP_mobility_system_level_optimal_control: /research/control_problems/CP_mobility_system_level_optimal_control
+CP_vehicle_level_optimal_control: /research/control_problems/CP_vehicle_level_optimal_control
+CP_component_level_optimal_control: /research/control_problems/CP_component_level_optimal_control
+
+RT_real_world_rl: /static/research/RT_real_world_rl.pdf
+RT_online_multistep_lookahead: /static/research/RT_online_multistep_lookahead.pdf
+RT_nonstationary_infinite_horizon_ocp: /static/research/RT_nonstationary_infinite_horizon_ocp.pdf
+RT_continual_model_learning: /static/research/RT_continual_model_learning.pdf
+RT_neuro_adaptive_control: /static/research/RT_neuro_adaptive_control.pdf
+RT_structured_critic_adaptation: /static/research/RT_structured_critic_adaptation.pdf
+
+RT_semantic_critic_learning: /static/research/RT_semantic_critic_learning.pdf
+RT_constrained_pinn: /static/research/RT_constrained_pinn.pdf

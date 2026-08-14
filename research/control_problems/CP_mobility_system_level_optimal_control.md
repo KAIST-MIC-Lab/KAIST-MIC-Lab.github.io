@@ -21,7 +21,7 @@ controller.*
 
 ## 1. Scope: control beyond the local vehicle boundary
 
-[Future Mobility Control Landscape](/research/control_problems/00_future_mobility_control_landscape)
+[Future Mobility Control Landscape]({{ site.data.links.control_problems }})
 defines mobility-system-level control by an information or decision scope that
 extends beyond the local vehicle boundary. In addition to onboard
 measurements, a controller may use road grade, signal phase and timing,
@@ -291,7 +291,7 @@ do not prescribe how every mobility-system problem must be solved.
 ### 7.1 Nonstationarity and context uncertainty: construct a reusable long-run critic
 
 [**Nonstationary Infinite-Horizon
-OCP**](/research/research_themes/04_nonstationary_infinite_horizon_ocp) addresses
+OCP**]({{ site.data.links.RT_nonstationary_infinite_horizon_ocp }}) addresses
 the first research question. In this application, the physical-time problem
 is first aggregated over road links so that repeated operation can be
 represented by a reusable network state rather than by absolute physical
@@ -354,7 +354,7 @@ fixed terminal-energy target.
 
 When the state or context space is too large for tabular value iteration,
 [Online Learning-Based Optimal
-Control](/research/research_themes/00_online_learning_based_optimal_control)
+Control]({{ site.data.links.research_themes }})
 uses approximate dynamic programming (ADP) to represent the long-run value or
 policy. Let $\zeta=(\bar x,q)$ denote the link-domain state and $\theta$ the
 critic parameters; then
@@ -366,7 +366,7 @@ J_{\mathrm{net}}^\star(\bar x,q).
 $$
 
 For the current prediction, [**Online Multistep
-Lookahead**](/research/research_themes/02_online_multistep_lookahead) holds this
+Lookahead**]({{ site.data.links.RT_online_multistep_lookahead }}) holds this
 critic fixed. More generally, let $\zeta_{j\mid k}$ denote the predicted
 application state, $a_{j\mid k}$ its decision,
 $A_k=(a_{0\mid k},\ldots,a_{H-1\mid k})$ the decision sequence, and
@@ -400,10 +400,10 @@ Other themes can support different missing pieces:
 
 | Research theme | Possible role in this control domain |
 |---|---|
-| **[Continual Model Learning](/research/research_themes/05_continual_model_learning)** | Update power-demand, traffic-transition, degradation, or thermal models while retaining behavior learned in earlier operating regions. |
-| **[Structured Critic Adaptation](/research/research_themes/08_structured_critic_adaptation)** | Reconfigure a prelearned long-run critic using identified traffic, demand, weather, or degradation parameters. |
-| **[Semantic Critic Learning](/research/research_themes/03_semantic_critic_learning)** | Incorporate incident, map, rule, mission, or scene semantics that are not captured by a compact numerical network state. |
-| **[Real-World RL](/research/research_themes/01_real_world_rl)** | Learn critic and policy from real streaming operation when simulation or explicit network models omit important effects. |
+| **[Continual Model Learning]({{ site.data.links.RT_continual_model_learning }})** | Update power-demand, traffic-transition, degradation, or thermal models while retaining behavior learned in earlier operating regions. |
+| **[Structured Critic Adaptation]({{ site.data.links.RT_structured_critic_adaptation }})** | Reconfigure a prelearned long-run critic using identified traffic, demand, weather, or degradation parameters. |
+| **[Semantic Critic Learning]({{ site.data.links.RT_semantic_critic_learning }})** | Incorporate incident, map, rule, mission, or scene semantics that are not captured by a compact numerical network state. |
+| **[Real-World RL]({{ site.data.links.RT_real_world_rl }})** | Learn critic and policy from real streaming operation when simulation or explicit network models omit important effects. |
 
 ## 8. References
 

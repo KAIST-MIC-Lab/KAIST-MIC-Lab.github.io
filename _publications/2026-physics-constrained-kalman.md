@@ -6,6 +6,7 @@ title: "Physics-Constrained Kalman Filtering for Wheel Normal Load Estimation Us
 # krtitle: # only for domestic papers
 authors: 
   - name: "Angus Siegloff"
+  - name: "Myeongseok Ryu"
   - name: "Kyunghwan Choi"
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"

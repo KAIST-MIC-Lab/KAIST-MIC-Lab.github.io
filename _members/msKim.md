@@ -5,8 +5,11 @@ title: Minsoh Kim
 name: Minsoh Kim
 kr_name: 김민서
 timeline_name: Minsoh
-sortdate: [2026-09-01]
+sortdate: [2026-08-03]
 positions:
+  - name: "Undergraduate Intern"
+    startdate: [2026-08-03]
+    enddate: [2026-08-31]
   - name: "Integrated M.S./Ph.D. Student"
     startdate: [2026-09-01]
     enddate: []

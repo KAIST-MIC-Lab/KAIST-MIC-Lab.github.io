@@ -5,10 +5,13 @@ title: Yejin Jang #This is the title of your page. It will be displayed in the n
 name: Yejin Jang
 kr_name: 장예진 #Your name in Korean, if applicable
 timeline_name: Yejin #If you would like your name to appear differently on the Lab timeline, fill out this line.
-sortdate: [2026-08-31] # for sorting
+sortdate: [2026-08-10] # for sorting
 positions: # Postdoctoral Researcher, Ph.D. Student, Integrated M.S./Ph.D. Student, Master's Student, Researcher, Visiting Researcher, Intern 
+  - name: "Undergraduate Intern" #Enter your position in the lab
+    startdate: [2026-08-10] #Enter your start date
+    enddate: [2026-08-31] #Enter your end date, or leave blank if you are still in the lab
   - name: "Master's Student" #Enter your position in the lab
-    startdate: [2026-08-31] #Enter your start date
+    startdate: [2026-09-01] #Enter your start date
     enddate: [] #Enter your end date, or leave blank if you are still in the lab
 image: /static/members/yjJang.jpg # Profile picture
 altimage: /static/members/yjJang-alt.jpg # Alternative image; set this same as the "image" name, if not applicable

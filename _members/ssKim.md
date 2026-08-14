@@ -6,7 +6,7 @@ title: Seonsoo Kim #This is the title of your page. It will be displayed in the 
 name: Seonsoo Kim #Include "Ph.D."" if applicable
 kr_name: 김선수
 timeline_name: Seonsoo #If you would like your name to appear differently on the Lab timeline, fill out this line.
-sortdate: [2023-03-01] # for sorting
+sortdate: [2023-01-22] # for sorting
 positions:
   - name: "Undergraduate Intern" #Enter your position in the lab
     startdate: [2023-01-22] #Enter your start date
