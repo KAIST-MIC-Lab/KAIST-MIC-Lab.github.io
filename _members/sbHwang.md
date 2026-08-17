@@ -17,16 +17,16 @@ image: /static/members/sbHwang.jpg # Profile picture
 altimage: /static/members/sbHwang-alt.jpg # Alternative image; set this same as the "image" name, if not applicable
 subsequent: #Leave this blank until you leave the lab
 pronouns: she/her/hers # he/him/his, she/her/hers, they/them/theirs
-email: tnqls2361@sookmyung.ac.kr # Enter your preferred public e-mail address
+email: sbhwang@kaist.ac.kr # Enter your preferred public e-mail address
 # For scholar, go to your Google Scholar profile and copy the last part of the URL.
 # For example, if your Google Scholar profile URL is "https://scholar.google.com/citations?user=gUHuDJ4AAAAJ&hl=en", scholar id is "gUHuDJ4AAAAJ". (FYI this is Myeongseok's ID)
-# scholar: gUHuDJ4AAAAJ # Google Scholar User ID, create if you don't have one
-# github: DDingR # GitHub ID, create if you don't have one
-# linkedin: myeongseok-ryu-21b5b02b1 # LinkedIn ID
+scholar: krHEEQ8AAAAJ # Google Scholar User ID, create if you don't have one
+github: hsoob-in # GitHub ID, create if you don't have one
+linkedin: soobin-hwang-871045360 # LinkedIn ID
 # cv: /static/img/members/msRyu.pdf # send me if you want to add your CV
-# orcid: 0009-0004-3279-5765 #ORCID, create if you don't have one
+orcid: 0009-0004-7830-1919 #ORCID, create if you don't have one
 # For researchgate, go to `Settings/Privacy/Your\ public\ profile` and copy the last part of the URL.
-# researchgate: Myeongseok-Ryu # ResearchGate
+researchgate: Soobin-Hwang-3 # ResearchGate
 # Write your description in markdown format.
 # I leave this as example for you.
 description: "
