@@ -25,6 +25,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     pp: # "380-385" # Leave it blank if not applicable
     year: "2026" # Leave it blank if not applicable
     state: "accepted" # published, accepted, submitted
+    pres: "/static/pub/2026-vector-space-pres.pdf" # Leave it blank if not applicable
     bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
 pub_date: "2026-08-28" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2026-vector-space.png" # Representative image of the paper
