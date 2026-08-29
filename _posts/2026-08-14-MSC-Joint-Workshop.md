@@ -1,6 +1,6 @@
 ---
 published: True
-title: CIS-MIC Joint Symposium
+title: Joint Workshop (MSC Lab at KAIST & EMSC Lab at CNU)
 author: Myeongseok Ryu
 author_link: msRyu
 layout: post
