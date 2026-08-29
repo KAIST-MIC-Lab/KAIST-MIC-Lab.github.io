@@ -1,6 +1,6 @@
 ---
 published: True
-title: Joint Workshop (MSC Lab at KAIST & EMSC Lab at CNU)
+title: Joint Workshop (MSC Lab at KAIST & EMCS Lab at CNU)
 author: Myeongseok Ryu
 author_link: msRyu
 layout: post
@@ -10,7 +10,7 @@ img: /static/posts/2026-08-14-MSC-Joint-Workshop0.jpg
 ---
 <div class="container-fluid">
 
-We participated in the 2026 joint workshop with **MSC Lab at KAIST** led by **Prof. Kyung-Soo Kim** and **EMSC Lab at Chungnam National University (CNU)** led by **Prof. Yonghun Kim** on **August 13 and 14, 2026**. 
+We participated in the 2026 joint workshop with **MSC Lab at KAIST** led by **Prof. Kyung-Soo Kim** and **EMCS Lab at Chungnam National University (CNU)** led by **Prof. Yonghun Kim** on **August 13 and 14, 2026**. 
 The workshop was held at *Goraebul Beach, Yeongdeok, South Korea*.
 
 
