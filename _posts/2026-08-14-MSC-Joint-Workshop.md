@@ -5,7 +5,7 @@ author: Myeongseok Ryu
 author_link: msRyu
 layout: post
 group: news
-tags: talk
+tags: life
 img: /static/posts/2026-08-14-MSC-Joint-Workshop0.jpg
 ---
 <div class="container-fluid">
