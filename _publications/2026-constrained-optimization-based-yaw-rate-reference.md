@@ -20,15 +20,13 @@ pub:
 pub_date: "2026-11-04"
 image: "/static/pub/2026-constrained-optimization-based-yaw-rate-reference.png"
 abstract: "
- The effectiveness of active rear steering (ARS) for four-wheel-steering (4WS) vehicles is widely recognized in the automotive industry.
-  At low speeds, ARS can enhance maneuverability by steering the rear wheels in the opposite direction to the front wheels, reducing the turning radius.
-  In contrast, at high speeds, ARS can improve stability by steering the rear wheels in the same direction as the front wheels, preventing oversteer behavior.
-  However, the performance of ARS is often limited by the reference model used to generate the desired yaw rate, which is typically derived from a steady-state of front-wheel-steering (FWS) vehicle model.
-  In this paper, we conduct a numerical analysis to construct an optimal reference map for ARS control by formulating an constrained optimization problem.
-  In the optimization problem, safety constraints are imposed to ensure that the vehicle operates within safe limits.
-  Numerical simulations demonstrates the effectiveness of the proposed method in providing an optimal reference map for ARS control.
+  The effectiveness of active rear steering (ARS) control for four-wheel steering (4WS) vehicles is widely recognized in the automotive industry. At low speeds, ARS control can enhance maneuverability by steering the rear wheels in the opposite direction to the front wheels, reducing the turning radius. In contrast, at high speeds, ARS control can improve stability by steering the rear wheels in the same direction as the front wheels, preventing oversteer behavior. However, the performance of ARS control is often limited by the reference model used to generate the desired yaw rate, which is typically derived from a steady state of front-wheel steering (FWS) vehicle model. In this paper, we conduct a numerical analysis to construct an optimal yaw rate reference map for ARS control by formulating a constrained optimization problem. In the optimization problem, constraints are imposed to ensure that the vehicle operates within safe limits at steady state. Numerical simulations demonstrate the effectiveness of the proposed method in providing an optimal yaw rate reference map for ARS control.
 "
 # links:
 #   - name: 
 #     url: 
+comments: "
+  This work was supported in part by **Hyundai Motor Company (HMC)**.
+  **Mr. Donghyun Hwang** and **Mr. Youngsik Yoon** are research engineers at Hyundai Motor Company (HMC), South Korea.
+"
 ---
