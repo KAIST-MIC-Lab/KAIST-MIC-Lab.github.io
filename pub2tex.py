@@ -14,8 +14,8 @@ import os
 import yaml
 
 # WHO_ARE_YOU = "Kyunghwan Choi" 
-# WHO_ARE_YOU = "Myeongseok Ryu" 
-WHO_ARE_YOU = "Changeun Park" 
+WHO_ARE_YOU = "Myeongseok Ryu" 
+# WHO_ARE_YOU = "Changeun Park" 
 
 def find_files_with_author(folder_path, target_author=WHO_ARE_YOU):
 
@@ -28,7 +28,8 @@ def find_files_with_author(folder_path, target_author=WHO_ARE_YOU):
 
     for root, _, files in os.walk(folder_path):
         for file in files:
-            if not file.endswith((".md")):
+            # Underscore-prefixed publication files are drafts.
+            if file.startswith("_") or not file.endswith(".md"):
                 continue
 
             file_path = os.path.join(root, file)
