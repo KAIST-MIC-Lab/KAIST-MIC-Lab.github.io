@@ -1,6 +1,6 @@
 ---
 published: True
-title: International Federation of Automatic Control (IFAC) 2026 Silver Award 
+title: International Federation of Automatic Control (IFAC) World Congress 2026 Silver Award 
 author: Myeongseok Ryu
 author_link: msRyu
 layout: post
