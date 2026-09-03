@@ -31,7 +31,10 @@
 {% assign finalyear = currentyear %}
 
 <?xml version="1.0" encoding="UTF-8" ?>
-<svg width="100%" height="auto" viewBox="0 0 {{ axiswidth }} {{ people.size | plus: 1 | times: yspacing | plus: 5 }}" xmlns="http://www.w3.org/2000/svg">
+<svg id="member-timeline" width="100%" height="auto"
+     viewBox="0 0 {{ axiswidth }} {{ people.size | plus: 1 | times: yspacing | plus: 5 }}"
+     data-year-offset="{{ yearoffset }}" data-stretch="{{ stretch }}" data-axis-padding="{{ axispadding }}"
+     xmlns="http://www.w3.org/2000/svg">
 
 {% assign i = 0 %}
 
@@ -61,23 +64,45 @@
 
         {% for tenure in (0..tenures) %}
 
-            {% assign startyear = position.startdate[tenure] | date: "%Y" | minus: yearoffset %}
-            {% assign startmonth = position.startdate[tenure] | date: "%m" | minus: 1 | divided_by: 12.0 %}
-            {% assign start = startyear | plus: startmonth %}
+            {% assign startcalendaryear = position.startdate[tenure] | date: "%Y" | plus: 0 %}
+            {% assign startyear = startcalendaryear | minus: yearoffset %}
+            {% assign startday = position.startdate[tenure] | date: "%j" | minus: 1 %}
+            {% assign daysinstartyear = 365.0 %}
+            {% assign startdivisibleby4 = startcalendaryear | modulo: 4 %}
+            {% assign startdivisibleby100 = startcalendaryear | modulo: 100 %}
+            {% assign startdivisibleby400 = startcalendaryear | modulo: 400 %}
+            {% if startdivisibleby400 == 0 %}
+                {% assign daysinstartyear = 366.0 %}
+            {% elsif startdivisibleby4 == 0 and startdivisibleby100 != 0 %}
+                {% assign daysinstartyear = 366.0 %}
+            {% endif %}
+            {% assign startyearprogress = startday | divided_by: daysinstartyear %}
+            {% assign start = startyear | plus: startyearprogress %}
 
             {% if position.enddate[tenure] %}
-                {% assign endyear = position.enddate[tenure] | date: "%Y" | minus: yearoffset %}
-                {% assign endmonth = position.enddate[tenure] | date: "%m" | minus: 1 | divided_by: 12.0 %}
-                {% assign end = endyear | plus: endmonth %}
+                {% assign endcalendaryear = position.enddate[tenure] | date: "%Y" | plus: 0 %}
+                {% assign endyear = endcalendaryear | minus: yearoffset %}
+                {% assign endday = position.enddate[tenure] | date: "%j" | minus: 1 %}
+                {% assign daysinendyear = 365.0 %}
+                {% assign enddivisibleby4 = endcalendaryear | modulo: 4 %}
+                {% assign enddivisibleby100 = endcalendaryear | modulo: 100 %}
+                {% assign enddivisibleby400 = endcalendaryear | modulo: 400 %}
+                {% if enddivisibleby400 == 0 %}
+                    {% assign daysinendyear = 366.0 %}
+                {% elsif enddivisibleby4 == 0 and enddivisibleby100 != 0 %}
+                    {% assign daysinendyear = 366.0 %}
+                {% endif %}
+                {% assign endyearprogress = endday | divided_by: daysinendyear %}
+                {% assign end = endyear | plus: endyearprogress %}
             {% else %}
                 {% assign end = currentdate %}
             {% endif %}
 
             {% assign duration = end | minus: start %}
             
-            {% comment %}For plotting purposes, the minimum duration is one month.{% endcomment %}
-            {% if duration < 0.083 %}
-                {% assign duration = 0.083 %}
+            {% comment %}For plotting purposes, the minimum duration is one day.{% endcomment %}
+            {% if duration < 0.00274 %}
+                {% assign duration = 0.00274 %}
             {% endif %}
 
             <!-- Color Assign -->
@@ -114,9 +139,13 @@
                         <circle cx="2" cy="2" r="2" fill="{{ color }}" />
                     </pattern>
                 </defs>
-                <rect x="{{ start | times: stretch }}" y="{{ i | times: yspacing }}" width="{{ duration | times: stretch }}" height="{{ yheight }}" fill="url(#{{ graduatepattern }})" />
+                <rect class="member-tenure{% unless position.enddate[tenure] %} member-tenure--active{% endunless %}"
+                      {% unless position.enddate[tenure] %}data-start="{{ start }}"{% endunless %}
+                      x="{{ start | times: stretch }}" y="{{ i | times: yspacing }}" width="{{ duration | times: stretch }}" height="{{ yheight }}" fill="url(#{{ graduatepattern }})" />
             {% else %}
-                <rect x="{{ start | times: stretch }}" y="{{ i | times: yspacing }}" width="{{ duration | times: stretch }}" height="{{ yheight }}" fill="{{ color }}" />
+                <rect class="member-tenure{% unless position.enddate[tenure] %} member-tenure--active{% endunless %}"
+                      {% unless position.enddate[tenure] %}data-start="{{ start }}"{% endunless %}
+                      x="{{ start | times: stretch }}" y="{{ i | times: yspacing }}" width="{{ duration | times: stretch }}" height="{{ yheight }}" fill="{{ color }}" />
             {% endif %}
 
             {% if tenure == 0 %}
@@ -185,3 +214,52 @@
 <!-- <rect x="{{ xposition }}" y="{{ yposition }}" width="{{ legendboxsize }}" height="{{ legendboxsize }}" fill="purple" />
 <text x="{{ fontsize | times: 0.25 | plus: legendboxsize | plus: xposition }}" y="{{ fontsize | times: 0.75 | plus: legendboxsize | times: 0.5 | plus: yposition }}" font-family="sans-serif" font-size="{{ fontsize }}" stroke="black">Visitor</text> -->
 </svg>
+
+<script>
+(function () {
+    var timeline = document.getElementById("member-timeline");
+    if (!timeline) return;
+
+    var yearOffset = Number(timeline.dataset.yearOffset);
+    var stretch = Number(timeline.dataset.stretch);
+    var axisPadding = Number(timeline.dataset.axisPadding);
+
+    function datePosition(date) {
+        var year = date.getFullYear();
+        var startOfYear = Date.UTC(year, 0, 1);
+        var startOfDay = Date.UTC(year, date.getMonth(), date.getDate());
+        var dayOfYear = Math.floor((startOfDay - startOfYear) / 86400000);
+        var daysInYear = Date.UTC(year + 1, 0, 1) - startOfYear;
+        daysInYear /= 86400000;
+        return year - yearOffset + dayOfYear / daysInYear;
+    }
+
+    function updateActiveTenures() {
+        var today = new Date();
+        var todayPosition = datePosition(today);
+        var daysInCurrentYear = (Date.UTC(today.getFullYear() + 1, 0, 1) - Date.UTC(today.getFullYear(), 0, 1)) / 86400000;
+        var minimumWidth = stretch / daysInCurrentYear;
+
+        timeline.querySelectorAll(".member-tenure--active").forEach(function (bar) {
+            var start = Number(bar.dataset.start);
+            bar.setAttribute("width", Math.max((todayPosition - start) * stretch, minimumWidth));
+        });
+
+        var viewBox = timeline.getAttribute("viewBox").split(/\s+/);
+        viewBox[2] = (todayPosition + axisPadding) * stretch;
+        timeline.setAttribute("viewBox", viewBox.join(" "));
+    }
+
+    function scheduleNextDailyUpdate() {
+        var now = new Date();
+        var nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+        setTimeout(function () {
+            updateActiveTenures();
+            scheduleNextDailyUpdate();
+        }, nextMidnight.getTime() - now.getTime() + 1000);
+    }
+
+    updateActiveTenures();
+    scheduleNextDailyUpdate();
+}());
+</script>

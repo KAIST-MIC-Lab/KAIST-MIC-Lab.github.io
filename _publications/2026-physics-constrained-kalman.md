@@ -18,6 +18,7 @@ domestic_or_international: "International" # "International" or "Domestic"
     # state: "published" # published, accepted, submitted
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "IEEE Transactions on Vehicle Technology"
+    pub_url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25"
     pdf: "/static/pub/2026-physics-constrained-kalman.pdf"
     doi: # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
@@ -26,7 +27,7 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     year: "2026" # Leave it blank if not applicable
     state: "submitted" # published, accepted, submitted
     bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
-pub_date: "2026-05-27" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
+pub_date: "2026-12-30" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2026-physics-constrained-kalman.png" # Representative image of the paper
 # github: # Leave this blank if not applicable
 #  - name: # "CONAC/ECC25-weight-constraint" # GitHub repository name
