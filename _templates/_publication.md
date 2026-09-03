@@ -35,6 +35,7 @@ authors:
 domestic_or_international: "International" # "International" or "Domestic"
 preprint: # Preprint information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: Techrxiv 
+    pub_url: # "https://"
     doi: "10.36227/techrxiv.173014412.26480551/v1"
     year: 2024
     pdf: "/static/pub/2025-imposing-Techrxiv.pdf"
