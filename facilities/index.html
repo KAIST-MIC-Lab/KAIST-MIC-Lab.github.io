@@ -8,44 +8,88 @@ group: facilities
 <!-- ********************************** -->
 <h1>Facilities</h1>
 
-To be updated.
 
 <div class="container-fluid">
 
 <!-- <h2 style="text-align: center;">{{ state | capitalize }}</h2> -->
 
-{% assign sorted = site.facilities | sort: "activeDate" | reverse %}
+{% assign facility_categories = "Mobility Platforms|Simulation Systems|E-Powertrain Systems|none" | split: "|" %}
 
+{% for category in facility_categories %}
+{% assign sorted = site.facilities | where: "category", category | sort: "date" | reverse %}
+{% if sorted.size > 0 %}
+<h2 style="margin-top: 40px;">{{ category }}</h2>
 {% for facility in sorted %}
 <hr>
 <div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{facility.pmid}}">
 	<div>
-		{% if facility.krtitle %}
-			<h4>{{ facility.krtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
-		{% else %}
+		{% if facility.engtitle %}
 			<h4>{{ facility.engtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
+		{% endif %}
+		{% if facility.krtitle and facility.engtitle != facility.krtitle %}
+		<h4>{{ facility.krtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
 		{% endif %}
 	</div>
 </div>
 
 <div class="row" style="padding-top: 20px; margin-top: -20px">
-	<div class="col-sm-6">
+	<div class="col-sm-6" style="display: flex; align-items: center; justify-content: center;">
+		{% if facility.image %}
 		<img class = "img-fluid" src = "{{facility.image}}" alt =  "Key Figure" style="max-width: 400px;">
 		<!-- <img class = "img-fluid" src = "{{facility.image}}" alt =  "Key Figure" style="max-height: 200px;"> -->
+		 {% else %}
+		<img class = "img-fluid" src = "https://via.placeholder.com/400x300?text=No+Image" alt = "No Image" style="max-width: 400px;">
+		{% endif %}
 	</div>
+
 	<ul class="col-sm-6">
-		
+		{% assign facility_year = facility.date | date: "%Y" %}
+		{% if facility.date and facility_year != "2100" %}
+			<li><strong>Acquisition Date:</strong> {{ facility.date | date: "%Y-%m-%d" }}</li>
+		{% else %}
+			<li><strong>Acquisition Date:</strong> TBA</li>
+		{% endif %}
+
+		{% if facility.quantity %}
+			<li><strong>Quantity:</strong> {{ facility.quantity }}</li>
+		{% endif %}
+
+		{% if facility.where %}
+			<li><strong>Location:</strong> {{ facility.where }}</li>
+		{% endif %}
+
+		{% if facility.krpurpose or facility.engpurpose %}
+			<li>
+				<strong>Purpose:</strong><br>
+				{% if facility.engpurpose %}
+				{{ facility.engpurpose }}
+				{% endif %}
+				{% if facility.krpurpose %}
+					<br>
+					({{ facility.krpurpose }})<br>
+				{% endif %}
+			</li>
+		{% endif %}
+
 		{% if facility.link %}
-			<li><h6>Additional Link</h6></li>
+			<li><strong>Additional Link</strong></li>
 			{% for link in facility.link %}
 				 <a href="{{ link.url }}">{{ link.name }}</a>
 				<br/>
 			<br>
 			{% endfor %}
 		{% endif %}
+
+		{% if facility.description %}
+			<li><strong>Description:</strong></li>
+			<!-- {{ facility.description | markdownify  | remove: '<p>' | remove: '</p>'}} -->
+			{{ facility.description | markdownify }}
+		{% endif %}
 	</ul>
 </div>
 <br>
+{% endfor %}
+{% endif %}
 {% endfor %}
 
 </div>
