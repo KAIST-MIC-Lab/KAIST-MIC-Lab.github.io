@@ -17,7 +17,7 @@ authors: # List of authors
   #   year: "2026"
 pub: 
   # - name: "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
-  - name: ____________________________
+  - name: Withheld during double-blind review
     # pub_url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021"
     doi: 
     year: 
