@@ -17,7 +17,7 @@ domestic_or_international: "International" # "International" or "Domestic"
 #     state: "published" # published, accepted, submitted
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   # - name: "IEEE Robotics and Automation Letters"
-  - name: ______________________________
+  - name: Withheld during double-blind review
     pdf: "/static/pub/2026-CAR-Planner.pdf"
     doi: # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
