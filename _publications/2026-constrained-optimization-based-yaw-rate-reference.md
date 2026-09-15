@@ -13,7 +13,8 @@ domestic_or_international: "International" # or "domestic"
 pub:
   - name: "International Conference on Control, Automation and Systems (ICCAS)"
     doi: 
-    # year: "2026"
+    year: "2026"
+    pub_url: "https://2026.iccas.org"
     # pp: "1273-1278"
     state: "accepted"
     pdf: "/static/pub/2026-constrained-optimization-based-yaw-rate-reference.pdf"
@@ -27,6 +28,6 @@ abstract: "
 #     url: 
 comments: "
   This work was supported in part by **Hyundai Motor Company (HMC)**.
-  **Mr. Donghyun Hwang** and **Mr. Youngsik Yoon** are research engineers at Hyundai Motor Company (HMC), South Korea.
+  **Mr. Donghyun Hwang** and **Mr. Youngsik Yoon** are research engineers at HMC, South Korea.
 "
 ---
