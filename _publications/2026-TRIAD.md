@@ -11,12 +11,12 @@ authors:
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International"
 pub: 
-  # - name: Conference on Robot Learning (CoRL)
-  - name: ____________________________
+  - name: Conference on Robot Learning (CoRL)
+  # - name: ____________________________
     doi: 
     year: "2026"
     pdf: "/static/pub/2026-TRIAD.pdf"
-    state: "submitted"
+    state: "accepted"
 pub_date: "2026-11-10" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2026-TRIAD.png"
 abstract: "
