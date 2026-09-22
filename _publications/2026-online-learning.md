@@ -10,9 +10,9 @@ authors:
     corresponding: true # true if this author is the corresponding author
 domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
-  - name: "2026 International Workshop on Intelligent Systems (IWIS)"
+  - name: "International Workshop on Intelligent Systems (IWIS)"
     pub_url: "https://islab.ulsan.ac.kr/iwis2026/" # conference or journal URL (not your paper URL)
-    pdf: "/static/pub/2026-online-learning.pdf"
+    pdf: 
     doi: "10.1109/IWIS70716.2026.11667752"
     vol: # Leave it blank if not applicable
     num: # Leave it blank if not applicable
