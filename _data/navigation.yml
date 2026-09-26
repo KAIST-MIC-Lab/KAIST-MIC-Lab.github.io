@@ -28,7 +28,7 @@
     - name: "- Research Themes"
       group: research
       link: "/research/research_themes/RT_research_themes"
-    - name: Industry Research Projects
+    - name: Research Projects
       group: research
       link: "/research/projects"
 
