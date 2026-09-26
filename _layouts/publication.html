@@ -33,12 +33,16 @@
     
     <div class="col-sm-5">
 
-      {% if page.image %}
-        <div style ="text-align: center; padding-bottom: 10px">
-          <!-- <img class = "img-fluid" src = "{{page.image}}" alt =  "Key Figure" style="max-height: 200px">   -->
+      {% assign image_url = page.image | default: '' | strip %}
+      <div style="text-align: center; padding-bottom: 10px">
+        {% if image_url != '' %}
           <img class="img-fluid" src="{{ page.image }}" alt="Key Figure" style="width: 100%; max-width: 400px; height: auto;">
-        </div>
-      {% endif %}
+        {% else %}
+          <div style="width: 100%; max-width: 400px; aspect-ratio: 4 / 3; margin: 0 auto; display: flex; align-items: center; justify-content: center; background-color: #eeeeee; color: #666; border: 1px solid #000000; box-sizing: border-box;">
+            will be added.
+          </div>
+        {% endif %}
+      </div>
 
       <br>
       

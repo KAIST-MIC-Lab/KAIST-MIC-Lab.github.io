@@ -14,7 +14,10 @@ group: research
 
 {% for state in states %}
 
-<h2 style="text-align: center;">{{ state | capitalize }}</h2>
+<!-- <h2 style="text-align: center;">{{ state | capitalize }}</h2> -->
+<section class="category-margin" aria-labelledby="category-{{ state | slugify }}">
+<h2 class="category-title" id="category-{{ state | slugify }}">{{ state | capitalize }}</h2>
+
 
 {% assign sorted = site.projects | where: "state", state | sort: "enddate" | reverse %}
 {% for project in sorted %}
@@ -32,15 +35,23 @@ group: research
 
 <div class="row" style="padding-top: 20px; margin-top: -20px">
 	<div class="col-sm-6">
-		<img class = "img-fluid" src = "{{project.image}}" alt =  "Key Figure" style="max-width: 400px;">
-		<!-- <img class = "img-fluid" src = "{{project.image}}" alt =  "Key Figure" style="max-height: 200px;"> -->
+		{% if project.image %}
+			<img class="img-fluid"
+				src="{{ project.image }}"
+				alt="Key Figure"
+				style="display: block; width: 100%; max-width: 400px; height: auto; margin: 0 auto;">
+		{% else %}
+			<div style="width: 100%; max-width: 400px; aspect-ratio: 4 / 2; margin: 0 auto; display: flex; align-items: center; justify-content: center; background-color: #eeeeee; color: #666; border: 1px solid #000000; box-sizing: border-box;">
+				will be added.
+			</div>
+		{% endif %}
 	</div>
 	<ul class="col-sm-6">
 		<li><h6>Sponsor</h6></li>
 		{% if project.krsponsor %}
 			&emsp; {{ project.krsponsor | markdownify  | remove: '<p>' | remove: '</p>'}}
 			<br>
-		{% else if %}
+		{% else %}
 			&emsp; {{ project.engsponsor | markdownify  | remove: '<p>' | remove: '</p>'}}
 			<br>
 		{% endif %}
@@ -49,26 +60,33 @@ group: research
 			&emsp; {{ project.startdate }} - {{ project.enddate }}
 			<br>
 
-		{% comment %}
-			{% if project.amount %}
-				<li><h6>Amout</h6></li>
-				&emsp; {{ project.amount | markdownify  | remove: '<p>' | remove: '</p>'}}
-				<br>
-			{% endif %}
-
-			
-			<!-- Participants -->
-			{% if project.participants %}
-				<li><h6>Participants</h6></li>
-				{% for participant in project.participants %}
-					&emsp; <b>{{ participant.name }}</b> {{ participant.role }}
-					<br/>
-					&emsp;&emsp; <a href="mailto:{{ participant.email }}">{{ participant.email }}</a>
-					<br/>
-				{% endfor %}
-				<br>
-			{% endif %}
-		{% endcomment %}
+		{% assign named_participants = project.participants | where_exp: "participant", "participant.name != nil" | where_exp: "participant", "participant.name != empty" %}
+		{% assign participant_roles = named_participants | group_by: "role" %}
+		{% if named_participants.size > 0 %}
+			<li class="project-participants">
+				<h6>Participants</h6>
+				<ul>
+					{% for role_group in participant_roles %}
+						<li class="project-participant-role">
+							<h6>{{ role_group.name | default: 'Participant' | escape }}</h6>
+							<ul>
+								{% for participant in role_group.items %}
+									{% assign memberName = participant.name %}
+									{% include memberLink.html %}
+									<li>
+										{% if memberUrl != "not Included" %}
+											<a href="{{ site.url }}/members/{{ memberUrl }}" title="{{ memberName | escape }}'s profile (opens in new tab)" target="_blank" rel="noopener">{{ memberName | escape }}</a>
+										{% else %}
+											{{ participant.name | escape }}
+										{% endif %}
+									</li>
+								{% endfor %}
+							</ul>
+						</li>
+					{% endfor %}
+				</ul>
+			</li>
+		{% endif %}
 		
 		{% if project.link %}
 			<li><h6>Additional Link</h6></li>
@@ -85,6 +103,7 @@ group: research
 
 <br>
 <br>
+</section>
 
 {% endfor %}
 

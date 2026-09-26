@@ -1,5 +1,5 @@
 ---
-krtitle: 'TruckMaker'
+krtitle: 'Vehicle Dynamics Simulator (TruckMaker)'
 engtitle: 'TruckMaker'
 category: 'Simulation Systems'
 amount: '22,000,000 Won'

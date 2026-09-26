@@ -100,8 +100,16 @@
 
 {% if underReview.size > 0 %}
 	<h4 id="Papers Under Review">Papers Under Review</h4>
-	{% assign data = underReview %}
-	{% include publication_sort_year.html %}
+	{% assign data = "" | split: "" %}
+	{% assign reviewTypes = underReview | sort: "pub_date" | reverse | group_by: "type" | sort: "name" | reverse %}
+	{% comment %}Journal before Conference; International before Domestic; newest first within each group.{% endcomment %}
+	{% for reviewType in reviewTypes %}
+		{% assign reviewRegions = reviewType.items | group_by: "domestic_or_international" | sort: "name" | reverse %}
+		{% for reviewRegion in reviewRegions %}
+			{% assign data = data | concat: reviewRegion.items %}
+		{% endfor %}
+	{% endfor %}
+	{% include publication_sort_year.html preserve_order=true always_new=true %}
 {% endif %}
 
 {% if intJour.size > 0 %}
