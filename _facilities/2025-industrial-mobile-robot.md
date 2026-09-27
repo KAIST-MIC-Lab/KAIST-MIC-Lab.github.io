@@ -1,6 +1,6 @@
 ---
 krtitle: '산업용로봇'
-engtitle: 'Industrial Mobile Robot (AMR)'
+engtitle: 'AMR'
 category: 'Mobility Platforms'
 amount: '62,000,000 Won'
 date: '2025-11-04'

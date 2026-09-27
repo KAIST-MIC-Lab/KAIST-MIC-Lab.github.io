@@ -18,16 +18,19 @@ group: facilities
 {% for category in facility_categories %}
 {% assign sorted = site.facilities | where: "category", category | sort: "date" | reverse %}
 {% if sorted.size > 0 %}
-<h2 style="margin-top: 40px;">{{ category }}</h2>
-{% for facility in sorted %}
+<section class="category-margin" aria-labelledby="category-{{ category | slugify }}">
+<h2 class="category-title" id="category-{{ category | slugify }}">{{ category }}</h2>
 <hr>
+{% for facility in sorted %}
+{% unless forloop.first %}
+<hr>
+{% endunless %}
 <div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{facility.pmid}}">
 	<div>
 		{% if facility.engtitle %}
 			<h4>{{ facility.engtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
-		{% endif %}
-		{% if facility.krtitle and facility.engtitle != facility.krtitle %}
-		<h4>{{ facility.krtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
+		{% elsif facility.krtitle %}
+			<h4>{{ facility.krtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
 		{% endif %}
 	</div>
 </div>
@@ -35,10 +38,11 @@ group: facilities
 <div class="row" style="padding-top: 20px; margin-top: -20px">
 	<div class="col-sm-6" style="display: flex; align-items: center; justify-content: center;">
 		{% if facility.image %}
-		<img class = "img-fluid" src = "{{facility.image}}" alt =  "Key Figure" style="max-width: 400px;">
-		<!-- <img class = "img-fluid" src = "{{facility.image}}" alt =  "Key Figure" style="max-height: 200px;"> -->
+			<img class = "img-fluid" src = "{{facility.image}}" alt =  "Key Figure" style="max-width: 400px;">
 		 {% else %}
-		<img class = "img-fluid" src = "https://via.placeholder.com/400x300?text=No+Image" alt = "No Image" style="max-width: 400px;">
+          	<div style="width: 100%; max-width: 400px; aspect-ratio: 4 / 3; margin: 0 auto; display: flex; align-items: center; justify-content: center; background-color: #eeeeee; color: #666; border: 1px solid #000000; box-sizing: border-box;">
+            will be added.
+          </div>
 		{% endif %}
 	</div>
 
@@ -64,10 +68,10 @@ group: facilities
 				{% if facility.engpurpose %}
 				{{ facility.engpurpose }}
 				{% endif %}
-				{% if facility.krpurpose %}
+				<!-- {% if facility.krpurpose %}
 					<br>
 					({{ facility.krpurpose }})<br>
-				{% endif %}
+				{% endif %} -->
 			</li>
 		{% endif %}
 
@@ -89,6 +93,7 @@ group: facilities
 </div>
 <br>
 {% endfor %}
+</section>
 {% endif %}
 {% endfor %}
 
