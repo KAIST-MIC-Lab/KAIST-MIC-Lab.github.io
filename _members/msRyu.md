@@ -39,7 +39,7 @@ Selected researches are as follows: **Constrained Optimization-Based Neuro-Adapt
 
 
 
-As a target application, he focuses on the control of **Vehicle Motion Systems**, specifically **Active Rear-Steering (ARS) Control**, see **[[4]](/publications/2025-all-wheel/)**, **[[6]](/publications/2026-constrained-optimization-based-yaw-rate-reference/)**.
+As a target application, he focuses on the control of **Vehicle Motion Systems**, specifically **Active Rear-Steering (ARS) Control**, see **[[4]](/publications/2025-all-wheel/)**, **[[6]](/publications/2026-constrained-optimization-based-yaw-rate-reference/)**, **[[7]](/publications/2027-model-predictive/)**.
     
 "
 ---
