@@ -66,6 +66,9 @@
         <div class="col-sm-12 col-md-12">
           {{ content }}
         </div>
+  </div>
+</div>
+
 
         {% if page.position == "Principal Investigator" %}
           
@@ -86,7 +89,7 @@
 
           {% if isTherePubs == "yes" %}
             <hr>
-            <h2>Publications in MIC Lab</h2>
+            <h2>Publications</h2>
 
             {% assign targetName = page.name %}
             {% include publication_with.html %}
@@ -94,8 +97,5 @@
           {% endif %}
 
         {% endif %}
-        
-  </div>
 
-</div>
 {% include footer.html %}
