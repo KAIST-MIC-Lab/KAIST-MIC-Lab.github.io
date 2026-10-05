@@ -15,6 +15,8 @@ pub: # Publication information
     year: "2025"
     pdf: "/static/pub/2025-cooperative-merging-in.pdf"
     state: "published"
+    pp: "945-951"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12539327"
 pub_date: "2025-10-02" # abstract; emphasize the important part using **bold** or *italic* of markdown syntax
 image: "/static/pub/2025-cooperative-merging-in.png"
 abstract: "

@@ -14,7 +14,9 @@ pub:
     doi: 
     year: "2026"
     pdf: "/static/pub/2026-concurrent-learning.pdf"
-    state: "accepted"
+    state: "published"
+    pp: "525-526"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12952391"
 pub_date: "2026-07-01"
 image: "/static/pub/2026-concurrent-learning.png"
 abstract: "

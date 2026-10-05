@@ -12,9 +12,11 @@ domestic_or_international: "Domestic"
 pub: 
   - name: 제어로봇시스템학회 (ICROS)
     doi: 
+    pp: "505-506"
     year: "2026"
     pdf: "/static/pub/2026-constrained-optimization.pdf"
-    state: "accepted"
+    state: "published"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12952381"
 pub_date: "2026-07-01" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2026-constrained-optimization.png"
 abstract: "

@@ -14,7 +14,9 @@ pub:
     doi: 
     year: "2026"
     pdf: "/static/pub/2026-online-learning-based.pdf"
-    state: "accepted"
+    state: "published"
+    pp: "165-166"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12952229"
 pub_date: "2026-07-01" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2026-online-learning-based.png"
 abstract: "

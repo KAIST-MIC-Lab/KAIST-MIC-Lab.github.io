@@ -14,7 +14,9 @@ pub:
     doi:
     year: "2026"
     pdf: "/static/pub/2026-end-to-end.pdf"
-    state: "accepted"
+    state: "published"
+    pp: "503-504"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12952380"
 pub_date: "2026-07-01"
 image: "/static/pub/2026-end-to-end.jpg"
 abstract: "
