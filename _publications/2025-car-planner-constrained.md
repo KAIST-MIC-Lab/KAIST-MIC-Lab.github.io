@@ -16,8 +16,10 @@ pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
     num: # Leave it blank if not applicable
     pp: # "380-385" # Leave it blank if not applicable
     year: "2025" # Leave it blank if not applicable
-    state: "accepted" # published, accepted, submitted
+    state: "published" # published, accepted, submitted
     pdf: "/static/pub/2025-car-planner-constrained.pdf" # Leave it blank if not applicable
+    pp: "938-944"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12539326"
 pub_date: "2025-11-14" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2025-car-planner-constrained.png" # Representative image of the paper
 # abstract; emphasize the important part using **bold** or *italic* of markdown syntax

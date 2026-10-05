@@ -14,7 +14,9 @@ pub:
     doi: 
     year: "2026"
     pdf: "/static/pub/2026-CARE-Planner-constrained.pdf"
-    state: "accepted"
+    state: "published"
+    pp: "475-476"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12952370"
 pub_date: "2026-07-01" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2026-CARE-Planner-constrained.png"
 abstract: "

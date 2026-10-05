@@ -15,6 +15,8 @@ pub:
     year: "2025"
     pdf: "/static/pub/2025-online-reinforcement.pdf"
     state: "published"
+    pp: "727-728"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12313465"
 pub_date: "2025-6-25" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-online-reinforcement.png"
 abstract: "

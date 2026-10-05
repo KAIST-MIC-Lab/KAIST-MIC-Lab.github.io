@@ -15,6 +15,8 @@ pub:
     year: "2025"
     pdf: "/static/pub/2025-physics-informed-online.pdf"
     state: "published"
+    pp: "592-593"
+    url: "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12313408"
 pub_date: "2025-06-25" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-physics-informed-online.png"
 abstract: "
