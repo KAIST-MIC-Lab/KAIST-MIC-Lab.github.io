@@ -53,9 +53,9 @@
   link: "/facilities"
   group: facilities
 
-- name: Teaching
-  link: "/courses"
-  group: courses
+- name: Teaching & Talks
+  link: "/talks"
+  group: talks
 
 - name: News & Events
   link: "/news"

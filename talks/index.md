@@ -1,7 +1,7 @@
 ---
-title: MIC Lab Courses
+title: MIC Lab Teaching & Talks
 layout: default
-group: courses
+group: taks
 ---
 
 # Courses
@@ -36,4 +36,15 @@ For more information, [Read Current Working Draft](https://kyunghwan-choi.github
   - Understand and formulate torque and current control strategies, including optimal torque control of synchronous motors.
   - Design and implement electric drive control algorithms and evaluate their performance through simulation and experimental validation. -->
 
+<br>
+
+# Selected Invited Talks
+
+---
+
+#### xEV Energy Management: From Vehicle Control to Network Intelligence
+KIEVC 2026 · Samcheok, South Korea · October 15, 2026
+Slides ([PDF](/static/courses/261015_KIEVC2026.pdf))
+
+---
 
