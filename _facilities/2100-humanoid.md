@@ -4,7 +4,7 @@ engtitle: 'Humanoid Robot (Unitree G1)'
 category: 'Mobility Platforms'
 amount:
 date: '2100-01-01'
-image:
+image: /static/facilities/2100-humanoid.png
 link:
 quantity:
 krpurpose:
