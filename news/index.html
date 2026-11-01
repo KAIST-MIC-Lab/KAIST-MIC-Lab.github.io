@@ -52,6 +52,7 @@ group: news
     <div class="col-sm-7  col-md-8">
 
       <h2>
+        {% include post_new_badge.html date=post.date %}
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h2>
       <p class="author">

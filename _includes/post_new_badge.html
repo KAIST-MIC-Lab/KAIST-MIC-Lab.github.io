@@ -1,0 +1,7 @@
+{%- assign current_date = 'now' | date: "%s" -%}
+{%- assign post_date = include.date | date: "%s" -%}
+{%- assign date_diff = current_date | minus: post_date -%}
+{%- assign one_month_seconds = 30 | times: 24 | times: 60 | times: 60 -%}
+{%- if date_diff >= 0 and date_diff < one_month_seconds -%}
+<span style="color: rgb(255, 0, 0); font-weight: bold;">[New]</span>
+{%- endif -%}

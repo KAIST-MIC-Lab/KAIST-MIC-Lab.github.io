@@ -43,7 +43,8 @@ For more information, [Read Current Working Draft](https://kyunghwan-choi.github
 ---
 
 
-#### Model Predictive Control as Online Policy Improvement: A Reinforcement Learning Perspective
+#### Model Predictive Control as Online Policy Improvement: A Reinforcement Learning Perspective 
+{: #ICCAS2026Tutorial}
 
 ICCAS 2026, Sapporo, Japan, October 27, 2026
 Slides ([PDF](/static/courses/ICCAS2026_Tutorial.pdf))
@@ -51,6 +52,8 @@ Slides ([PDF](/static/courses/ICCAS2026_Tutorial.pdf))
 ---
 
 #### xEV Energy Management: From Vehicle Control to Network Intelligence
+{: #KIEVC2026Tutorial}
+
 KIEVC 2026 · Samcheok, South Korea · October 15, 2026
 Slides ([PDF](/static/courses/261015_KIEVC2026.pdf))
 
