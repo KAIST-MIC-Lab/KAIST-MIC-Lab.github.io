@@ -2,13 +2,21 @@
 
 * You should name this file as "YYYY-Title-of-the-project.md"
     - This rule is important for the Jekyll to recognize the post.
-* When you finalize the post, move this file to "_research" folder.
+* When you finalize the project, move this file to "_projects" folder.
 * Save figures you use in "static/img/research/projects" folder.
 
 * Highly recommended to use the same name as the file name for figure, 
   so that you can easily find the figure later.
 
-* You can refer to previous projects for the format in "_research" folder.
+* You can refer to previous projects for the format in "_projects" folder.
+* Use each member profile's `name` in `participants` to show the project on that
+  member's page. General labels such as "All members of the MIC Lab" do not assign
+  the project to individual members.
+* Member pages link the title to the project's section on the Projects page.
+  The label is `[sponsor] title`, with the sponsor in bold, using English for each field when available
+  and falling back to Korean. The sponsor prefix is omitted if no sponsor is set.
+  They show a nested period: `startdate - Ongoing` for
+  `state: ongoing`, and `startdate - enddate` for `state: completed`.
 
 Required: Published, Title, Author, Tags
 

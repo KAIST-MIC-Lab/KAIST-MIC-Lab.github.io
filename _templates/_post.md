@@ -13,6 +13,14 @@
 Required: Published, Title, Author, Tags
 Available tags: general, ... (will be added later)
 
+Use `related_members` to list the names of people mentioned in the post, matching
+the `name` in their `_members/` profile. `memberLink.html` resolves each name
+automatically, and the post appears under News & Events on that member's page.
+The top-level `author_link` identifies only the writer; it does not add the post
+to their News & Events automatically. Use `related_members: []` when no individuals
+are identified. Names without profiles can stay in the list; they will be linked
+automatically once a profile with the same `name` is added.
+
 When you filled the required fields, write the post content after line "---".
 You can use markdown syntax to write the post content.
 However, for advanced features like figure, HTML syntax is recommended.
@@ -26,6 +34,9 @@ published: True # True or False
 title: Example Post # Title of the post
 author: Myeongseok Ryu # Author of the post
 author_link: msRyu # Author link ID (refer to /members/)
+related_members: # People mentioned in this post, separate from the writer
+  - Myeongseok Ryu
+  - Seunghun Jang
 layout: post # Do not change this
 group: news # Do not change this
 tags: general # Tags for the post
