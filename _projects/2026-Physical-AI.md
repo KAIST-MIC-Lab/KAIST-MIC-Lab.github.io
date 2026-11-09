@@ -1,7 +1,7 @@
 ---
 state: 'ongoing'
 krtitle: "산업 특화 Physical AI 파운데이션 모델 개발 및 차세대 융합형 인재양성"
-engtitle:
+engtitle: "Development of Industry-Specific Physical AI Foundation Models and Training of Next-Generation Interdisciplinary Talent"
 participants:
   - name: "Kyunghwan Choi"
     role: "Researcher"
