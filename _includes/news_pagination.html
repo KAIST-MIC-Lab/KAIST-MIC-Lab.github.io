@@ -1,0 +1,133 @@
+{% comment %}
+  News uses Jekyll links. Pass list_id, page_size, total_pages, and current_page
+  to paginate an existing list in place on member pages.
+{% endcomment %}
+{% assign news_total_pages = include.total_pages | default: paginator.total_pages %}
+{% assign news_current_page = include.current_page | default: paginator.page %}
+{% assign news_group_start = news_current_page | minus: 1 | divided_by: 5 | times: 5 | plus: 1 %}
+{% assign news_group_end = news_group_start | plus: 4 | at_most: news_total_pages %}
+{% if news_total_pages > 1 %}
+<nav aria-label="News &amp; Events pages"{% if include.list_id %} data-list-id="{{ include.list_id }}" data-page-size="{{ include.page_size }}" hidden{% endif %}>
+  <ul class="pagination pagination-sm justify-content-center flex-wrap">
+    {% assign news_last_control = news_total_pages | plus: 3 %}
+    {% assign news_next_control = news_total_pages | plus: 2 %}
+    {% for control_index in (0..news_last_control) %}
+      {% assign news_control_disabled = false %}
+      {% assign news_control_current = false %}
+      {% case control_index %}
+        {% when 0 %}
+          {% assign news_control_action = 'first' %}
+          {% assign news_control_label = 'First' %}
+          {% assign news_target_page = 1 %}
+        {% when 1 %}
+          {% assign news_control_action = 'previous' %}
+          {% assign news_control_label = 'Prev' %}
+          {% assign news_target_page = news_group_start | minus: 5 %}
+        {% when news_next_control %}
+          {% assign news_control_action = 'next' %}
+          {% assign news_control_label = 'Next' %}
+          {% assign news_target_page = news_group_end | plus: 1 %}
+        {% when news_last_control %}
+          {% assign news_control_action = 'last' %}
+          {% assign news_control_label = 'End' %}
+          {% assign news_target_page = news_total_pages %}
+        {% else %}
+          {% assign news_control_action = 'page' %}
+          {% assign news_target_page = control_index | minus: 1 %}
+          {% unless include.list_id %}
+            {% if news_target_page < news_group_start or news_target_page > news_group_end %}
+              {% continue %}
+            {% endif %}
+          {% endunless %}
+          {% assign news_control_label = news_target_page %}
+          {% if news_target_page == news_current_page %}
+            {% assign news_control_current = true %}
+          {% endif %}
+      {% endcase %}
+      {% if news_control_action == 'first' and news_current_page == 1 %}
+        {% assign news_control_disabled = true %}
+      {% elsif news_control_action == 'previous' and news_group_start == 1 %}
+        {% assign news_control_disabled = true %}
+      {% elsif news_control_action == 'next' and news_group_end == news_total_pages %}
+        {% assign news_control_disabled = true %}
+      {% elsif news_control_action == 'last' and news_current_page == news_total_pages %}
+        {% assign news_control_disabled = true %}
+      {% endif %}
+      {% if news_control_action == 'page' %}
+        {% capture news_control_aria_label %}Page {{ news_target_page }}{% endcapture %}
+      {% elsif news_control_action == 'previous' %}
+        {% assign news_control_aria_label = 'Previous group of pages' %}
+      {% elsif news_control_action == 'next' %}
+        {% assign news_control_aria_label = 'Next group of pages' %}
+      {% else %}
+        {% assign news_control_aria_label = news_control_action | append: ' page' | capitalize %}
+      {% endif %}
+      <li class="page-item mb-1{% if news_control_current %} active{% endif %}{% if news_control_disabled %} disabled{% endif %}">
+        {% if include.list_id %}
+          <button type="button" class="page-link" data-action="{{ news_control_action }}" data-page="{{ news_target_page }}" aria-label="{{ news_control_aria_label }}" aria-controls="{{ include.list_id }}"{% if news_control_current %} aria-current="page"{% endif %}{% if news_control_disabled %} disabled{% endif %}>{{ news_control_label }}</button>
+        {% elsif news_control_disabled or news_control_current %}
+          <span class="page-link" aria-label="{{ news_control_aria_label }}"{% if news_control_current %} aria-current="page"{% endif %}{% if news_control_disabled %} aria-disabled="true"{% endif %}>{{ news_control_label }}</span>
+        {% else %}
+          {% if news_target_page == 1 %}
+            {% assign news_page_path = '/news/' %}
+          {% else %}
+            {% assign news_page_path = site.paginate_path | replace: ':num', news_target_page %}
+          {% endif %}
+          <a class="page-link" href="{{ news_page_path | relative_url }}" aria-label="{{ news_control_aria_label }}">{{ news_control_label }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% if include.list_id %}<p class="sr-only" aria-live="polite" aria-atomic="true"></p>{% endif %}
+</nav>
+{% if include.list_id %}
+<script>
+  (function () {
+    var navigation = document.currentScript.previousElementSibling;
+    var posts = document.getElementById(navigation.dataset.listId).children;
+    var pageSize = Number(navigation.dataset.pageSize);
+    var pageCount = Math.ceil(posts.length / pageSize);
+    var buttons = navigation.querySelectorAll('button');
+    var status = navigation.querySelector('[aria-live]');
+    var currentPage = 1;
+
+    function showPage(page) {
+      currentPage = Math.max(1, Math.min(page, pageCount));
+      var groupStart = Math.floor((currentPage - 1) / 5) * 5 + 1;
+      var groupEnd = Math.min(groupStart + 4, pageCount);
+      Array.prototype.forEach.call(posts, function (post, index) {
+        post.hidden = index < (currentPage - 1) * pageSize || index >= currentPage * pageSize;
+      });
+      buttons.forEach(function (button) {
+        var action = button.dataset.action;
+        var number = Number(button.dataset.page);
+        var isCurrent = action === 'page' && number === currentPage;
+        button.parentElement.hidden = action === 'page' && (number < groupStart || number > groupEnd);
+        button.disabled = (action === 'first' && currentPage === 1) ||
+          (action === 'previous' && groupStart === 1) ||
+          (action === 'next' && groupEnd === pageCount) ||
+          (action === 'last' && currentPage === pageCount);
+        button.parentElement.classList.toggle('active', isCurrent);
+        button.parentElement.classList.toggle('disabled', button.disabled);
+        if (isCurrent) {
+          button.setAttribute('aria-current', 'page');
+        } else {
+          button.removeAttribute('aria-current');
+        }
+      });
+      status.textContent = 'News & Events: Page ' + currentPage + ' of ' + pageCount;
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var groupStart = Math.floor((currentPage - 1) / 5) * 5 + 1;
+        var destinations = { first: 1, previous: groupStart - 5, next: groupStart + 5, last: pageCount };
+        showPage(button.dataset.action === 'page' ? Number(button.dataset.page) : destinations[button.dataset.action]);
+      });
+    });
+    showPage(1);
+    navigation.hidden = false;
+  })();
+</script>
+{% endif %}
+{% endif %}
