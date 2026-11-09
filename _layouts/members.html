@@ -78,6 +78,89 @@
   </div>
 </div>
 
+{% comment %}Resolve related member names through the shared publication link helper.{% endcomment %}
+{% assign member_id = page.path | split: '/' | last | remove: '.md' %}
+{% assign related_posts = "" | split: "" %}
+{% for post in site.posts %}
+  {% for member in post.related_members %}
+    {% assign memberName = member %}
+    {% include memberLink.html %}
+    {% if memberUrl == member_id %}
+      {% assign related_posts = related_posts | push: post %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign related_posts = related_posts | sort: 'date' | reverse %}
+
+{% if related_posts.size > 0 %}
+  <hr>
+  <section aria-labelledby="related-posts">
+    <h2 id="related-posts">News &amp; Events</h2>
+    <ul id="related-posts-list">
+      {% for post in related_posts %}
+        <li>
+          <div class="related-post-entry">
+            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+            <span aria-hidden="true"> </span>
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    {% assign related_page_count = related_posts.size | plus: 4 | divided_by: 5 %}
+    {% include news_pagination.html total_pages=related_page_count current_page=1 list_id="related-posts-list" page_size=5 %}
+  </section>
+{% endif %}
+
+{% assign member_projects = "" | split: "" %}
+{% for project in site.projects %}
+  {% for participant in project.participants %}
+    {% assign memberName = participant.name %}
+    {% include memberLink.html %}
+    {% if memberUrl == member_id %}
+      {% assign member_projects = member_projects | push: project %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign member_projects = member_projects | sort: 'startdate' | reverse %}
+
+{% if member_projects.size > 0 %}
+  <hr>
+  <section aria-labelledby="member-projects">
+    <h2 id="member-projects">Projects</h2>
+    <ul>
+      {% for project in member_projects %}
+        {% assign project_member_roles = "" | split: "" %}
+        {% for participant in project.participants %}
+          {% assign memberName = participant.name %}
+          {% include memberLink.html %}
+          {% if memberUrl == member_id %}
+            {% assign project_member_role = participant.role | default: '' | strip | default: 'Participant' %}
+            {% assign project_member_roles = project_member_roles | push: project_member_role %}
+          {% endif %}
+        {% endfor %}
+        {% assign project_english_title = project.engtitle | default: '' | strip %}
+        {% assign project_korean_title = project.krtitle | default: '' | strip %}
+        {% assign project_title = project_english_title | default: project_korean_title %}
+        {% assign project_sponsor = project.engsponsor | strip | default: project.krsponsor %}
+        {% assign project_korean_sponsor = project.krsponsor | default: '' | strip %}
+        {% assign project_english_sponsor = project.engsponsor | default: '' | strip %}
+        {% assign project_subtitle_sponsor = project_korean_sponsor | default: project_english_sponsor %}
+        <li>
+          <a href="{% link research/projects.html %}#{{ project.pmid | escape }}">{% if project_sponsor != nil and project_sponsor != empty %}<strong>[{{ project_sponsor | markdownify | remove: '<p>' | remove: '</p>' | strip }}]</strong> {% endif %}{{ project_title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</a>
+          {% if project_english_title != empty and project_korean_title != empty %}
+            <span class="d-block text-muted" lang="ko">{% if project_subtitle_sponsor != empty %}<strong>[{{ project_subtitle_sponsor | markdownify | remove: '<p>' | remove: '</p>' | strip }}]</strong> {% endif %}{{ project_korean_title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+          {% endif %}
+          <ul>
+            <li>{{ project_member_roles | uniq | join: ', ' | escape }} ({{ project.startdate | escape }} - {% if project.state == 'completed' %}{{ project.enddate | escape }}{% elsif project.state == 'ongoing' %}Ongoing{% endif %})</li>
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
 
         {% if page.position == "Principal Investigator" %}
           
