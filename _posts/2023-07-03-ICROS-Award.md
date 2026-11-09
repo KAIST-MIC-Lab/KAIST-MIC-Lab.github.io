@@ -3,6 +3,10 @@ published: True
 title: Institute of Control, Robotics and Systems (ICROS) 2023 Best Paper Awards
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Myeongseok Ryu
+  - Jihyeok Park
+  - Seonsoo Kim
 layout: post
 group: news
 tags: award conference

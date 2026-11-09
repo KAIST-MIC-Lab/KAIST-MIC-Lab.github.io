@@ -3,6 +3,8 @@ published: True
 title: Institute of Control, Robotics and Systems (ICROS) 2024 Outstanding Young Researcher Award
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Kyunghwan Choi
 layout: post
 group: news
 tags: award conference

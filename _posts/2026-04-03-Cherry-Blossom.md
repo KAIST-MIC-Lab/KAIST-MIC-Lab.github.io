@@ -3,6 +3,17 @@ published: True
 title: Cherry Blossom Viewing at Munji Campus, KAIST
 author: Myeongseok Ryu
 author_link: msRyu
+related_members: 
+  - Naol Samuel Erega
+  - Minseok Seo
+  - Changeun Park
+  - Hyochan Lee
+  - Seunghun Jang
+  - Jiyun Kim
+  - Myeongseok Ryu
+  - Donghwa Hong
+  - Kyunghwan Choi
+  - Ahmad Mouri Zadeh Khaki
 layout: post
 group: news
 tags: life

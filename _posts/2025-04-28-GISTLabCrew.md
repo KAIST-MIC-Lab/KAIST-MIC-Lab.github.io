@@ -3,6 +3,14 @@ published: True
 title: GIST Lab Crew
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Seunghun Jang
+  - Myeongseok Ryu
+  - Jiyun Kim
+  - Donghwa Hong
+  - Hyochan Lee
+  - Minseok Seo
+  - Yeongho Jeong
 layout: post
 group: news
 tags: life

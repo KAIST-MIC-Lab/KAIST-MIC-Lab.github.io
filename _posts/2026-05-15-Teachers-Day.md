@@ -3,6 +3,16 @@ published: True
 title: Celebrating Teacher's Day
 author: Myeongseok Ryu
 author_link: msRyu
+related_members: 
+  - Minseok Seo
+  - Changeun Park
+  - Jiyun Kim
+  - Hyochan Lee
+  - Seunghun Jang
+  - Kyunghwan Choi
+  - Myeongseok Ryu
+  - Naol Samuel Erega
+  - Ahmad Mouri Zadeh Khaki
 layout: post
 group: news
 tags: life

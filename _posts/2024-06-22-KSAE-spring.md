@@ -3,6 +3,8 @@ published: True
 title: Korean Society of Automotive Engineers (KSAE) 2024 Spring Conference
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Kyunghwan Choi
 layout: post
 group: news
 tags: conference

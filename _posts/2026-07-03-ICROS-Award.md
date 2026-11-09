@@ -3,6 +3,8 @@ published: True
 title: Institute of Control, Robotics and Systems (ICROS) 2026 Best Paper Awards
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Jiyun Kim
 layout: post
 group: news
 tags: award conference
