@@ -25,10 +25,17 @@ group: research
 <hr>
 <div class="row" style="padding-top: 60px; margin-top: -60px;" id="{{project.pmid}}">
 	<div>
-		{% if project.krtitle %}
-			<h4>{{ project.krtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
-		{% else %}
-			<h4>{{ project.engtitle | markdownify  | remove: '<p>' | remove: '</p>'}}</h4>
+		{% assign english_title = project.engtitle | strip %}
+		{% assign korean_title = project.krtitle | strip %}
+		{% if english_title != empty %}
+			<h4>
+				{{ english_title | markdownify | remove: '<p>' | remove: '</p>' }}
+			{% if korean_title != empty %}
+				<span class="d-block text-muted mt-2" style="font-size: 80%;">{{ korean_title | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+			{% endif %}
+			</h4>
+		{% elsif korean_title != empty %}
+			<h4>{{ korean_title | markdownify | remove: '<p>' | remove: '</p>' }}</h4>
 		{% endif %}
 	</div>
 </div>

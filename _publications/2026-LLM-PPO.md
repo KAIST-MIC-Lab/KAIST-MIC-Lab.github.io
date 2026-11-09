@@ -18,12 +18,12 @@ domestic_or_international: "International" # "International" or "Domestic"
 pub: # Publication information - REMOVE THIS FIELD IF NOT APPLICABLE!
   - name: "Asian Control Conference (ASCC)"
     pdf: "/static/pub/2026-LLM-PPO.pdf"
-    doi: # Leave it blank if not applicable
+    doi: "10.1109/ASCC70886.2026.11702225" # Leave it blank if not applicable
     vol: # Leave it blank if not applicable
     num: # Leave it blank if not applicable
-    pp: # "380-385" # Leave it blank if not applicable
+    pp: 2327-2332 # "380-385" # Leave it blank if not applicable
     year: "2026" # Leave it blank if not applicable
-    state: "accepted" # published, accepted, submitted
+    state: "published" # published, accepted, submitted
     bib: # "/static/pub/2025-imposing.bib" # Leave it blank if not applicable
 pub_date: "2026-06-21" # Date of publication. Change Techrxiv (or other preprint) date to Journal date once published.
 image: "/static/pub/2026-LLM-PPO.png" # Representative image of the paper

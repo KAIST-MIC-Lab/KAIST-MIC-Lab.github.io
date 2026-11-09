@@ -3,6 +3,8 @@ published: True
 title: IEEE International Workshop on Intelligent Systems (IWIS) 2025 Best Presentation Paper Award
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Myeongseok Ryu
 layout: post
 group: news
 tags: award conference

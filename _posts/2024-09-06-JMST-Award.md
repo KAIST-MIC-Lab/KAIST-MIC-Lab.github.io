@@ -3,6 +3,8 @@ published: True
 title: JMST Outstanding Contribution Award
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Kyunghwan Choi
 layout: post
 group: news
 tags: award

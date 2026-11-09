@@ -3,6 +3,20 @@ published: True
 title: Joint Workshop (MSC Lab at KAIST & EMCS Lab at CNU)
 author: Myeongseok Ryu
 author_link: msRyu
+related_members: 
+  - Minsoh Kim
+  - Yejin Jang
+  - Soobin Hwang
+  - Donghwa Hong
+  - Hyochan Lee
+  - Jiyun Kim
+  - Changeun Park
+  - Seunghun Jang
+  - Ahmad Mouri Zadeh Khaki
+  - Geunyoung Park
+  - Myeongseok Ryu
+  - Naol Samuel Erega
+  - Kyunghwan Choi
 layout: post
 group: news
 tags: life

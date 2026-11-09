@@ -23,6 +23,9 @@ https://mic.gist.ac.kr/prog/lectureMaster/mic/ALL/65352/list.do
 - Research page: `./research/`
 - Add a new project
   - Copy the template in `./_templates/`.
+  - Set `participants[].name` to each participant's member profile name. Their **Projects** section lists matching projects by start date, newest first, with a link to the project's section on the Projects page and its period underneath.
+  - Member pages label projects as **[sponsor]** title, preferring `engsponsor` and `engtitle` independently and falling back to `krsponsor` and `krtitle`. The sponsor prefix is omitted when no sponsor is provided.
+  - Set `state: completed` to display the end date on member pages; `state: ongoing` shows `startdate - Ongoing`. General participant labels such as `All members of the MIC Lab` do not assign projects to individuals.
 - Add Member Information
   - Copy the template in `./_templates/`.
 - Add a new publication
@@ -31,6 +34,8 @@ https://mic.gist.ac.kr/prog/lectureMaster/mic/ALL/65352/list.do
 - Teaching page: `./course/index.md`
 - Add a news post
   - Copy the template in `./_templates/`.
+  - Add names to `related_members` (for example, `related_members: [Myeongseok Ryu, Seunghun Jang]`), matching the `name` in each `_members/` profile. `memberLink.html` resolves the names automatically, and linked posts appear in each member's **News & Events**, newest first.
+  - The top-level `author` / `author_link` still identifies the writer. Use `related_members: []` for posts without named individuals. Names without profiles are linked automatically once a matching member profile is added.
 - News page: `./news/index.md`
 - Join page: `./join/index.md`
 - Contact page: `./contact/index.md`

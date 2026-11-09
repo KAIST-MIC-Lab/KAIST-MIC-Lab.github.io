@@ -181,6 +181,22 @@ body {
     /* font-size: 15px; */
 }
 
+.related-post-entry {
+  display: grid;
+  grid-template-columns: 11ch auto minmax(0, 1fr);
+  column-gap: 0.5em;
+  align-items: baseline;
+}
+
+.related-post-entry time {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.related-post-entry a {
+  overflow-wrap: anywhere;
+}
+
 .dropdown-submenu {
   position: relative;
 }

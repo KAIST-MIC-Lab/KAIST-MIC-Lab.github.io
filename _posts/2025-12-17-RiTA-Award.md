@@ -3,6 +3,8 @@ published: True
 title: International Conference on Robot Intelligence Technology and Applications (RiTA) 2025 Best Intelligence Paper Award
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Jiyun Kim
 layout: post
 group: news
 tags: award conference

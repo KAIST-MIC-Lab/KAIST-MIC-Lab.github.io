@@ -3,6 +3,11 @@ published: True
 title: Korean Society of Automotive Engineers (KSAE) 2025 Autumn Conference
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Jiyun Kim
+  - Minseok Seo
+  - Semin Jeong
+  - Kyunghwan Choi
 layout: post
 group: news
 tags: conference

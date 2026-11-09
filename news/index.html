@@ -24,24 +24,7 @@ group: news
 
 <hr>
 
-<!-- This makes links to other paginator pages -->
-{% if paginator.total_pages > 1 %}
-<ul class="pagination" style="margin-left: 30px;">
-  <li> {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path }}"> {% endif %} Prev</a>&nbsp;</li>
-
-  {% for page in (1..paginator.total_pages) %}
-  {% if page == paginator.page %}
-  <li class="active">{{ page }}&nbsp;</li>
-  {% elsif page == 1 %}
-  <li><a href="/news/">{{ page }}</a>&nbsp;</li>
-  {% else %}
-  <li><a href="/news/page{{ page }}">{{ page }}</a>&nbsp;</li>
-  {% endif %}
-  {% endfor %}
-
-  <li> {% if paginator.next_page %} <a href="{{ paginator.next_page_path }}"> {% endif %} Next</a></li>
-</ul>
-{% endif %}
+{% include news_pagination.html %}
 
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
@@ -86,21 +69,4 @@ group: news
   {% endfor %}
 <hr>
 
-<!-- This makes links to other paginator pages -->
-{% if paginator.total_pages > 1 %}
-<ul class="pagination" style="margin-left: 30px;">
-  <li> {% if paginator.previous_page %} <a href="{{ paginator.previous_page_path }}"> {% endif %} Prev</a>&nbsp;</li>
-
-  {% for page in (1..paginator.total_pages) %}
-  {% if page == paginator.page %}
-  <li class="active">{{ page }}&nbsp;</li>
-  {% elsif page == 1 %}
-  <li><a href="/news/">{{ page }}</a>&nbsp;</li>
-  {% else %}
-  <li><a href="/news/page{{ page }}">{{ page }}</a>&nbsp;</li>
-  {% endif %}
-  {% endfor %}
-
-  <li> {% if paginator.next_page %} <a href="{{ paginator.next_page_path }}"> {% endif %} Next</a></li>
-</ul>
-{% endif %}
+{% include news_pagination.html %}

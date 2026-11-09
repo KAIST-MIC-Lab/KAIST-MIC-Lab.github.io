@@ -3,6 +3,18 @@ published: True
 title: Lab Dinner Gathering
 author: Myeongseok Ryu
 author_link: msRyu
+related_members: 
+  - Minsoh Kim
+  - Yejin Jang
+  - Soobin Hwang
+  - Hyochan Lee
+  - Jiyun Kim
+  - Changeun Park
+  - Seunghun Jang
+  - Geunyoung Park
+  - Myeongseok Ryu
+  - Naol Samuel Erega
+  - Kyunghwan Choi
 layout: post
 group: news
 tags: life

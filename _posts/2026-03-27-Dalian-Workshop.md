@@ -3,6 +3,11 @@ published: True
 title: Spring International Workshop on AI, Reinforcement Learning, and Control
 author: Myeongseok Ryu
 author_link: msRyu
+related_members:
+  - Ahmad Mouri Zadeh Khaki
+  - Seunghun Jang
+  - Myeongseok Ryu
+  - Hyochan Lee
 layout: post
 group: news
 tags: conference

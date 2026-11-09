@@ -3,6 +3,13 @@ published: True
 title: CIS-MIC Joint Symposium
 author: Myeongseok Ryu
 author_link: msRyu
+related_members: 
+  - Seunghun Jang
+  - Myeongseok Ryu
+  - Jiyun Kim
+  - Hyochan Lee
+  - Minseok Seo
+  - Kyunghwan Choi
 layout: post
 group: news
 tags: talk
