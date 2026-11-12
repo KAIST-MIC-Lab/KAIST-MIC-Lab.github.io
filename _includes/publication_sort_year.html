@@ -10,6 +10,12 @@
 <ol | reversed>
 {% for publication in sorted %}
 
+    {% assign latest_pub = publication.pub | last %}
+    {% assign is_submitted = false %}
+    {% if latest_pub.state contains "submitted" %}
+        {% assign is_submitted = true %}
+    {% endif %}
+
     {% assign year = publication.pub_date | date: "%Y" %}
     {% if year != last_year %}
     <br>
@@ -73,10 +79,10 @@
                 {% assign diss_info = publication.pub | last %}
                 <i><b>{{ diss_info.name }}</b></i>{% if diss_info.year %}, {{ diss_info.year }}{% endif %}                
 
-                {% if diss_info.pdf %}
+                {% if diss_info.pdf and is_submitted == false %}
                     <a href="{{diss_info.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[📃 Full-Text]</a>
                 {% endif %}
-                {% if diss_info.bib %}
+                {% if diss_info.bib and is_submitted == false %}
                     <a href="{{diss_info.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[💾 Cite]</a>
                 {% endif %}
 
@@ -110,21 +116,21 @@
                     {% endif %}
                 {% endif %}
 
-                {% if pub.pdf %}
+                {% if pub.pdf and is_submitted == false %}
                     <a href="{{pub.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[📃 Full-Text]</a>
-                {% elsif pre_info.pdf and publication.preprint %}
+                {% elsif pre_info.pdf and publication.preprint and is_submitted == false %}
                     <a href="{{pre_info.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[📃 Full-Text]</a>
                 {% endif %}
 
-                {% if pub.pres %}
+                {% if pub.pres and is_submitted == false %}
                     <a href="{{pub.pres}}" class="custom-color-link" title = "Presentation for {{publication.title}} (opens in new tab)" target="_blank">[🎥 Presentation]</a>
                 {% endif %}
 
-                {% if pub.bib %}
+                {% if pub.bib and is_submitted == false %}
                     <a href="{{pub.bib}}" class="custom-color-link" title = "BibTex for {{publication.title}} (opens in new tab)" target="_blank">[💾 Cite]</a>
                 {% endif %}
                                 
-                {% if publication.github %}
+                {% if publication.github and is_submitted == false %}
                     {% assign github = publication.github | last %}
                         <a href="https://www.github.com/{{github.url}}"
                             class="custom-color-link"
@@ -136,7 +142,7 @@
 
                 {% if publication.Youtube %}
                     {% for video in publication.Youtube %}
-                        {% if video.representative %}
+                        {% if video.name %}
                             <a href="https://youtu.be/{{video.url}}"
                             class="custom-color-link"
                             title="Youtube Video for {{publication.title}} (opens in new tab)"
@@ -155,7 +161,7 @@
                 {% if pre_info.doi %}
                     <a href="https://doi.org/{{ pre_info.doi }}" class="custom-color-link" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[🌐 Preprint Online]</a>
                 {% endif %}
-                {% if pre_info.pdf %}
+                {% if pre_info.pdf and is_submitted == false %}
                     <a href="{{pre_info.pdf}}" class="custom-color-link" title = "PDF for {{publication.title}} (opens in new tab)" target="_blank">[📃 Preprint Full-Text]</a>
                 {% endif %}
                 {% if pre_info.bib %}

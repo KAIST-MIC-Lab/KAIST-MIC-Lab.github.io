@@ -1,5 +1,11 @@
 {% include header.html %}
 
+{% assign latest_pub = page.pub | last %}
+{% assign is_submitted = false %}
+{% if latest_pub.state contains "submitted" %}
+  {% assign is_submitted = true %}
+{% endif %}
+
 <div class="container-fluid">
 
 <h5>
@@ -54,13 +60,13 @@
         {% assign pub = page.pub | last %}
 
         <i><b>{{ pub.name }}</b></i>{% if pub.year %}, {{ pub.year }}{% endif %} <b>{{ pub.state }}</b>
-        {% if pub.doi %}
+        {% if pub.doi and is_submitted == false %}
           <a href="https://doi.org/{{ pub.doi }}" class="custom-color-link" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[🌐 Online]</a>
         {% endif %}
-        {% if pub.pdf %}
+        {% if pub.pdf and is_submitted == false %}
           <a href="{{pub.pdf}}" class="custom-color-link" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[📃 Full-Text]</a>
         {% endif %}
-        {% if pub.bib %}
+        {% if pub.bib and is_submitted == false %}
           <a href="{{pub.bib}}" class="custom-color-link" title = "BibTex for {{page.title}} (opens in new tab)" target="_blank">[💾 Cite]</a>
         {% endif %}
           
@@ -78,15 +84,15 @@
               <a href="https://doi.org/{{ pub.doi }}" class="custom-color-link" title = "DOI: {{pub.doi}} (opens in new tab)" target="_blank">[🌐Online]</a>
             {% endif %}
 
-            {% if pub.pdf %}
+            {% if pub.pdf and is_submitted == false %}
                 <a href="{{pub.pdf}}" class="custom-color-link" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[📃 Full-Text]</a>
             {% endif %}
 
-            {% if pub.pres %}
+            {% if pub.pres and is_submitted == false %}
                 <a href="{{pub.pres}}" class="custom-color-link" title = "Presentation for {{page.title}} (opens in new tab)" target="_blank">[🎥 Presentation]</a>
             {% endif %}
 
-            {% if pub.bib %}
+            {% if pub.bib and is_submitted == false %}
                 <a href="{{pub.bib}}" class="custom-color-link" title = "BibTex for {{page.title}} (opens in new tab)" target="_blank">[💾 Cite]</a>
             {% endif %}
           {% endif %}
@@ -100,7 +106,7 @@
             {% if pre_info.doi %}
                 <a href="https://doi.org/{{ pre_info.doi }}" class="custom-color-link" title = "DOI: {{pre_info.doi}} (opens in new tab)" target="_blank">[🌐 Preprint Online]</a>
             {% endif %}
-            {% if pre_info.pdf %}
+            {% if pre_info.pdf and is_submitted == false %}
                 <a href="{{pre_info.pdf}}" class="custom-color-link" title = "PDF for {{page.title}} (opens in new tab)" target="_blank">[📃 Preprint Full-Text]</a>
             {% endif %}
             {% if pre_info.bib %}
@@ -112,7 +118,7 @@
         {% endif %}
 
       <!--Github - optional-->
-      {% if page.github %}
+      {% if page.github and is_submitted == false %}
       <br>
         
         <h5><li>GitHub Repository</h5></li>
@@ -137,7 +143,9 @@
 
         <h5><li>Abstract</li></h5>
 
-      {% if page.abstract %}
+      {% if is_submitted %}
+        <p>To be added.</p>
+      {% elsif page.abstract %}
         {{ page.abstract | markdownify }}
       {% else %}
         No abstract available
