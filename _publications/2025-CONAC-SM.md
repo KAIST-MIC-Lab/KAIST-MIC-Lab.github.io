@@ -22,8 +22,9 @@ pub:
     doi: "10.1109/IECON58223.2025.11221692"
     year: "2025"
     pp: "1-7"
-    pdf: "/static/pub/2025-CONAC-SM-IECON.pdf"
+    pdf: "/static/pub/2025-CONAC-SM.pdf"
     bib: "/static/pub/2025-CONAC-SM.bib"
+    pres: "/static/pub/2025-CONAC-SM-pres.pdf"
     state: "published"
 pub_date: "2025-10-14" #Date of publication. Change from Biorxiv date to Journal date once accepted
 image: "/static/pub/2025-CONAC-SM.png"
